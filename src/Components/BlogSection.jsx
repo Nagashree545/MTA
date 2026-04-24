@@ -77,7 +77,7 @@ export default function BlogSection() {
                 <h3>{post.title}</h3>
                 <p className={styles.excerpt}>{post.excerpt}</p>
 
-                <a href="#" className={styles.readMore} onClick={(e) => e.preventDefault()}>
+                <a href="/blog" className={styles.readMore} onClick={(e) => e.preventDefault()}>
                   Read Article →
                 </a>
               </div>
