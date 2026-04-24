@@ -66,7 +66,7 @@ export default function ContactSection() {
               <div className={styles.icon}>⏰</div>
               <h3>Timing</h3>
               <p>Mon - Fri: 9 AM - 6 PM</p>
-              <p className={styles.subtext}>Sat - Sun: 10 AM - 4 PM</p>
+              {/* <p className={styles.subtext}>Sat - Sun: 10 AM - 4 PM</p> */}
             </div>
           </div>
 
