@@ -48,11 +48,11 @@ export default function Footer() {
             </p>
             <p className={styles.contactInfo}>
               <strong>Phone:</strong><br />
-              +91 87928 93421
+              +91 9663317167 
             </p>
             <p className={styles.contactInfo}>
               <strong>Email:</strong><br />
-              info@mastertraders.com
+            info@mastertradersacademy.in
             </p>
           </div>
         </div>
