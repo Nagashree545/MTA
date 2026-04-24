@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../Styles/Herosection.module.css';
-import herosection from "../Assets/herosection.png";
+import anandsir from "../Assets/AnandSir.JPG";
 export default function HeroSection() {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
@@ -41,7 +41,7 @@ export default function HeroSection() {
       </div>
 
       <div className={styles.logoDisplay}>
-        <img src={herosection} alt="Master Traders Academy Logo" />
+        <img src={anandsir} alt="Master Traders Academy Logo" />
       </div>
     </section>
   );
