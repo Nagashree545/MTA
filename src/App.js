@@ -22,7 +22,7 @@ function App() {
       {/* <CoursesSection /> */}
       <WhyUsSection />
       <WhoCanEnroll/>
-      <PopularCoursesgit init/>
+      <PopularCourses/>
       {/* <InstructorsSection /> */}
       <TestimonialsSection/>
       <BlogSection />
