@@ -1,0 +1,243 @@
+.instructorsSection {
+  background-color: var(--light-bg);
+  padding: 80px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.header h2 {
+  font-size: 2.5rem;
+  color: var(--text-dark);
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+.header h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background-color: var(--primary-gold);
+  border-radius: 2px;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 600px;
+  margin: 30px auto 0;
+}
+
+.instructorsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.instructorCard {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.instructorCard:hover {
+  transform: translateY(-15px);
+  border-color: var(--primary-gold);
+  box-shadow: 0 12px 30px rgba(212, 175, 55, 0.2);
+}
+
+.cardInner {
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  background: linear-gradient(135deg, var(--primary-gold), var(--primary-green));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 700;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+.instructorCard h3 {
+  font-size: 1.4rem;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.title {
+  color: var(--primary-gold);
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+}
+
+.badge {
+  display: inline-block;
+  background-color: rgba(27, 94, 32, 0.15);
+  border: 1px solid var(--primary-green);
+  color: var(--primary-green);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+.specialty {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 15px 0;
+  flex-grow: 1;
+}
+
+.label {
+  font-weight: 700;
+  color: var(--primary-burgundy);
+}
+
+.bio {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.messageBtn {
+  background-color: var(--primary-gold);
+  color: var(--text-dark);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: center;
+  min-width: 200px;
+}
+
+.messageBtn:hover {
+  background-color: var(--accent-gold);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .instructorsSection {
+    padding: 60px 20px;
+  }
+
+  .header h2 {
+    font-size: 2rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .instructorsGrid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+  }
+
+  .cardInner {
+    padding: 25px;
+  }
+
+  .avatar {
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+  }
+
+  .instructorCard h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .instructorsSection {
+    padding: 40px 15px;
+  }
+
+  .header h2 {
+    font-size: 1.5rem;
+  }
+
+  .header h2::after {
+    width: 60px;
+  }
+
+  .header p {
+    font-size: 0.95rem;
+  }
+
+  .instructorsGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .cardInner {
+    padding: 20px;
+  }
+
+  .avatar {
+    width: 60px;
+    height: 60px;
+    font-size: 1.8rem;
+  }
+
+  .instructorCard h3 {
+    font-size: 1.1rem;
+  }
+
+  .title {
+    font-size: 0.85rem;
+  }
+
+  .specialty {
+    font-size: 0.9rem;
+  }
+
+  .bio {
+    font-size: 0.85rem;
+  }
+
+  .messageBtn {
+    padding: 10px 16px;
+    font-size: 0.85rem;
+    min-width: auto;
+  }
+}

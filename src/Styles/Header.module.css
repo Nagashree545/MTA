@@ -1,0 +1,163 @@
+.navbar {
+  background: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+}
+
+/* LOGO FIX */
+/*  */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* LOGO ICON */
+.logo img {
+  height: 75px;
+  width: 75px;
+  object-fit: contain;
+}
+
+/* TEXT */
+.logoText {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.logoText .main {
+  font-size: 20px;
+  font-weight: 700;
+  color: #d4af37; /* gold */
+  letter-spacing: 1px;
+  margin-bottom: 5px
+}
+
+.logoText .sub {
+  font-size: 16px;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+
+.logo img:hover {
+  transform: scale(1.08);
+}
+
+/* NAV LINKS */
+.navLinks {
+  display: flex;
+  list-style: none;
+  gap: 28px;
+  align-items: center;
+}
+
+.navLinks li button {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+/* GOLD UNDERLINE EFFECT */
+.navLinks li button::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #d4af37, #f5d76e);
+  transition: width 0.3s ease;
+}
+
+.navLinks li button:hover {
+  color: #f5d76e;
+}
+
+.navLinks li button:hover::after {
+  width: 100%;
+}
+
+/* MENU TOGGLE */
+.menuToggle {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.menuToggle span {
+  width: 26px;
+  height: 3px;
+  background: #d4af37;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .menuToggle {
+    display: flex;
+  }
+
+  .navLinks {
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: #0a0a0a;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s ease;
+  }
+
+  .navLinks.active {
+    max-height: 500px;
+  }
+
+  .navLinks li {
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+  }
+
+  .navLinks li button::after {
+    display: none;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+  .container {
+    height: 65px;
+  }
+
+  .logo img {
+    height: 45px;
+  }
+}

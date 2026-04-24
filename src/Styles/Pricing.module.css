@@ -1,0 +1,339 @@
+.pricingSection {
+  background-color: var(--dark-bg);
+  color: var(--text-light);
+  padding: 80px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+  color: var(--text-light);
+}
+
+.header h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background-color: var(--primary-gold);
+  border-radius: 2px;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #bbb;
+  max-width: 600px;
+  margin: 30px auto 0;
+}
+
+.pricingGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+.pricingCard {
+  border-radius: 8px;
+  padding: 40px 30px;
+  position: relative;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(212, 175, 55, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.standard {
+  background-color: rgba(212, 175, 55, 0.05);
+}
+
+.featured {
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.15), rgba(27, 94, 32, 0.1));
+  border-color: var(--primary-gold);
+  transform: scale(1.05);
+}
+
+.premium {
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.2), rgba(139, 0, 0, 0.15));
+  border-color: var(--primary-burgundy);
+}
+
+.pricingCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(212, 175, 55, 0.2);
+}
+
+.featured:hover {
+  transform: scale(1.05) translateY(-10px);
+}
+
+.badge {
+  position: absolute;
+  top: -15px;
+  right: 30px;
+  background-color: var(--primary-gold);
+  color: var(--text-dark);
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.pricingCard h3 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: var(--primary-gold);
+}
+
+.priceBlock {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+
+.currency {
+  font-size: 1.2rem;
+  color: var(--accent-gold);
+}
+
+.amount {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-light);
+}
+
+.duration {
+  font-size: 1rem;
+  color: #999;
+  margin-left: 10px;
+}
+
+.featuresList {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+  flex-grow: 1;
+}
+
+.featuresList li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+  color: #bbb;
+  line-height: 1.4;
+}
+
+.checkmark {
+  color: var(--primary-green);
+  font-weight: bold;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  margin-top: -2px;
+}
+
+.enrollBtn {
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.btn_standard {
+  background-color: var(--primary-gold);
+  color: var(--text-dark);
+}
+
+.btn_standard:hover {
+  background-color: var(--accent-gold);
+  transform: scale(1.02);
+}
+
+.btn_featured {
+  background-color: var(--primary-gold);
+  color: var(--text-dark);
+}
+
+.btn_featured:hover {
+  background-color: var(--accent-gold);
+  transform: scale(1.02);
+}
+
+.btn_premium {
+  background-color: var(--primary-burgundy);
+  color: var(--text-light);
+}
+
+.btn_premium:hover {
+  background-color: #a60000;
+  transform: scale(1.02);
+}
+
+/* FAQ Section */
+.faqSection {
+  margin-top: 60px;
+  padding-top: 60px;
+  border-top: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.faqSection h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--text-light);
+}
+
+.faqItems {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.faqItem {
+  background-color: rgba(212, 175, 55, 0.08);
+  border-left: 3px solid var(--primary-gold);
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.faqItem h4 {
+  font-size: 1.1rem;
+  color: var(--primary-gold);
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.faqItem p {
+  font-size: 0.95rem;
+  color: #aaa;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .pricingSection {
+    padding: 60px 20px;
+  }
+
+  .header h2 {
+    font-size: 2rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .pricingGrid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-bottom: 60px;
+  }
+
+  .pricingCard {
+    padding: 30px;
+  }
+
+  .featured {
+    transform: scale(1);
+  }
+
+  .featured:hover {
+    transform: translateY(-10px);
+  }
+
+  .badge {
+    top: -12px;
+    right: 20px;
+  }
+
+  .faqItems {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pricingSection {
+    padding: 40px 15px;
+  }
+
+  .header h2 {
+    font-size: 1.5rem;
+  }
+
+  .header h2::after {
+    width: 60px;
+  }
+
+  .header p {
+    font-size: 0.95rem;
+  }
+
+  .pricingCard {
+    padding: 25px;
+  }
+
+  .pricingCard h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+
+  .priceBlock {
+    margin-bottom: 20px;
+  }
+
+  .amount {
+    font-size: 2.2rem;
+  }
+
+  .featuresList li {
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+  }
+
+  .enrollBtn {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+
+  .faqSection h3 {
+    font-size: 1.5rem;
+  }
+
+  .faqItem {
+    padding: 15px;
+  }
+
+  .faqItem h4 {
+    font-size: 1rem;
+  }
+
+  .faqItem p {
+    font-size: 0.9rem;
+  }
+}

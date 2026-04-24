@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Navigation from './Components/Header';
+import HeroSection from './Components/Herosection';
+import CoursesSection from './Components/CoursesSection';
+import WhyUsSection from './Components/WhyChooseUs';
+import InstructorsSection from './Components/Intersectors';
+import TestimonialsSection from './Components/Testimonial';
+import BlogSection from './Components/BlogSection';
+import PricingSection from './Components/Pricing';
+import ContactSection from './Components/Contact';
+import Footer from './Components/Footer';
+import StatsSection from './Components/StatsSction';
+import WhoCanEnroll from './Components/WhoCanEnrool';
+import PopularCourses from './Components/OurPopularCourses';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navigation/>
+      <HeroSection/>
+      <StatsSection/>
+      {/* <CoursesSection /> */}
+      <WhyUsSection />
+      <WhoCanEnroll/>
+      <PopularCoursesgit init/>
+      {/* <InstructorsSection /> */}
+      <TestimonialsSection/>
+      <BlogSection />
+      {/* <PricingSection /> */}
+      <ContactSection />
+      <Footer />
     </div>
   );
 }

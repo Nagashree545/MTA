@@ -1,0 +1,275 @@
+.contactSection {
+  background-color: var(--light-bg);
+  padding: 80px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.header h2 {
+  font-size: 2.5rem;
+  color: var(--text-dark);
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+.header h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background-color: var(--primary-gold);
+  border-radius: 2px;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 600px;
+  margin: 30px auto 0;
+}
+
+.contactContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+.contactInfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.infoCard {
+  background: white;
+  border-radius: 8px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(212, 175, 55, 0.1);
+  transition: all 0.3s ease;
+}
+
+.infoCard:hover {
+  transform: translateY(-8px);
+  border-color: var(--primary-gold);
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.15);
+}
+
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.infoCard h3 {
+  font-size: 1.2rem;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+.infoCard p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+.subtext {
+  font-size: 0.85rem;
+  color: #999 !important;
+}
+
+/* Contact Form */
+.contactForm {
+  background: white;
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(212, 175, 55, 0.2);
+}
+
+.successMessage {
+  background-color: rgba(27, 94, 32, 0.15);
+  border: 1px solid var(--primary-green);
+  color: var(--primary-green);
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.contactForm label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--text-dark);
+  font-size: 0.95rem;
+}
+
+.contactForm input,
+.contactForm select,
+.contactForm textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.contactForm input:focus,
+.contactForm select:focus,
+.contactForm textarea:focus {
+  outline: none;
+  border-color: var(--primary-gold);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+}
+
+.contactForm textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .contactContent {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contactInfo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contactForm {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contactSection {
+    padding: 60px 20px;
+  }
+
+  .header h2 {
+    font-size: 2rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .contactInfo {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .infoCard {
+    padding: 20px;
+  }
+
+  .icon {
+    font-size: 2rem;
+  }
+
+  .infoCard h3 {
+    font-size: 1.1rem;
+  }
+
+  .contactForm {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactSection {
+    padding: 40px 15px;
+  }
+
+  .header h2 {
+    font-size: 1.5rem;
+  }
+
+  .header h2::after {
+    width: 60px;
+  }
+
+  .header p {
+    font-size: 0.95rem;
+  }
+
+  .contactInfo {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .infoCard {
+    padding: 15px;
+  }
+
+  .icon {
+    font-size: 1.8rem;
+  }
+
+  .infoCard h3 {
+    font-size: 1rem;
+  }
+
+  .infoCard p {
+    font-size: 0.9rem;
+  }
+
+  .contactForm {
+    padding: 20px;
+  }
+
+  .contactForm input,
+  .contactForm select,
+  .contactForm textarea {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+
+  .submitBtn {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+}

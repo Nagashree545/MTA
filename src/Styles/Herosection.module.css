@@ -1,0 +1,226 @@
+.hero {
+  background: radial-gradient(circle at top right, rgba(212,175,55,0.12), transparent 40%),
+              linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+  color: #ffffff;
+  padding: 120px 20px;
+  min-height: 90vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* subtle background glow */
+.hero::after {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: rgba(212,175,55,0.08);
+  filter: blur(120px);
+  top: -150px;
+  right: -150px;
+}
+
+/* LEFT CONTENT */
+.content {
+  flex: 1;
+  max-width: 600px;
+  animation: fadeInLeft 1s ease;
+  z-index: 2;
+}
+
+.title {
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #ffffff, #d4af37);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title::before {
+  content: '';
+  display: block;
+  width: 70px;
+  height: 4px;
+  background: linear-gradient(90deg, #d4af37, #f5d76e);
+  margin-bottom: 20px;
+  border-radius: 2px;
+}
+
+.subtitle {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #cfcfcf;
+  margin-bottom: 30px;
+}
+
+/* BADGES */
+.certifications {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.badge {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  color: #d4af37;
+  padding: 8px 14px;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  backdrop-filter: blur(6px);
+  transition: 0.3s;
+}
+
+.badge:hover {
+  background: rgba(212, 175, 55, 0.2);
+  transform: translateY(-2px);
+}
+
+/* BUTTONS */
+.buttonGroup {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.buttonGroup button {
+  padding: 12px 26px;
+  font-size: 0.9rem;
+  border-radius: 30px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* PRIMARY BUTTON */
+.btn-primary {
+  background: linear-gradient(90deg, #d4af37, #f5d76e);
+  color: #000;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(212,175,55,0.4);
+}
+
+/* SECONDARY BUTTON */
+.btn-secondary {
+  background: transparent;
+  border: 1px solid #d4af37;
+  color: #d4af37;
+}
+
+.btn-secondary:hover {
+  background: #d4af37;
+  color: #000;
+}
+
+/* RIGHT IMAGE SECTION */
+.logoDisplay {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  animation: fadeInRight 1s ease;
+  z-index: 2;
+}
+
+/* glowing circle behind image */
+.logoDisplay::before {
+  content: '';
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, rgba(212,175,55,0.25), transparent 70%);
+  border-radius: 50%;
+  z-index: 0;
+  animation: pulse 4s infinite ease-in-out;
+}
+
+/* IMAGE */
+.logoDisplay img {
+  max-width: 320px;   /* 🔥 fixed smaller size */
+  width: 100%;
+  position: relative;
+  z-index: 1;
+
+  animation: floatRotate 6s ease-in-out infinite;
+  filter: drop-shadow(0 25px 50px rgba(212,175,55,0.3));
+}
+
+/* FLOAT + ROTATE */
+@keyframes floatRotate {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(2deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+/* PULSE GLOW */
+@keyframes pulse {
+  0%,100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+/* TEXT ANIMATION */
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-60px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(60px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 80px 20px;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .logoDisplay img {
+    max-width: 240px;
+  }
+
+  .logoDisplay::before {
+    width: 220px;
+    height: 220px;
+  }
+
+  .buttonGroup {
+    justify-content: center;
+  }
+
+  .certifications {
+    justify-content: center;
+  }
+}
