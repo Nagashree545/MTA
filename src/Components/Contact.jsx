@@ -51,14 +51,14 @@ export default function ContactSection() {
             <div className={styles.infoCard}>
               <div className={styles.icon}>📞</div>
               <h3>Phone</h3>
-              <p>+91 87928 93421</p>
+              <p>+91 9663317167 </p>
               <p className={styles.subtext}>Available 9 AM - 6 PM IST</p>
             </div>
 
             <div className={styles.infoCard}>
               <div className={styles.icon}>✉️</div>
               <h3>Email</h3>
-              <p>info@mastertraders.com</p>
+              <p>info@mastertradersacademy.in</p>
               <p className={styles.subtext}>Response within 24 hours</p>
             </div>
 
