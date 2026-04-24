@@ -1,38 +1,50 @@
+/* NAVBAR */
 .navbar {
   background: rgba(10, 10, 10, 0.95);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(10px);
   position: sticky;
   top: 0;
   z-index: 1000;
   border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+  transition: all 0.3s ease;
 }
 
+.navbar:hover {
+  border-bottom: 1px solid rgba(212, 175, 55, 0.5);
+}
+
+/* CONTAINER */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   height: 75px;
 }
 
-/* LOGO FIX */
-/*  */
+/* LOGO */
 .logo {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-/* LOGO ICON */
 .logo img {
   height: 75px;
   width: 75px;
   object-fit: contain;
+  transition: transform 0.3s ease;
 }
 
-/* TEXT */
+.logo img:hover {
+  transform: scale(1.08) rotate(2deg);
+}
+
+/* LOGO TEXT */
 .logoText {
   display: flex;
   flex-direction: column;
@@ -42,20 +54,15 @@
 .logoText .main {
   font-size: 20px;
   font-weight: 700;
-  color: #d4af37; /* gold */
+  color: #d4af37;
   letter-spacing: 1px;
-  margin-bottom: 5px
+  margin-bottom: 5px;
 }
 
 .logoText .sub {
   font-size: 16px;
   color: #ffffff;
   letter-spacing: 2px;
-}
-
-
-.logo img:hover {
-  transform: scale(1.08);
 }
 
 /* NAV LINKS */
@@ -66,6 +73,8 @@
   align-items: center;
 }
 
+/* LINKS + BUTTONS */
+.navLinks li a,
 .navLinks li button {
   background: none;
   border: none;
@@ -73,14 +82,18 @@
   font-size: 0.9rem;
   cursor: pointer;
   transition: all 0.3s ease;
+
   text-transform: uppercase;
   letter-spacing: 0.8px;
   font-weight: 500;
+
   position: relative;
   padding-bottom: 5px;
+  text-decoration: none;
 }
 
-/* GOLD UNDERLINE EFFECT */
+/* GOLD UNDERLINE */
+.navLinks li a::after,
 .navLinks li button::after {
   content: '';
   position: absolute;
@@ -92,12 +105,24 @@
   transition: width 0.3s ease;
 }
 
+/* HOVER */
+.navLinks li a:hover,
 .navLinks li button:hover {
   color: #f5d76e;
 }
 
+.navLinks li a:hover::after,
 .navLinks li button:hover::after {
   width: 100%;
+}
+
+/* ACTIVE LINK */
+.activeLink {
+  color: #f5d76e !important;
+}
+
+.activeLink::after {
+  width: 100% !important;
 }
 
 /* MENU TOGGLE */
@@ -129,23 +154,36 @@
     top: 75px;
     left: 0;
     width: 100%;
+
     flex-direction: column;
-    background: #0a0a0a;
-    max-height: 0;
-    overflow: hidden;
-    transition: 0.3s ease;
+    align-items: center;
+
+    background: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(10px);
+
+    transform: translateY(-120%);
+    opacity: 0;
+    transition: all 0.4s ease;
   }
 
   .navLinks.active {
-    max-height: 500px;
+    transform: translateY(0);
+    opacity: 1;
   }
 
   .navLinks li {
-    padding: 15px 0;
+    padding: 18px 0;
+    width: 100%;
     text-align: center;
     border-bottom: 1px solid rgba(212, 175, 55, 0.15);
   }
 
+  .navLinks li a,
+  .navLinks li button {
+    font-size: 1rem;
+  }
+
+  .navLinks li a::after,
   .navLinks li button::after {
     display: none;
   }
@@ -159,5 +197,14 @@
 
   .logo img {
     height: 45px;
+    width: 45px;
+  }
+
+  .logoText .main {
+    font-size: 16px;
+  }
+
+  .logoText .sub {
+    font-size: 12px;
   }
 }

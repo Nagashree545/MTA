@@ -1,25 +1,35 @@
 import React, { useState } from 'react';
 import styles from '../Styles/Header.module.css';
-import logo from "../Assets/logowidth.jpeg"
+import logo from "../Assets/logowidth.jpeg";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 export default function Navigation() {
     const [menuOpen, setMenuOpen] = useState(false);
+    const navigate = useNavigate();
+    const location = useLocation();
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
 
-    const scrollToSection = (sectionId) => {
-        const element = document.getElementById(sectionId);
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-            setMenuOpen(false);
+    // 🔥 scroll handler (only works on home page)
+    const handleScroll = (sectionId) => {
+        if (location.pathname !== "/") {
+            navigate("/");
+            setTimeout(() => {
+                document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+            }, 200);
+        } else {
+            document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
         }
+        setMenuOpen(false);
     };
 
     return (
         <nav className={styles.navbar}>
             <div className={styles.container}>
+
+                {/* LOGO */}
                 <div className={styles.logo}>
                     <img src={logo} alt="Master Traders Academy" />
                     <div className={styles.logoText}>
@@ -28,7 +38,7 @@ export default function Navigation() {
                     </div>
                 </div>
 
-
+                {/* MOBILE MENU BUTTON */}
                 <button
                     className={styles.menuToggle}
                     onClick={toggleMenu}
@@ -39,46 +49,41 @@ export default function Navigation() {
                     <span></span>
                 </button>
 
+                {/* NAV LINKS */}
                 <ul className={`${styles.navLinks} ${menuOpen ? styles.active : ''}`}>
+
                     <li>
-                        {/* <button onClick={() => scrollToSection('courses')}>
+                        <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
+                    </li>
+
+                    <li>
+                        <Link to="/about" onClick={() => setMenuOpen(false)}>About</Link>
+                    </li>
+
+                    <li>
+                        <button onClick={() => handleScroll('courses')}>
                             Courses
-                        </button> */}
-                        <button>Home</button>
+                        </button>
                     </li>
+
                     <li>
-                        {/* <button onClick={() => scrollToSection('why-us')}>
+                        <button onClick={() => handleScroll('why-us')}>
                             Why Us
-                        </button> */}
-                        <button>About</button>
+                        </button>
                     </li>
+
                     <li>
-                        {/* <button onClick={() => scrollToSection('instructors')}>
-                            Instructors
-                        </button> */}
-                        <button>Courses</button>
-                    </li>
-                    <li>
-                        {/* <button onClick={() => scrollToSection('testimonials')}>
-                            Testimonials
-                        </button> */}
-                        <button>Resources</button>
-                    </li>
-                    <li>
-                        <button onClick={() => scrollToSection('blog')}>
+                        <button onClick={() => handleScroll('blog')}>
                             Blog
                         </button>
                     </li>
-                    {/* <li>
-                        <button onClick={() => scrollToSection('pricing')}>
-                            Pricing
-                        </button>
-                    </li> */}
+
                     <li>
-                        <button onClick={() => scrollToSection('contact')}>
+                        <button onClick={() => handleScroll('contact')}>
                             Contact
                         </button>
                     </li>
+
                 </ul>
             </div>
         </nav>
