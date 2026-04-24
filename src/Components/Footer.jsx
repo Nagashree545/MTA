@@ -13,10 +13,18 @@ export default function Footer() {
             </div>
             <p>Transforming traders into successful market participants since 2015.</p>
             <div className={styles.socials}>
-              <a href="#" className={styles.social}>f</a>
-              <a href="#" className={styles.social}>𝕏</a>
-              <a href="#" className={styles.social}>in</a>
-              <a href="#" className={styles.social}>📺</a>
+              <a href="#" className={styles.social} onClick={(e) => e.preventDefault()}>
+                f
+              </a>
+              <a href="#" className={styles.social} onClick={(e) => e.preventDefault()}>
+                𝕏
+              </a>
+              <a href="#" className={styles.social} onClick={(e) => e.preventDefault()}>
+                in
+              </a>
+              <a href="#" className={styles.social} onClick={(e) => e.preventDefault()}>
+                📺
+              </a>
             </div>
           </div>
 
