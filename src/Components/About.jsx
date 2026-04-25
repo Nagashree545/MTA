@@ -101,40 +101,69 @@ export default function About() {
 
       {/* What Sets Us Apart */}
       <section className={styles.whatSetsApart}>
-        <div className={styles.container}>
-          <h2 className={styles.sectionTitle}>What Sets Us Apart</h2>
-          <div className={styles.featureGrid}>
-            <div className={styles.featureCard}>
-              <div className={styles.featureIcon}>👨‍🏫</div>
-              <h3>Expert Mentors</h3>
-              <p>
-                Our team of experienced mentors bring years of real-market expertise and teaching excellence. Their personalized guidance helps you navigate market complexities with confidence and clarity.
-              </p>
-            </div>
-            <div className={styles.featureCard}>
-              <div className={styles.featureIcon}>📚</div>
-              <h3>Comprehensive Curriculum</h3>
-              <p>
-                Master multiple trading strategies from swing trading to long-term investing with our structured and practical learning approach.
-              </p>
-            </div>
-            <div className={styles.featureCard}>
-              <div className={styles.featureIcon}>🎯</div>
-              <h3>Practical Learning</h3>
-              <p>
-                Learn by doing. Our hands-on approach ensures you gain real-world trading experience and market confidence.
-              </p>
-            </div>
-            <div className={styles.featureCard}>
-              <div className={styles.featureIcon}>🔒</div>
-              <h3>Risk Management</h3>
-              <p>
-                Master the art of protecting your capital while maximizing returns through proven risk management strategies.
-              </p>
-            </div>
+      <div className={styles.container}>
+
+        <h2 className={styles.sectionTitle}>What Sets Us Apart</h2>
+
+        <div className={styles.featureGrid}>
+
+          {/* 1 */}
+          <div className={styles.featureCard}>
+            <div className={styles.featureIcon}>👨‍🏫</div>
+            <h3>Expert Mentors</h3>
+            <p>
+              Our team of experienced mentors bring years of real-market expertise and teaching excellence. Their personalized guidance helps you navigate market complexities with confidence and clarity.
+            </p>
           </div>
+
+          {/* 2 */}
+          <div className={styles.featureCard}>
+            <div className={styles.featureIcon}>📚</div>
+            <h3>Comprehensive Curriculum</h3>
+            <p>
+              Master multiple trading strategies from swing trading to long-term investing with our structured and practical learning approach.
+            </p>
+          </div>
+
+          {/* 3 */}
+          <div className={styles.featureCard}>
+            <div className={styles.featureIcon}>🎯</div>
+            <h3>Practical Learning</h3>
+            <p>
+              Learn by doing. Our hands-on approach ensures you gain real-world trading experience and market confidence.
+            </p>
+          </div>
+
+          {/* 4 */}
+          <div className={styles.featureCard}>
+            <div className={styles.featureIcon}>🔒</div>
+            <h3>Risk Management</h3>
+            <p>
+              Master the art of protecting your capital while maximizing returns through proven risk management strategies.
+            </p>
+          </div>
+
+          {/* 5 - NEW */}
+          <div className={styles.featureCard}>
+            <div className={styles.featureIcon}>📊</div>
+            <h3>Live Market Training</h3>
+            <p>
+              Experience real-time trading sessions where you learn how professionals analyze and execute trades directly in live market conditions.
+            </p>
+          </div>
+
+          {/* 6 - NEW */}
+          <div className={styles.featureCard}>
+            <div className={styles.featureIcon}>🤝</div>
+            <h3>Strong Trading Community</h3>
+            <p>
+              Join a supportive network of traders where you can share insights, discuss strategies, and grow together with continuous mentorship.
+            </p>
+          </div>
+
         </div>
-      </section>
+      </div>
+    </section>
 
       {/* Our Mission */}
   <section className={styles.missionWhiteSection}>
