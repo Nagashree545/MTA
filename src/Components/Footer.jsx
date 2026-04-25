@@ -13,7 +13,7 @@ export default function Footer() {
         {/* BRAND */}
         <div className={styles.col}>
           <div className={styles.logo}>
-            <img src={whitelogo} alt="logo" />
+            <img src={whitelogo} alt="Master Traders Academy Logo" />
           </div>
 
           <p className={styles.desc}>
@@ -21,10 +21,10 @@ export default function Footer() {
           </p>
 
           <div className={styles.socials}>
-            <span>f</span>
-            <span>𝕏</span>
-            <span>in</span>
-            <span>📺</span>
+            <button type="button">f</button>
+            <button type="button">𝕏</button>
+            <button type="button">in</button>
+            <button type="button">📺</button>
           </div>
         </div>
 
