@@ -3,6 +3,7 @@ import styles from '../Styles/About.module.css';
 import learningtrading from "../Assets/trading.jpg";
 import ourmission from "../Assets/ourMission.png";
 import ourvission from "../Assets/ourvission.png";
+import anandsir from "../Assets/AnandSir.JPG";
 
 export default function About() {
   return (
@@ -45,8 +46,53 @@ export default function About() {
   </div>
 </section>
 
+{/*About Sir*/}
+<section className={styles.sirAboutSection}>
+      <div className={styles.sirContainer}>
 
+        {/* LEFT CONTENT */}
+        <div className={styles.sirContent}>
 
+          <p className={styles.sirTagline}>Founder & Lead Mentor</p>
+
+          <h2 className={styles.sirTitle}>
+            Anand Sir – <span>Master Traders Academy</span>
+          </h2>
+
+          <p className={styles.sirDesc}>
+            Anand Sir is a seasoned market professional with deep expertise in
+            technical analysis, price action trading, and risk management.
+            With years of practical experience in the financial markets, he has
+            dedicated his career to simplifying trading education for aspiring traders.
+          </p>
+
+          <p className={styles.sirDesc}>
+            His teaching approach focuses on <b>real market understanding</b> rather than
+            theory. He believes that successful trading comes from discipline,
+            patience, and structured learning rather than shortcuts or speculation.
+          </p>
+
+          <ul className={styles.sirPoints}>
+            <li>✔ Practical Market Experience</li>
+            <li>✔ Simplified Trading Strategies</li>
+            <li>✔ Risk Management Expertise</li>
+            <li>✔ Mentored Hundreds of Students</li>
+          </ul>
+
+          <p className={styles.sirHighlight}>
+            “My goal is to make every student confident enough to understand the
+            market independently and trade with discipline.”
+          </p>
+
+        </div>
+
+        {/* RIGHT IMAGE */}
+        <div className={styles.sirImageBox}>
+          <img src={anandsir} alt="Anand Sir" />
+        </div>
+
+      </div>
+    </section>
       {/* Welcome Section */}
     <section className={styles.welcomeWhiteSection}>
   <div className={styles.container}>

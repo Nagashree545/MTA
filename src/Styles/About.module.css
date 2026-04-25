@@ -187,12 +187,133 @@
   border-radius: 3px;
   animation: expandWidth 0.8s ease-out;
 }
+/* ================= About Sir SECTION ================= */
+/* =======================
+   ABOUT SECTION
+======================= */
+.sirAboutSection {
+  padding: 30px 20px;
+  background: #f7f7f7;
+}
+
+/* =======================
+   CONTAINER
+======================= */
+.sirContainer {
+  max-width: 1200px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* =======================
+   LEFT CONTENT
+======================= */
+.sirContent {
+  flex: 1;
+}
+
+/* TAGLINE */
+.sirTagline {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1B5E20;
+  letter-spacing: 1px;
+}
+
+/* TITLE */
+.sirTitle {
+  font-size: 38px;
+  font-weight: 900;
+  margin: 10px 0;
+  color: #111;
+}
+
+.sirTitle span {
+  color: #D4AF37;
+}
+
+/* DESCRIPTION */
+.sirDesc {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+/* POINTS */
+.sirPoints {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.sirPoints li {
+  font-size: 15px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #222;
+}
+
+/* QUOTE */
+.sirHighlight {
+  margin-top: 15px;
+  font-style: italic;
+  color: #1f1f1f;
+
+  border-left: 3px solid #D4AF37;
+  padding-left: 10px;
+}
+
+/* =======================
+   IMAGE SECTION
+======================= */
+.sirImageBox {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.sirImageBox img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  border: 2px solid #D4AF37;
+  transition: 0.3s ease;
+}
+
+.sirImageBox img:hover {
+  transform: scale(1.03);
+}
+
+/* =======================
+   RESPONSIVE
+======================= */
+@media (max-width: 900px) {
+
+  .sirContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sirPoints {
+    text-align: left;
+    display: inline-block;
+  }
+
+  .sirImageBox {
+    margin-top: 20px;
+  }
+}
 
 /* ================= WELCOME SECTION ================= */
 /* ===== WHITE WELCOME SECTION ===== */
 .welcomeWhiteSection {
   background: #ffffff;
-  padding: 100px 20px;
+  padding: 50px 20px;
   position: relative;
   overflow: hidden;
 }
@@ -320,7 +441,7 @@
 
 /* ================= FEATURES SECTION ================= */
 .whatSetsApart {
-  padding: 120px 20px;
+  padding: 30px 20px;
   background: linear-gradient(180deg, rgba(27, 94, 32, 0.08) 0%, var(--dark-bg) 100%);
   position: relative;
   overflow: hidden;
@@ -735,7 +856,7 @@
 
 /* ================= WHY CHOOSE US ================= */
 .whyChooseSection {
-  padding: 120px 20px;
+  padding: 60px 20px;
   background: linear-gradient(180deg, rgba(139, 0, 0, 0.05) 0%, var(--dark-bg) 100%);
   position: relative;
   overflow: hidden;
@@ -837,7 +958,7 @@
 /* MAIN SECTION */
 .tradeCtaSection {
   position: relative;
-  padding: 140px 20px;
+  padding: 70px 20px;
   overflow: hidden;
 
   /* luxury dark trading background */
