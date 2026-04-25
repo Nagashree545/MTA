@@ -30,19 +30,19 @@ export default function Footer() {
         {/* COURSES */}
         <div className={styles.col}>
           <h3>Courses</h3>
-          <a href="#">Master Trader</a>
-          <a href="#">Masterclass</a>
-          <a href="#">Option Hunter</a>
-          <a href="#">Big Bull</a>
+          <a href="/">Master Trader</a>
+          <a href="/">Masterclass</a>
+          <a href="/">Option Hunter</a>
+          <a href="/">Big Bull</a>
         </div>
 
         {/* LINKS */}
         <div className={styles.col}>
           <h3>Quick Links</h3>
-          <a href="#">Why Us</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Refund Policy</a>
-          <a href="#">Pricing</a>
+          <a href="/">Why Us</a>
+          <a href="/">Privacy Policy</a>
+          <a href="/">Refund Policy</a>
+          <a href="/">Pricing</a>
         </div>
 
         {/* CONTACT */}
