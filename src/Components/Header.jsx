@@ -5,20 +5,19 @@ import { Link, useNavigate, useLocation } from "react-router-dom";
 
 export default function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false);
+
   const navigate = useNavigate();
   const location = useLocation();
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+  const closeMenu = () => setMenuOpen(false);
 
-  // ⭐ FIXED SMOOTH SCROLL WITH OFFSET
   const handleScroll = (sectionId) => {
     const scrollToSection = () => {
       const element = document.getElementById(sectionId);
       if (!element) return;
 
-      const offset = 80; // navbar height
+      const offset = 80;
       const top =
         element.getBoundingClientRect().top + window.pageYOffset - offset;
 
@@ -27,7 +26,7 @@ export default function Navigation() {
         behavior: "smooth",
       });
 
-      setMenuOpen(false);
+      closeMenu();
     };
 
     if (location.pathname !== "/") {
@@ -50,17 +49,32 @@ export default function Navigation() {
           <img src={logo} alt="Master Traders Academy" />
         </div>
 
-        {/* NAV LINKS */}
-        <div className={styles.rightSection}>
+        {/* OVERLAY */}
+        {menuOpen && (
+          <div className={styles.overlay} onClick={closeMenu}></div>
+        )}
 
-          <ul className={`${styles.navLinks} ${menuOpen ? styles.active : ""}`}>
+        {/* RIGHT SECTION (MENU DRAWER) */}
+        <div className={`${styles.rightSection} ${menuOpen ? styles.active : ""}`}>
+
+          {/* CLOSE BUTTON */}
+          <button className={styles.closeBtn} onClick={closeMenu}>
+            ✕
+          </button>
+
+          {/* NAV LINKS */}
+          <ul className={styles.navLinks}>
 
             <li>
-              <Link to="/" className={isActive("/")}>Home</Link>
+              <Link to="/" onClick={closeMenu} className={isActive("/")}>
+                Home
+              </Link>
             </li>
 
             <li>
-              <Link to="/about" className={isActive("/about")}>About</Link>
+              <Link to="/about" onClick={closeMenu} className={isActive("/about")}>
+                About
+              </Link>
             </li>
 
             <li>
@@ -96,7 +110,7 @@ export default function Navigation() {
 
         </div>
 
-        {/* MOBILE MENU */}
+        {/* MOBILE MENU BUTTON */}
         <button className={styles.menuToggle} onClick={toggleMenu}>
           <span></span>
           <span></span>
