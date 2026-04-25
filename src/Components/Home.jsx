@@ -7,17 +7,19 @@ import PopularCourses from './OurPopularCourses';
 import TestimonialsSection from './Testimonial';
 import ContactSection from './Contact';
 import BlogSection from './BlogSection';
+import WorkshopPopup from './Popupforworkshop';
 
 function HomePage() {
   return (
     <div >
+      <WorkshopPopup/>
       <HeroSection/>
       <StatsSection/>
       <WhyUsSection/>
       <WhoCanEnroll/>
       <PopularCourses/>
       <TestimonialsSection/>
-      <BlogSection/>
+      {/* <BlogSection/> */}
       <ContactSection/>
     </div>
   );

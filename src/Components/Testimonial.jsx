@@ -30,15 +30,7 @@ export default function TestimonialsSection() {
       quote: 'Outstanding mentorship and support throughout my trading journey. The instructors really care about their students\' success. Highly recommended for anyone serious about trading.',
       result: 'Turned ₹50,000 into ₹2,50,000'
     },
-    {
-      id: 4,
-      name: 'Sneha Patel',
-      role: 'Beginner to Pro',
-      image: 'S',
-      rating: 5,
-      quote: 'Started with zero knowledge about stock market. The Master Trader course covered everything from basics to advanced techniques. Now I trade confidently with proper risk management.',
-      result: 'From zero to consistent profit trader'
-    }
+   
   ];
 
   return (

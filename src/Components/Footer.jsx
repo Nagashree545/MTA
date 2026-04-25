@@ -1,83 +1,76 @@
-import React from 'react';
-import styles from '../Styles/Footer.module.css';
-import whitelogo from "../Assets/logowhite.jpeg"
+import React from "react";
+import styles from "../Styles/Footer.module.css";
+import whitelogo from "../Assets/logowidth.jpeg";
+
 export default function Footer() {
   return (
     <footer className={styles.footer}>
+      <div className={styles.glow}></div>
+
       <div className={styles.container}>
-        <div className={styles.footerContent}>
-          <div className={styles.column}>
-            <div className={styles.logo}>
-              <img src={whitelogo} alt="Master Traders Academy" />
-              <h3>Master Traders Academy</h3>
-            </div>
-            <p>Transforming traders into successful market participants since 2015.</p>
-            <div className={styles.socials}>
-              <a href="/" className={styles.social} onClick={(e) => e.preventDefault()}>
-                f
-              </a>
-              <a href="/" className={styles.social} onClick={(e) => e.preventDefault()}>
-                𝕏
-              </a>
-              <a href="/" className={styles.social} onClick={(e) => e.preventDefault()}>
-                in
-              </a>
-              <a href="/" className={styles.social} onClick={(e) => e.preventDefault()}>
-                📺
-              </a>
-            </div>
+
+        {/* BRAND */}
+        <div className={styles.col}>
+          <div className={styles.logo}>
+            <img src={whitelogo} alt="logo" />
           </div>
 
-          <div className={styles.column}>
-            <h4>Courses</h4>
-            <ul>
-              <li><a href="#courses">Master Trader</a></li>
-              <li><a href="#courses">Masterclass</a></li>
-              <li><a href="#courses">Option Hunter</a></li>
-              <li><a href="#courses">The Big Bull</a></li>
-            </ul>
-          </div>
+          <p className={styles.desc}>
+            Empowering traders with professional market knowledge since 2015.
+          </p>
 
-          <div className={styles.column}>
-            <h4>Quick Links</h4>
-            <ul>
-              <li><a href="#why-us">Why Us</a></li>
-              <li><a href="#instructors">Privacy Policy</a></li>
-              <li><a href="#blog">Refund Policy</a></li>
-              <li><a href="#pricing">Pricing</a></li>
-            </ul>
-          </div>
-
-          <div className={styles.column}>
-            <h4>Contact</h4>
-            <p className={styles.contactInfo}>
-              <strong>Address:</strong><br />
-              Bangalore, India
-            </p>
-            <p className={styles.contactInfo}>
-              <strong>Phone:</strong><br />
-              +91 9663317167 
-            </p>
-            <p className={styles.contactInfo}>
-              <strong>Email:</strong><br />
-            info@mastertradersacademy.in
-            </p>
+          <div className={styles.socials}>
+            <span>f</span>
+            <span>𝕏</span>
+            <span>in</span>
+            <span>📺</span>
           </div>
         </div>
 
-        <div className={styles.divider}></div>
+        {/* COURSES */}
+        <div className={styles.col}>
+          <h3>Courses</h3>
+          <a href="#">Master Trader</a>
+          <a href="#">Masterclass</a>
+          <a href="#">Option Hunter</a>
+          <a href="#">Big Bull</a>
+        </div>
 
-        <div className={styles.bottom}>
-          <div className={styles.certifications}>
-            <span>ISO Certified</span>
-            <span>NISM Certified</span>
-            <span>2025 Best Academy Award</span>
-          </div>
+        {/* LINKS */}
+        <div className={styles.col}>
+          <h3>Quick Links</h3>
+          <a href="#">Why Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Refund Policy</a>
+          <a href="#">Pricing</a>
+        </div>
 
-          <div className={styles.copyright}>
-            <p>&copy; 2025 Master Traders Academy. All rights reserved.</p>
-         
-          </div>
+        {/* CONTACT */}
+        <div className={styles.col}>
+          <h3>Contact</h3>
+
+          <a href="tel:+919663317167" className={styles.contactItem}>
+            📞 +91 9663317167
+          </a>
+
+          <a
+            href="mailto:info@mastertradersacademy.in"
+            className={styles.contactItem}
+          >
+            ✉️ info@mastertradersacademy.in
+          </a>
+
+          <p className={styles.contactItem}>📍 Bangalore, India</p>
+        </div>
+      </div>
+
+      {/* BOTTOM */}
+      <div className={styles.bottom}>
+        <p>© 2025 Master Traders Academy</p>
+        <div className={styles.badges}>
+          <span>ISO</span>
+          <span>NISM</span>
+          <span>Best Academy</span>
         </div>
       </div>
     </footer>

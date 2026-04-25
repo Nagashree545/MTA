@@ -1,204 +1,221 @@
+/* HERO */
 .hero {
-  width: 100%;
-  min-height: 100vh;
-  padding: 0 80px;
+  background: linear-gradient(180deg, #ffffff 0%, #f7f7f7 100%);
+  padding: 55px 20px;
+  overflow: hidden;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1200px;
+  margin: auto;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
-
-  background: radial-gradient(circle at 80% 20%, rgba(212,175,55,0.12), transparent 40%),
-              linear-gradient(135deg, #0b0b0b, #1a1a1a);
-
-  position: relative;
-  overflow: hidden;
-  color: #fff;
+  gap: 45px;
 }
 
-/* 🔥 subtle animated gradient wave */
-.hero::before {
-  content: '';
-  position: absolute;
-  width: 120%;
-  height: 120%;
-  background: linear-gradient(120deg, transparent, rgba(212,175,55,0.08), transparent);
-  top: -10%;
-  left: -10%;
-  animation: waveMove 10s linear infinite;
-}
-
-/* 🔥 glowing orb */
-.hero::after {
-  content: '';
-  position: absolute;
-  width: 350px;
-  height: 350px;
-  background: radial-gradient(circle, rgba(212,175,55,0.25), transparent 70%);
-  top: 30%;
-  right: 5%;
-  filter: blur(80px);
-}
-
-/* LEFT CONTENT */
+/* CONTENT */
 .content {
   flex: 1;
-  max-width: 600px;
-  z-index: 2;
+  max-width: 520px;
+  animation: fadeLeft 0.7s ease forwards;
 }
 
+/* TAGLINE */
+.tagline {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1B5E20;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+/* TITLE */
 .title {
-  font-size: 3.6rem;
-  font-weight: 800;
+  font-size: 44px;
+  font-weight: 900;
+  color: #111;
   line-height: 1.2;
-  margin-bottom: 20px;
-
-  background: linear-gradient(90deg, #fff, #D4AF37);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  margin-bottom: 14px;
 }
 
-.subtitle {
-  font-size: 1.2rem;
-  color: #cfcfcf;
-  line-height: 1.8;
-  margin-bottom: 35px;
-}
-
-/* BADGES */
-.certifications {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-bottom: 35px;
-}
-
-.badge {
-  padding: 8px 16px;
-  border-radius: 30px;
-  font-size: 0.8rem;
-
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(212,175,55,0.4);
+.title span {
   color: #D4AF37;
-
-  transition: 0.3s;
 }
 
-.badge:hover {
-  background: rgba(212,175,55,0.2);
+/* SUBTITLE */
+.subtitle {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* POINTS */
+.points {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 22px;
+}
+
+.points li {
+  font-size: 15px;
+  margin-bottom: 7px;
+  font-weight: 600;
+  color: #222;
+}
+
+/* BUTTON + RATING */
+.buttonGroup {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* BUTTON (BALANCED SIZE) */
+.buttonGroup button {
+  padding: 9px 20px;          /* 🔥 slightly bigger */
+  font-size: 16px;            /* 🔥 increased */
+  font-weight: 600;
+
+  border: 1.5px solid #D4AF37;
+  border-radius: 4px;
+
+  background: transparent;
+  color: #1B5E20;
+
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+
+  transition: all 0.25s ease;
+}
+
+/* GOLD FILL ANIMATION */
+.buttonGroup button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 0%;
+  height: 100%;
+  background: #D4AF37;
+
+  z-index: -1;
+  transition: width 0.3s ease;
+}
+
+/* HOVER */
+.buttonGroup button:hover {
+  color: #fff;
   transform: translateY(-2px);
 }
 
-/* BUTTONS */
-.buttonGroup {
-  display: flex;
-  gap: 18px;
+.buttonGroup button:hover::before {
+  width: 100%;
 }
 
-.buttonGroup button {
-  padding: 12px 28px;
-  border-radius: 30px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.3s;
+/* RATING BOX */
+.ratingBox {
+  background: #fff;
+  padding: 6px 12px;         /* 🔥 slightly bigger */
+  border-radius: 6px;
+  border: 1px solid #eee;
+  animation: fadeUp 0.9s ease forwards;
 }
 
-/* PRIMARY */
-.btn-primary {
-  background: linear-gradient(90deg, #D4AF37, #f5d76e);
-  color: #000;
-}
-
-.btn-primary:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(212,175,55,0.4);
-}
-
-/* SECONDARY */
-.btn-secondary {
-  background: transparent;
-  border: 1px solid #D4AF37;
+/* STARS */
+.stars {
   color: #D4AF37;
+  font-size: 16px;           /* 🔥 increased */
+  letter-spacing: 1.5px;
+  display: block;
 }
 
-.btn-secondary:hover {
-  background: #D4AF37;
-  color: #000;
+/* RATING TEXT */
+.ratingBox p {
+  font-size: 15px;           /* 🔥 increased */
+  margin: 0;
+  color: #333;
 }
 
-/* RIGHT IMAGE */
-.logoDisplay {
-  flex: 1;
+/* IMAGE SIDE */
+.imageWrapper {
+  flex: 1.2;
   display: flex;
   justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index: 2;
+  animation: fadeRight 0.7s ease forwards;
 }
 
-/* glass card behind image */
-.logoDisplay::before {
-  content: '';
-  position: absolute;
-  width: 320px;
-  height: 420px;
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(212,175,55,0.2);
-  backdrop-filter: blur(10px);
-  border-radius: 20px;
-  transform: rotate(-6deg);
+/* IMAGE BOX */
+.imageBox {
+  background: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  border: 2px solid #D4AF37;
 }
 
 /* IMAGE */
-.logoDisplay img {
-  max-width: 320px;
-  width: 100%;
-  border-radius: 18px;
-  position: relative;
-  z-index: 2;
+.imageBox img {
+  width: 500px;
+  max-width: 100%;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
 
-  animation: floatSmooth 5s ease-in-out infinite;
-  box-shadow: 0 30px 70px rgba(0,0,0,0.6);
+.imageBox img:hover {
+  transform: scale(1.03);
 }
 
 /* ANIMATIONS */
-@keyframes floatSmooth {
-  0%,100% { transform: translateY(0); }
-  50% { transform: translateY(-14px); }
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-35px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
-@keyframes waveMove {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(200px); }
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(35px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
-  .hero {
+  .container {
     flex-direction: column;
-    padding: 80px 20px;
     text-align: center;
-  }
-
-  .title {
-    font-size: 2.4rem;
   }
 
   .buttonGroup {
     justify-content: center;
   }
 
-  .certifications {
-    justify-content: center;
-  }
-
-  .logoDisplay::before {
-    width: 260px;
-    height: 340px;
-  }
-
-  .logoDisplay img {
-    max-width: 260px;
+  .content {
+    max-width: 100%;
   }
 }

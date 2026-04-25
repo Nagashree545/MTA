@@ -1,0 +1,145 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(44, 44, 44, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  backdrop-filter: blur(10px);
+}
+
+/* POPUP CARD */
+.popup {
+  width: 380px;
+  background: var(--light-bg);
+  border-radius: 20px;
+  padding: 24px;
+  position: relative;
+  box-shadow: 0 25px 70px rgba(0,0,0,0.35);
+
+  transform: translateY(40px) scale(0.85);
+  opacity: 0;
+  transition: all 0.35s ease;
+  border: 2px solid var(--border-gold);
+}
+
+/* ANIMATION */
+.show {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+
+.hide {
+  transform: translateY(40px) scale(0.85);
+  opacity: 0;
+}
+
+/* CLOSE BUTTON */
+.closeBtn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: var(--primary-burgundy);
+  color: var(--text-light);
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.closeBtn:hover {
+  transform: scale(1.1);
+}
+
+/* BADGE */
+.badge {
+  display: inline-block;
+  padding: 6px 12px;
+  background: linear-gradient(
+    90deg,
+    var(--primary-gold),
+    var(--accent-gold)
+  );
+  color: var(--dark-bg);
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+/* TITLE */
+.title {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--dark-bg);
+}
+
+.title span {
+  color: var(--primary-green);
+}
+
+/* SUBTITLE */
+.subtitle {
+  font-size: 14px;
+  color: #555;
+  margin-top: 4px;
+}
+
+/* INFO BOX */
+.infoBox {
+  margin-top: 14px;
+  background: rgba(212, 175, 55, 0.15);
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  color: var(--dark-bg);
+  border-left: 4px solid var(--primary-gold);
+}
+
+/* DESCRIPTION */
+.desc {
+  margin-top: 14px;
+  font-size: 13px;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* BUTTONS */
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.actions a {
+  flex: 1;
+  text-align: center;
+  padding: 11px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  transition: 0.25s;
+}
+
+/* CALL BUTTON */
+.actions a:first-child {
+  background: var(--primary-burgundy);
+  color: var(--text-light);
+}
+
+/* WHATSAPP BUTTON */
+.actions a:last-child {
+  background: var(--primary-green);
+  color: var(--text-light);
+}
+
+/* HOVER EFFECT */
+.actions a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}

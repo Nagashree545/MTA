@@ -165,7 +165,7 @@ export default function About() {
           <div>✔ Practical Learning</div>
           <div>✔ Real Market Exposure</div>
           <div>✔ Expert Mentorship</div>
-          <div>✔ Financial Independence</div>
+          <div>✔ Capital Growth Mindset</div>
         </div>
 
       </div>
