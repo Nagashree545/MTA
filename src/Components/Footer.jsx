@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../Styles/Footer.module.css";
 import whitelogo from "../Assets/logowidth.jpeg";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -30,19 +31,21 @@ export default function Footer() {
         {/* COURSES */}
         <div className={styles.col}>
           <h3>Courses</h3>
-          <a href="/">Master Trader</a>
-          <a href="/">Masterclass</a>
-          <a href="/">Option Hunter</a>
-          <a href="/">Big Bull</a>
+
+          <Link to="/courses">Master Trader</Link>
+          <Link to="/courses">Masterclass</Link>
+          <Link to="/courses">Option Hunter</Link>
+          <Link to="/courses">Big Bull</Link>
         </div>
 
         {/* LINKS */}
         <div className={styles.col}>
           <h3>Quick Links</h3>
-          <a href="/">Why Us</a>
-          <a href="/">Privacy Policy</a>
-          <a href="/">Refund Policy</a>
-          <a href="/">Pricing</a>
+
+          <Link to="/why-us">Why Us</Link>
+          <Link to="/privacy-policy">Privacy Policy</Link>
+          <Link to="/refund-policy">Refund Policy</Link>
+          <Link to="/pricing">Pricing</Link>
         </div>
 
         {/* CONTACT */}
@@ -62,11 +65,13 @@ export default function Footer() {
 
           <p className={styles.contactItem}>📍 Bangalore, India</p>
         </div>
+
       </div>
 
       {/* BOTTOM */}
       <div className={styles.bottom}>
         <p>© 2025 Master Traders Academy</p>
+
         <div className={styles.badges}>
           <span>ISO</span>
           <span>NISM</span>
