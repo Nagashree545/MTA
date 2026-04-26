@@ -8,6 +8,8 @@ import Footer from './Components/Footer';
 import CoursesSection from './Components/CoursesSection';
 import BlogSection from './Components/BlogSection';
 import ContactPage from './Components/Contactpage';
+import PrivacyPolicy from './Components/PrivacyP{olicy';
+import RefundPolicy from './Components/RefundPolicy';
 
 function App() {
   return (
@@ -19,6 +21,9 @@ function App() {
         <Route path='/courses' element={<CoursesSection/>}/>
         <Route path="/blog" element={<BlogSection/>}/>
         <Route path="/contactpage" element={<ContactPage/>}/>
+        <Route path="/privacypolicy" element={<PrivacyPolicy/>}/>
+        <Route path="/refundpolicy" element={<RefundPolicy/>}/>
+
 
       </Routes>
       <Footer/>

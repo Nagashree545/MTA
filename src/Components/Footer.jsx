@@ -42,10 +42,8 @@ export default function Footer() {
         <div className={styles.col}>
           <h3>Quick Links</h3>
 
-          <Link to="/why-us">Why Us</Link>
-          <Link to="/privacy-policy">Privacy Policy</Link>
-          <Link to="/refund-policy">Refund Policy</Link>
-          <Link to="/pricing">Pricing</Link>
+          <Link to="/privacypolicy">Privacy Policy</Link>
+          <Link to="/refundpolicy">Refund Policy</Link>
         </div>
 
         {/* CONTACT */}
@@ -72,11 +70,7 @@ export default function Footer() {
       <div className={styles.bottom}>
         <p>© 2025 Master Traders Academy</p>
 
-        <div className={styles.badges}>
-          <span>ISO</span>
-          <span>NISM</span>
-          <span>Best Academy</span>
-        </div>
+      
       </div>
     </footer>
   );
