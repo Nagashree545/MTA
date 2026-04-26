@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "../Styles/BlogSection.module.css";
-import Fivetradingmistake from "./fivetradingmistakedetailpage";
 
 export default function BlogSection() {
   const blogPosts = [
