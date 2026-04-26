@@ -73,7 +73,7 @@ export default function Navigation() {
 
             <li>
               <Link to="/about" onClick={closeMenu} className={isActive("/about")}>
-                About
+                About Us
               </Link>
             </li>
 
@@ -85,20 +85,19 @@ export default function Navigation() {
 
             <li>
               <button onClick={() => handleScroll("why-us")}>
-                Why Us
-              </button>
+Resources              </button>
             </li>
 
             <li>
-              <button onClick={() => handleScroll("blog")}>
+              <Link to="/blog" onClick={closeMenu} className={isActive("/blog")}>
                 Blog
-              </button>
+              </Link>
             </li>
 
             <li>
-              <button onClick={() => handleScroll("contact")}>
-                Contact
-              </button>
+             <Link to="/contactpage" onClick={closeMenu} className={isActive("/contactpage")}>
+                Contact Us
+              </Link>
             </li>
 
           </ul>

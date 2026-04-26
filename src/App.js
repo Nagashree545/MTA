@@ -6,6 +6,8 @@ import About from './Components/About';
 import Navigation from './Components/Header';
 import Footer from './Components/Footer';
 import CoursesSection from './Components/CoursesSection';
+import BlogSection from './Components/BlogSection';
+import ContactPage from './Components/Contactpage';
 
 function App() {
   return (
@@ -15,6 +17,9 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<About/>} />
         <Route path='/courses' element={<CoursesSection/>}/>
+        <Route path="/blog" element={<BlogSection/>}/>
+        <Route path="/contactpage" element={<ContactPage/>}/>
+
       </Routes>
       <Footer/>
     </Router>

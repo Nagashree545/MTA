@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '../Styles/Herosection.module.css';
 import herosection from "../Assets/herosectionimage.png";
+import { Link } from 'react-router-dom';
 
 export default function HeroSection() {
 
@@ -25,7 +26,7 @@ export default function HeroSection() {
           </h1>
 
           <p className={styles.subtitle}>
-            Build strong market knowledge with structured learning and real-time insights 
+            Build strong market knowledge with structured learning and real-time insights
             designed to help you understand trading with clarity and confidence.
           </p>
 
@@ -36,10 +37,10 @@ export default function HeroSection() {
 
           <div className={styles.buttonGroup}>
 
-            <button onClick={() => scrollToSection('courses')}>
-              Explore Courses
-            </button>
 
+            <Link to="/courses"   className={styles.exploreBtn} >
+              Explore  Courses
+            </Link>
             <div className={styles.ratingBox}>
               <span className={styles.stars}>★★★★★</span>
               <p><strong>4.9/5</strong> Google Reviews</p>
