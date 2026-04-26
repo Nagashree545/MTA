@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../Styles/BlogSection.module.css";
+import Fivetradingmistake from "./fivetradingmistakedetailpage";
 
 export default function BlogSection() {
   const blogPosts = [
@@ -59,9 +60,9 @@ export default function BlogSection() {
                   Learn actionable trading knowledge and improve consistency.
                 </p>
 
-                <a href="/" className={styles.readMore}>
+                {/* <a href="/" className={styles.readMore}>
                   Read Article →
-                </a>
+                </a> */}
               </div>
 
             </article>
