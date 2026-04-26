@@ -5,10 +5,7 @@ import { Link } from 'react-router-dom';
 
 export default function HeroSection() {
 
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) element.scrollIntoView({ behavior: 'smooth' });
-  };
+ 
 
   return (
     <section className={styles.hero}>
