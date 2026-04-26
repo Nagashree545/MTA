@@ -1,95 +1,104 @@
-import React from 'react';
-import styles from '../Styles/CoursesSection.module.css';
+import React from "react";
+import styles from "../Styles/CoursesSection.module.css";
+import mastertrader from "../Assets/mastertraderforcourse.png"
+import masterclass from "../Assets/masterclassforcourse.jpg";
+import optionhunter from "../Assets/optionhunterforcourses.jpg";
+import bigbull from "../Assets/bigbullcourses.png"
 
 export default function CoursesSection() {
   const courses = [
     {
       id: 1,
-      title: 'Master Trader',
-      description: 'Comprehensive foundation course covering all basics of stock market trading, technical analysis, and risk management.',
-      level: 'Beginner to Intermediate',
-      duration: '8 Weeks',
-      price: '₹15,999',
-      highlights: ['Technical Analysis', 'Risk Management', 'Trading Psychology', 'Live Market Sessions']
+      title: "Master Trader",
+      image:
+mastertrader,
+      description:
+        "Build strong foundations in stock market trading with real market understanding.",
+      highlights: ["Technical Analysis", "Risk Management", "Live Practice"],
     },
     {
       id: 2,
-      title: 'Masterclass',
-      description: 'Advanced trading strategies and in-depth market analysis techniques for experienced traders.',
-      level: 'Advanced',
-      duration: '12 Weeks',
-      price: '₹24,999',
-      highlights: ['Advanced Strategies', 'Portfolio Management', 'Market Analysis', 'One-on-One Mentoring']
+      title: "Masterclass",
+      image:
+masterclass,
+      description:
+        "Advanced strategies for professional trading execution.",
+      highlights: ["Advanced Strategies", "Portfolio Building", "Mentorship"],
     },
     {
       id: 3,
-      title: 'Option Hunter',
-      description: 'Specialized course focused on options trading, strategies, and profitable option selling techniques.',
-      level: 'Intermediate',
-      duration: '10 Weeks',
-      price: '₹19,999',
-      highlights: ['Options Greeks', 'Selling Strategies', 'Iron Condor Setup', 'Live Trading Calls']
+      title: "Option Hunter",
+      image:
+optionhunter,      description:
+        "Specialized options trading system for consistent income.",
+      highlights: ["Options Basics", "Selling Strategies", "Risk Control"],
     },
     {
       id: 4,
-      title: 'The Big Bull',
-      description: 'Premium comprehensive program combining all trading aspects with lifetime mentorship support.',
-      level: 'All Levels',
-      duration: '16 Weeks',
-      price: '₹49,999',
-      highlights: ['Complete Training', 'Lifetime Access', 'Premium Support', 'Trading Tools', 'Lifetime Updates']
-    }
+      title: "The Big Bull",
+      image:
+bigbull,      description:
+        "Complete trading mastery program with lifetime mentorship support.",
+      highlights: ["Full Market Mastery", "Live Room", "Pro Tools"],
+    },
   ];
 
   return (
-    <section id="courses" className={styles.coursesSection}>
-      <div className={styles.container}>
-        <div className={styles.header}>
-          <h2>Our Premium Courses</h2>
-          <p>Master the art of profitable trading with our carefully designed curriculum</p>
+    <section className={styles.wrapper}>
+
+      {/* ================= HERO (same as yours) ================= */}
+      <div className={styles.hero}>
+        <div className={styles.heroBg}></div>
+
+        <div className={styles.heroContent}>
+          <span className={styles.badge}>Premium Trading Academy</span>
+
+          <h1>
+            Learn Trading Like<br />
+            A Professional Market Expert
+          </h1>
+
+          <div className={styles.stats}>
+            <div>📊 Live Market Room</div>
+            <div>🎯 Strategy Learning</div>
+            <div>💡 Expert Mentorship</div>
+          </div>
         </div>
 
-        <div className={styles.coursesGrid}>
-          {courses.map((course, index) => (
-            <div 
-              key={course.id} 
-              className={`${styles.courseCard} ${index % 2 === 0 ? styles.cardLight : styles.cardDark}`}
-            >
-              <div className={styles.cardHeader}>
-                <h3>{course.title}</h3>
-                <span className={styles.level}>{course.level}</span>
-              </div>
-
-              <p className={styles.description}>{course.description}</p>
-
-              <div className={styles.courseDetails}>
-                <div className={styles.detail}>
-                  <span className={styles.label}>Duration:</span>
-                  <span>{course.duration}</span>
-                </div>
-                <div className={styles.detail}>
-                  <span className={styles.label}>Price:</span>
-                  <span className={styles.price}>{course.price}</span>
-                </div>
-              </div>
-
-              <div className={styles.highlights}>
-                <h4>What You'll Learn:</h4>
-                <ul>
-                  {course.highlights.map((highlight, idx) => (
-                    <li key={idx}>
-                      <span className={styles.checkmark}>✓</span>
-                      {highlight}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <button className="btn btn-primary">Enroll Now</button>
-            </div>
-          ))}
-        </div>
+        <div className={styles.floatCard1}>📈 NIFTY +1.2%</div>
+        <div className={styles.floatCard2}>📉 BANKNIFTY -0.8%</div>
       </div>
+
+      {/* ================= NEW COURSES GRID ================= */}
+      <div className={styles.courseGrid}>
+
+        {courses.map((course) => (
+          <div key={course.id} className={styles.courseTile}>
+
+            <div className={styles.imageWrap}>
+              <img src={course.image} alt={course.title} />
+            </div>
+
+            <div className={styles.content}>
+              <h2>{course.title}</h2>
+              <p>{course.description}</p>
+
+              <div className={styles.tagRow}>
+                {course.highlights.map((h, i) => (
+                  <span key={i}>{h}</span>
+                ))}
+              </div>
+
+              <button className={styles.readMoreBtn}>
+                Read More
+              </button>
+            </div>
+
+          </div>
+        ))}
+
+      </div>
+
     </section>
   );
 }

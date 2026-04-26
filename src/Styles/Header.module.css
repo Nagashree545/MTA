@@ -161,6 +161,7 @@
   position: absolute;
   top: 15px;
   right: 15px;
+  display: none;
 
   background: none;
   border: none;
@@ -178,6 +179,12 @@
   .menuToggle {
     display: flex;
   }
+  .closeBtn {
+
+  display: block;
+
+}
+
 .container{
   justify-content: space-between;
 }

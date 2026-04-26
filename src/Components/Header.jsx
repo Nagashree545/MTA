@@ -78,9 +78,9 @@ export default function Navigation() {
             </li>
 
             <li>
-              <button onClick={() => handleScroll("courses")}>
+             <Link to="/courses" onClick={closeMenu} className={isActive("/courses")}>
                 Courses
-              </button>
+              </Link>
             </li>
 
             <li>
