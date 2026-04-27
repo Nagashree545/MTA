@@ -63,8 +63,8 @@ export default function WhyUsSection() {
             <p>National Institute Standards</p>
           </div>
           <div className={styles.certificationItem}>
-            <h4>2025  Award Winner</h4>
-            <p>Best Stock Market Academy in Bangalore</p>
+            <h4>India's Business Iconic  Award </h4>
+            <p>Best Stock Market Institute in banglore Master Traders Academy</p>
           </div>
         </div>
       </div>
