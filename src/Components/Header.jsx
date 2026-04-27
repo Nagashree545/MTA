@@ -12,30 +12,30 @@ export default function Navigation() {
   const toggleMenu = () => setMenuOpen(!menuOpen);
   const closeMenu = () => setMenuOpen(false);
 
-  const handleScroll = (sectionId) => {
-    const scrollToSection = () => {
-      const element = document.getElementById(sectionId);
-      if (!element) return;
+  // const handleScroll = (sectionId) => {
+  //   const scrollToSection = () => {
+  //     const element = document.getElementById(sectionId);
+  //     if (!element) return;
 
-      const offset = 80;
-      const top =
-        element.getBoundingClientRect().top + window.pageYOffset - offset;
+  //     const offset = 80;
+  //     const top =
+  //       element.getBoundingClientRect().top + window.pageYOffset - offset;
 
-      window.scrollTo({
-        top,
-        behavior: "smooth",
-      });
+  //     window.scrollTo({
+  //       top,
+  //       behavior: "smooth",
+  //     });
 
-      closeMenu();
-    };
+  //     closeMenu();
+  //   };
 
-    if (location.pathname !== "/") {
-      navigate("/");
-      setTimeout(scrollToSection, 300);
-    } else {
-      scrollToSection();
-    }
-  };
+  //   if (location.pathname !== "/") {
+  //     navigate("/");
+  //     setTimeout(scrollToSection, 300);
+  //   } else {
+  //     scrollToSection();
+  //   }
+  // };
 
   const isActive = (path) =>
     location.pathname === path ? styles.activeLink : "";
