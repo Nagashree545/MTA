@@ -10,7 +10,6 @@ export default function TestimonialsSection() {
       image: 'V',
       rating: 5,
       quote: 'Master Traders Academy transformed my trading journey. I went from losing money to consistently profitable within 3 months. The structured approach and live trading sessions were game-changers.',
-      result: 'Now earning ₹50K+ monthly from trading'
     },
     {
       id: 2,
@@ -19,7 +18,6 @@ export default function TestimonialsSection() {
       image: 'A',
       rating: 5,
       quote: 'The Option Hunter course was exactly what I needed. The strategies taught here work in real market conditions. My portfolio has grown by 200% in the last year.',
-      result: '200% portfolio growth in 12 months'
     },
     {
       id: 3,
@@ -28,7 +26,6 @@ export default function TestimonialsSection() {
       image: 'R',
       rating: 5,
       quote: 'Outstanding mentorship and support throughout my trading journey. The instructors really care about their students\' success. Highly recommended for anyone serious about trading.',
-      result: 'Turned ₹50,000 into ₹2,50,000'
     },
    
   ];
@@ -60,10 +57,7 @@ export default function TestimonialsSection() {
                 </div>
               </div>
 
-              <div className={styles.result}>
-                <span className={styles.resultLabel}>Result:</span>
-                <p>{testimonial.result}</p>
-              </div>
+        
             </div>
           ))}
         </div>

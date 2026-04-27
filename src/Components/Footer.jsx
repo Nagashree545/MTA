@@ -35,7 +35,7 @@ export default function Footer() {
           <Link to="/courses">Master Trader</Link>
           <Link to="/courses">Masterclass</Link>
           <Link to="/courses">Option Hunter</Link>
-          <Link to="/courses">Big Bull</Link>
+          <Link to="/courses">The Big Bull</Link>
         </div>
 
         {/* LINKS */}

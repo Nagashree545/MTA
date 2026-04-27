@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "../Styles/PopularCourses.module.css";
 
-import masterclassImg from "../Assets/masterclassimg.png";
-import bigbullImg from "../Assets/bigbullimage.png";
+import masterclassImg from "../Assets/masterclass.png";
+import bigbullImg from "../Assets/thebigbull.png";
 
 export default function PopularCourses() {
   const courses = [
@@ -47,7 +47,6 @@ export default function PopularCourses() {
 
             {/* CONTENT */}
             <div className={styles.content}>
-              <div className={styles.number}>0{index + 1}</div>
 
               <h3>{course.title}</h3>
 

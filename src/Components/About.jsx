@@ -56,11 +56,11 @@ export default function About() {
           <p className={styles.sirTagline}>Founder & Lead Mentor</p>
 
           <h2 className={styles.sirTitle}>
-            Anand Sir – <span>Master Traders Academy</span>
+            Anand Patil – <span>Master Traders Academy</span>
           </h2>
 
           <p className={styles.sirDesc}>
-            Anand Sir is a seasoned market professional with deep expertise in
+            Anand Patil is a seasoned market professional with deep expertise in
             technical analysis, price action trading, and risk management.
             With years of practical experience in the financial markets, he has
             dedicated his career to simplifying trading education for aspiring traders.
