@@ -32,7 +32,7 @@ export default function HeroSection() {
 
           <ul className={styles.points}>
             <li>✔ Beginner to Advanced Training</li>
-            <li>✔ Live Market Sessions</li>
+            <li>✔ Live Market Sessions.</li>
           </ul>
 
           <div className={styles.buttonGroup}>
