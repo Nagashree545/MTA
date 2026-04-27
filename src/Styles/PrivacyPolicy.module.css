@@ -170,4 +170,16 @@
   .card {
     padding: 20px;
   }
+}.card ul {
+  padding-left: 22px;
+  margin: 10px 0;
 }
+
+.card ul li {
+  list-style-type: disc;
+  margin-bottom: 6px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #333;
+}
+

@@ -10,6 +10,7 @@ import BlogSection from './Components/BlogSection';
 import ContactPage from './Components/Contactpage';
 import PrivacyPolicy from './Components/PrivacyP{olicy';
 import RefundPolicy from './Components/RefundPolicy';
+import TermsAndConditions from './Components/TermsAndCondition';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/contactpage" element={<ContactPage/>}/>
         <Route path="/privacypolicy" element={<PrivacyPolicy/>}/>
         <Route path="/refundpolicy" element={<RefundPolicy/>}/>
+        <Route path='/termsandcondition' element={<TermsAndConditions/>}/>
 
 
       </Routes>

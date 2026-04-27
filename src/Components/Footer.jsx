@@ -43,7 +43,7 @@ export default function Footer() {
           <h3>Quick Links</h3>
 
           <Link to="/privacypolicy">Privacy Policy</Link>
-          <Link to="/refundpolicy">Refund Policy</Link>
+          <Link to="/termsandcondition">Terms & Conditions</Link>
         </div>
 
         {/* CONTACT */}
