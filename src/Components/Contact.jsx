@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "../Styles/Contact.module.css";
+import emailjs from "@emailjs/browser";
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -19,18 +20,39 @@ export default function ContactSection() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setSubmitted(true);
 
-    setTimeout(() => {
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        course: "",
-        message: "",
+    const templateParams = {
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      course: formData.course,
+      message: formData.message,
+    };
+
+    emailjs
+      .send(
+        "service_jo6y31s",     // replace
+        "template_igmt0uq",    // replace
+        templateParams,
+        "sV9tqma_clnL7GzYk"      // replace
+      )
+      .then(() => {
+        setSubmitted(true);
+
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          course: "",
+          message: "",
+        });
+
+        setTimeout(() => setSubmitted(false), 3000);
+      })
+      .catch((error) => {
+        console.error("Email error:", error);
+        alert("Something went wrong!");
       });
-      setSubmitted(false);
-    }, 2500);
   };
 
   return (
@@ -76,7 +98,7 @@ export default function ContactSection() {
           </div>
         </div>
 
-        {/* RIGHT FORM */}
+        {/* FORM */}
         <form className={styles.form} onSubmit={handleSubmit}>
 
           {submitted && (
@@ -85,37 +107,11 @@ export default function ContactSection() {
             </div>
           )}
 
-          <input
-            name="name"
-            placeholder="Full Name *"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
+          <input name="name" placeholder="Full Name *" value={formData.name} onChange={handleChange} required />
+          <input name="email" type="email" placeholder="Email *" value={formData.email} onChange={handleChange} required />
+          <input name="phone" placeholder="Phone *" value={formData.phone} onChange={handleChange} required />
 
-          <input
-            name="email"
-            placeholder="Email *"
-            type="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-
-          <input
-            name="phone"
-            placeholder="Phone *"
-            value={formData.phone}
-            onChange={handleChange}
-            required
-          />
-
-          <select
-            name="course"
-            value={formData.course}
-            onChange={handleChange}
-            required
-          >
+          <select name="course" value={formData.course} onChange={handleChange} required>
             <option value="">Select Course</option>
             <option>Master Trader</option>
             <option>Masterclass</option>
@@ -123,13 +119,7 @@ export default function ContactSection() {
             <option>Big Bull</option>
           </select>
 
-          <textarea
-            name="message"
-            placeholder="Your Message..."
-            rows="4"
-            value={formData.message}
-            onChange={handleChange}
-          />
+          <textarea name="message" placeholder="Your Message..." rows="4" value={formData.message} onChange={handleChange} />
 
           <button type="submit">Send Message 🚀</button>
 
