@@ -7,6 +7,7 @@ import PopularCourses from './OurPopularCourses';
 import TestimonialsSection from './Testimonial';
 import ContactSection from './Contact';
 import WorkshopPopup from './Popupforworkshop';
+import AwardPage from './AwardPage';
 
 function HomePage() {
   return (
@@ -17,6 +18,7 @@ function HomePage() {
       <WhyUsSection/>
       <WhoCanEnroll/>
       <PopularCourses/>
+      <AwardPage/>
       <TestimonialsSection/>
       <ContactSection/>
     </div>
