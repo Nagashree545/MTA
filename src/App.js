@@ -11,10 +11,12 @@ import ContactPage from './Components/Contactpage';
 import PrivacyPolicy from './Components/PrivacyP{olicy';
 import RefundPolicy from './Components/RefundPolicy';
 import TermsAndConditions from './Components/TermsAndCondition';
+import ScrollToTop from './Components/ScrollToTop';
 
 function App() {
   return (
     <Router>
+       <ScrollToTop />
       <Navigation/>
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -25,7 +27,7 @@ function App() {
         <Route path="/privacypolicy" element={<PrivacyPolicy/>}/>
         <Route path="/refundpolicy" element={<RefundPolicy/>}/>
         <Route path='/termsandcondition' element={<TermsAndConditions/>}/>
-
+        {/* <Route path='/resources' element={<Resources/>}/> */}
 
       </Routes>
       <Footer/>

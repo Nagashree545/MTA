@@ -1,7 +1,11 @@
 import React from "react";
 import styles from "../Styles/Footer.module.css";
-import whitelogo from "../Assets/logowidth.jpeg";
+import whitelogo from "../Assets/logofull.png";
 import { Link } from "react-router-dom";
+
+// icons
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -20,18 +24,12 @@ export default function Footer() {
             Empowering traders with professional market knowledge since 2015.
           </p>
 
-          <div className={styles.socials}>
-            <button type="button">f</button>
-            <button type="button">𝕏</button>
-            <button type="button">in</button>
-            <button type="button">📺</button>
-          </div>
+        
         </div>
 
         {/* COURSES */}
         <div className={styles.col}>
           <h3>Courses</h3>
-
           <Link to="/courses">Master Trader</Link>
           <Link to="/courses">Masterclass</Link>
           <Link to="/courses">Option Hunter</Link>
@@ -41,9 +39,15 @@ export default function Footer() {
         {/* LINKS */}
         <div className={styles.col}>
           <h3>Quick Links</h3>
-
           <Link to="/privacypolicy">Privacy Policy</Link>
           <Link to="/termsandcondition">Terms & Conditions</Link>
+            {/* SOCIAL ICONS */}
+          <div className={styles.socials}>
+            <a href="https://www.facebook.com/people/Master-Traders-Academy/61578116649789/?locale=en_GB#" className={styles.icon}><FaFacebookF /></a>
+            <a href="https://www.instagram.com/mastertraders.academy/" className={styles.icon}><FaInstagram /></a>
+            <a href="https://in.linkedin.com/in/master-traders-academy" className={styles.icon}><FaLinkedinIn /></a>
+            <a href="https://www.youtube.com/channel/UC5xTMSn0D-UB7fDvx5JG88A" className={styles.icon}><FaYoutube /></a>
+          </div>
         </div>
 
         {/* CONTACT */}
@@ -66,11 +70,8 @@ export default function Footer() {
 
       </div>
 
-      {/* BOTTOM */}
       <div className={styles.bottom}>
-        <p>© 2025 Master Traders Academy</p>
-
-      
+        <p>© 2025 Master Traders Academy. All Rights Reserved.</p>
       </div>
     </footer>
   );

@@ -67,12 +67,33 @@
   line-height: 1.5;
 }
 
-/* SOCIAL ICONS */
 .socials {
   display: flex;
-  gap: 10px;
-  margin-top: 10px;
+  gap: 12px;
+  margin-top: 15px;
 }
+
+.icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.icon:hover {
+  transform: translateY(-4px);
+  background: #ffcc00;
+  color: #000;
+  box-shadow: 0 8px 20px rgba(255, 204, 0, 0.3);
+}
+
 
 .socials span {
   width: 34px;
@@ -122,8 +143,7 @@
   margin-top: 40px;
   border-top: 1px solid rgba(255,255,255,0.1);
   padding-top: 15px;
-  display: flex;
-  justify-content: space-between;
+  text-align: center;
   flex-wrap: wrap;
   animation: fadeUp 1s ease;
 }
@@ -132,6 +152,7 @@
 .badges {
   display: flex;
   gap: 10px;
+  text-align: center;
 }
 
 .badges span {

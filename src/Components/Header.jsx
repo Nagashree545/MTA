@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "../Styles/Header.module.css";
-import logo from "../Assets/logowidth.jpeg";
+import logo from "../Assets/logofull.png";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 
 export default function Navigation() {
@@ -84,8 +84,9 @@ export default function Navigation() {
             </li>
 
             <li>
-              <button onClick={() => handleScroll("why-us")}>
-Resources              </button>
+             <Link to="/resources" onClick={closeMenu} className={isActive("/resources")}>
+                Resources
+              </Link>
             </li>
 
             <li>
