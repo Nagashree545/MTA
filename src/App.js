@@ -12,7 +12,6 @@ import PrivacyPolicy from './Components/PrivacyP{olicy';
 import RefundPolicy from './Components/RefundPolicy';
 import TermsAndConditions from './Components/TermsAndCondition';
 import ScrollToTop from './Components/ScrollToTop';
-import { GrResources } from 'react-icons/gr';
 import Resources from './Components/Resourcespage';
 
 function App() {
