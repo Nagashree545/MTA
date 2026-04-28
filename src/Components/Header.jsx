@@ -6,7 +6,6 @@ import { Link, useNavigate, useLocation } from "react-router-dom";
 export default function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const navigate = useNavigate();
   const location = useLocation();
 
   const toggleMenu = () => setMenuOpen(!menuOpen);

@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 
 // icons
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
-
 export default function Footer() {
   return (
     <footer className={styles.footer}>
