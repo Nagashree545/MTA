@@ -16,11 +16,9 @@
   max-width: 1200px;
   margin: auto;
   padding: 0 20px;
-
   display: flex;
   align-items: center;
   justify-content: flex-start;
-
   height: 85px;
 }
 
@@ -33,7 +31,7 @@
 }
 
 /* =======================
-   RIGHT SECTION (DESKTOP)
+   RIGHT SECTION
 ======================= */
 .rightSection {
   display: flex;
@@ -52,28 +50,21 @@
   align-items: center;
 }
 
-/* LINKS + BUTTONS */
-.navLinks li a,
-.navLinks li button {
+/* LINKS */
+.navLinks li a {
   font-size: 16px;
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 0.8px;
-
-  background: none;
-  border: none;
-  cursor: pointer;
-
+  text-decoration: none;
   padding: 6px 2px;
   position: relative;
-  text-decoration: none;
   transition: 0.3s;
 }
 
-/* UNDERLINE EFFECT */
-.navLinks li a::after,
-.navLinks li button::after {
+/* underline */
+.navLinks li a::after {
   content: "";
   position: absolute;
   bottom: -3px;
@@ -84,33 +75,28 @@
   transition: 0.3s;
 }
 
-.navLinks li a:hover,
-.navLinks li button:hover {
+.navLinks li a:hover {
   color: #D4AF37;
 }
 
-.navLinks li a:hover::after,
-.navLinks li button:hover::after {
+.navLinks li a:hover::after {
   width: 100%;
 }
 
-/* ACTIVE LINK */
 .activeLink {
   color: #D4AF37 !important;
 }
 
 /* =======================
-   PHONE BUTTON
+   PHONE
 ======================= */
 .phone {
   font-size: 14px;
   font-weight: 700;
   color: #ffffff;
-
   padding: 6px 12px;
   border-radius: 20px;
   border: 1.5px solid #D4AF37;
-
   text-decoration: none;
   transition: 0.3s;
 }
@@ -121,14 +107,12 @@
 }
 
 /* =======================
-   HAMBURGER MENU
+   MENU BUTTON
 ======================= */
 .menuToggle {
   display: none;
   flex-direction: column;
   gap: 4px;
-  margin-left: 10px;
-
   background: none;
   border: none;
   cursor: pointer;
@@ -138,7 +122,6 @@
   width: 25px;
   height: 3px;
   background: #D4AF37;
-  border-radius: 2px;
 }
 
 /* =======================
@@ -150,176 +133,177 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0,0,0,0.6);
   z-index: 900;
 }
 
 /* =======================
-   CLOSE BUTTON (MOBILE)
+   CLOSE BTN
 ======================= */
 .closeBtn {
-  position: absolute;
-  top: 15px;
-  right: 15px;
   display: none;
-
-  background: none;
-  border: none;
-  font-size: 26px;
-  color: #D4AF37;
-  cursor: pointer;
 }
 
 /* =======================
-   MOBILE MENU DRAWER
+   DROPDOWN DESKTOP
 ======================= */
-@media (max-width: 768px) {
-
-  /* show hamburger */
-  .menuToggle {
-    display: flex;
-  }
-
-  .closeBtn {
-
-    display: block;
-
-  }
-
-  .container {
-    justify-content: space-between;
-  }
-
-  /* drawer */
-  .rightSection {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 75%;
-    height: 100vh;
-
-    background: #2c2c2c;
-    flex-direction: column;
-    padding-top: 90px;
-
-    transition: 0.3s ease;
-    z-index: 1000;
-
-    align-items: center;
-  }
-
-  /* open drawer */
-  .rightSection.active {
-    right: 0;
-  }
-
-  /* close button spacing */
-  .rightSection {
-    position: fixed;
-  }
-
-  /* nav vertical */
-  .navLinks {
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-  }
-
-  .navLinks li {
-    padding: 15px 0;
-    width: 100%;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-
-  /* phone spacing */
-  .phone {
-    margin-top: 20px;
-  }
-}
-
-/* wrapper */
 .dropdown {
   position: relative;
 }
 
-/* make Courses look like other nav links */
-
-
-/* dropdown menu */
 .dropdownMenu {
   position: absolute;
   top: 100%;
-  /* no gap */
   left: 0;
 
   margin: 0;
-  /* remove default ul spacing */
-  padding: 4px 0;
-  /* tight spacing */
+  padding: 6px 0;
   list-style: none;
 
   min-width: 180px;
 
   background: #111;
-  /* match header theme */
-  border-radius: 6px;
+  border-radius: 8px;
   border: 1px solid rgba(212, 175, 55, 0.2);
 
   opacity: 0;
   visibility: hidden;
-  transform: translateY(4px);
-  transition: all 0.2s ease;
-
+  transform: translateY(6px);
+  transition: 0.25s;
   z-index: 1000;
 }
 
-/* show dropdown on hover */
+/* show on hover (desktop only) */
 .dropdown:hover .dropdownMenu {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
 }
 
-/* remove li spacing */
 .dropdownMenu li {
-  margin: 0;
-  padding: 0px 15px;
+  padding: 0;
 }
 
-/* dropdown items */
 .dropdownMenu a {
   display: block;
-  padding: 8px 14px;
-  /* compact */
+  padding: 10px 14px;
   font-size: 14px;
-
   color: #fff;
-  /* same as header */
-  text-decoration: none;
-
-  transition: 0.2s ease;
 }
 
-/* hover effect */
 .dropdownMenu a:hover {
-  background: rgba(212, 175, 55, 0.08);
-  color: #d4af37;
+  background: rgba(212,175,55,0.1);
+  color: #D4AF37;
 }
 
-/* 📱 mobile fix */
+/* =======================
+   MOBILE DESIGN
+======================= */
 @media (max-width: 768px) {
+
+  .menuToggle {
+    display: flex;
+  }
+
+  .closeBtn {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 26px;
+    color: #D4AF37;
+    background: none;
+    border: none;
+  }
+
+  .container {
+    justify-content: space-between;
+  }
+
+  .rightSection {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 75%;
+    height: 100vh;
+    background: #2c2c2c;
+    flex-direction: column;
+    padding-top: 80px;
+    transition: 0.3s;
+    z-index: 1000;
+  }
+
+  .rightSection.active {
+    right: 0;
+  }
+
+  .navLinks {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navLinks li {
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .navLinks li a {
+    display: block;
+    padding: 15px 20px;
+  }
+
+  /* ===== MOBILE DROPDOWN FIX ===== */
+
+  .dropdownHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+  }
+
   .dropdownMenu {
     position: static;
+    background: transparent;
+    border: none;
+
+    max-height: 0;
+    overflow: hidden;
     opacity: 1;
     visibility: visible;
     transform: none;
 
-    background: transparent;
-    border: none;
-    padding-left: 10px;
+    transition: max-height 0.3s ease;
+  }
+
+  .dropdownMenu.show {
+    max-height: 300px;
+  }
+
+  .dropdownMenu li {
+    padding: 8px 25px;
   }
 
   .dropdownMenu a {
-    padding: 6px 0;
+    color: #ccc;
+    font-size: 14px;
+  }
+
+  .dropdownMenu a:hover {
+    color: #D4AF37;
+    background: none;
+  }
+
+  /* arrow */
+  .arrow {
+    color: #D4AF37;
+    transition: 0.3s;
+  }
+
+  .rotate {
+    transform: rotate(180deg);
+  }
+
+  .phone {
+    margin-top: 20px;
   }
 }

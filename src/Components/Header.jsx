@@ -5,7 +5,9 @@ import { Link, useLocation } from "react-router-dom";
 
 export default function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [courseOpen, setCourseOpen] = useState(false);
 
+  const toggleCourses = () => setCourseOpen(!courseOpen);
   const location = useLocation();
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
@@ -82,44 +84,58 @@ export default function Navigation() {
               </Link>
             </li> */}
             <li className={styles.dropdown}>
-  
-  {/* Click goes to /courses */}
-  <Link 
-    to="/courses" 
-    className={styles.navLink}
-    onClick={closeMenu}
-  >
-    Courses ▾
-  </Link>
 
-  {/* Dropdown */}
-  <ul className={styles.dropdownMenu}>
-    <li>
-      <Link to="/courses/master-trader" onClick={closeMenu}>
-        Master Trader
-      </Link>
-    </li>
-    <li>
-      <Link to="/courses/masterclass" onClick={closeMenu}>
-        MasterClass
-      </Link>
-    </li>
-    <li>
-      <Link to="/courses/option-hunter" onClick={closeMenu}>
-        Option Hunter
-      </Link>
-    </li>
-    <li>
-      <Link to="/courses/bigbull" onClick={closeMenu}>
-        The BigBull
-      </Link>
-    </li>
-  </ul>
+              {/* Click goes to /courses */}
+              <li className={styles.dropdown}>
 
-</li>
+                {/* Clickable row */}
+                <div className={styles.dropdownHeader} onClick={toggleCourses}>
+                  <Link to="/courses" onClick={closeMenu}>
+                    Courses
+                  </Link>
+                  <span className={`${styles.arrow} ${courseOpen ? styles.rotate : ""}`}>
+                    ▾
+                  </span>
+                </div>
+
+                {/* Dropdown items */}
+                <ul className={`${styles.dropdownMenu} ${courseOpen ? styles.show : ""}`}>
+                  <li><Link to="/courses/master-trader" onClick={closeMenu}>Master Trader</Link></li>
+                  <li><Link to="/courses/masterclass" onClick={closeMenu}>MasterClass</Link></li>
+                  <li><Link to="/courses/option-hunter" onClick={closeMenu}>Option Hunter</Link></li>
+                  <li><Link to="/courses/bigbull" onClick={closeMenu}>The BigBull</Link></li>
+                </ul>
+
+              </li>
+
+              {/* Dropdown */}
+              <ul className={styles.dropdownMenu}>
+                <li>
+                  <Link to="/courses/master-trader" onClick={closeMenu}>
+                    Master Trader
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/courses/masterclass" onClick={closeMenu}>
+                    MasterClass
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/courses/option-hunter" onClick={closeMenu}>
+                    Option Hunter
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/courses/bigbull" onClick={closeMenu}>
+                    The BigBull
+                  </Link>
+                </li>
+              </ul>
+
+            </li>
 
             <li>
-             <Link to="/resources" onClick={closeMenu} className={isActive("/resources")}>
+              <Link to="/resources" onClick={closeMenu} className={isActive("/resources")}>
                 Resources
               </Link>
             </li>
@@ -131,7 +147,7 @@ export default function Navigation() {
             </li>
 
             <li>
-             <Link to="/contactpage" onClick={closeMenu} className={isActive("/contactpage")}>
+              <Link to="/contactpage" onClick={closeMenu} className={isActive("/contactpage")}>
                 Contact Us
               </Link>
             </li>
