@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "../Styles/Header.module.css";
 import logo from "../Assets/logofull.png";
-import { Link, useNavigate, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false);
