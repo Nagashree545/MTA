@@ -12,6 +12,8 @@ import PrivacyPolicy from './Components/PrivacyP{olicy';
 import RefundPolicy from './Components/RefundPolicy';
 import TermsAndConditions from './Components/TermsAndCondition';
 import ScrollToTop from './Components/ScrollToTop';
+import { GrResources } from 'react-icons/gr';
+import Resources from './Components/Resourcespage';
 
 function App() {
   return (
@@ -27,7 +29,7 @@ function App() {
         <Route path="/privacypolicy" element={<PrivacyPolicy/>}/>
         <Route path="/refundpolicy" element={<RefundPolicy/>}/>
         <Route path='/termsandcondition' element={<TermsAndConditions/>}/>
-        {/* <Route path='/resources' element={<Resources/>}/> */}
+        <Route path='/resources' element={<Resources/>}/>
 
       </Routes>
       <Footer/>

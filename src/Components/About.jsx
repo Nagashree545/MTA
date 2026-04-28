@@ -4,7 +4,29 @@ import learningtrading from "../Assets/trading.jpg";
 import ourmission from "../Assets/ourMission.png";
 import ourvission from "../Assets/ourvission.png";
 import anandsir from "../Assets/AnandSir.JPG";
+import { Link } from 'react-router-dom';
 
+const reviews = [
+  { name: "Vijay Vijju", rating: 5,
+     text: "Awesome learning experience with a highly experienced teacher. Learned trading and the stock market smoothly with clear explanations, practical examples, and real-time market insights. The sessions were well-structured and beginner-friendly, which built confidence step by step." },
+  { name: "ಯಶಸ್ ಗೌಡ Yashas Gowda", rating: 5, text: "The only academy which teaches and provides the real knowledge about trading and investing without any unwanted or unneeded promotions They talk and teach only the real facts I have been observing for past 5 months and then joined the training program They are the best in Bangalore" },
+  { name: "Ravi B Mali", rating: 5, 
+    text: "Recently, attended the Big Bull course and completed successfully. Anand Patil sir explained the concepts easily and made us understand it with simple real life examples. Understood how to short lost stocks that gives 10x returns, risk management and more. Thanks for your guidance and support." },
+  { name: "Venky VC", rating: 5, 
+    text: "If you really want to learn stock market trading properly, this is the best place in Bangalore. The live market sessions helped me a lot to build confidence. Thank you, Anand sir!"},
+  { name: "riya sen", rating: 5, text: "The training session on trading was absolutely phenomenal, delivering an engaging and insightful experience that left participants buzzing with excitement and newfound knowledge. The instructors, clearly experts in their field, taught an impressive array of valuable concepts and practical strategies that catered to both novice and seasoned traders." },
+  { name: "Navya raj", rating: 5, text: "Thank you so much for this support and learning skills it was beautiful knowledge this master traders academy is very good tn others academy I am happy from this learning process and both sir thought very good tqsm 😊" },
+  { name: "Uday Holkar", rating: 5, text: "joined Master Traders Academy and honestly it’s the best decision! Anand sir makes the subject very easy to understand even for beginners like me. Now I do small trades confidently." },
+  { name: "Naushad", rating: 5, text: "It's a accelant academy to gain knowledge about stock market. Friendly environment. Offline and online option available. The way of teaching is excellent. I am learning from the beginning. Thanks to Anand Patil sir." },
+  { name: "Ambika V", rating: 5, text: "The best academy personalized attention, strong concept building, and positive environments that boost confidence and skill development, leading to successful career outcomes for students." },
+  { name: "yallappa bhujangi", rating: 5, text: "One of best Realistic and psychological stock market academy i ever seen in bangalore, Anand sir is a genuine and humble person to teach students who have learn very much interested in stock market, totally he have a best realistic and hidden statergys... always he want to Heartly well wisher to the student future.... every one try to learn with him once...." },
+  { name: "Anish Z", rating: 5, text: "Thank you Anand sir for your support and learning in technical analysis. I visited many academy before but no one was providing real knowledge for a beginner like me. since I have life time support I will be visiting academy quite frequently." }
+  ,{ name: "VINAY BHARATH", rating: 5, text: "I had a wonderful experience with the training. Anand Sir does not mind extending the class hours to clear doubts if we have. Very patient and helpful"}
+
+];
+
+
+   
 export default function About() {
   return (
     <div className={styles.aboutPage}>
@@ -331,25 +353,68 @@ export default function About() {
       </section>
 
       {/* Google reviews*/}
+ <section className={styles.reviewSection}>
 
+      <div className={styles.header}>
+        <h2>⭐ 4.9 Student Reviews</h2>
+        <p>Trusted by hundreds of learners</p>
+      </div>
+
+      <div className={styles.grid}>
+        {reviews.map((review, index) => (
+          <div key={index} className={styles.card}>
+            
+            <div className={styles.top}>
+              <div className={styles.avatar}>
+                {review.name.charAt(0)}
+              </div>
+
+              <div>
+                <h4>{review.name}</h4>
+                <div className={styles.stars}>
+                  {"⭐".repeat(review.rating)}
+                </div>
+              </div>
+            </div>
+
+            <p className={styles.text}>
+              "{review.text}"
+            </p>
+
+          </div>
+        ))}
+      </div>
+
+      <a
+        href="https://www.google.com/search?sca_esv=b5576d60e09f6916&rlz=1C1UEAD_en-GBIN1164IN1180&sxsrf=ANbL-n43CU2YrpNcr9hn2UGstyxz7hu9Rw:1777396519444&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOe-EC5QPsmeu0ebi9YEXhOKxmFNws3iT5DV_F_OAB2OA2QaRdUg30MaO-n9nx6oFIbKfg0oCBTi0dlf0riL_EMPciAv934ps5Q3d2WDg3k0g8BoO0g%3D%3D&q=Master+Traders+Academy+Reviews&sa=X&ved=2ahUKEwjClqqBhpGUAxUsSGwGHQ_ZMtgQ0bkNegQILhAI"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.viewMore}
+      >
+        View More Reviews →
+      </a>
+
+    </section>
       {/* Google Reviews */}
 
 
 
       {/* Call to Action */}
-    <section className={styles.tradeCtaSection}>
-  <div className={styles.tradeCtaOverlay}></div>
 
+<section className={styles.tradeCtaSection}>
   <div className={styles.tradeCtaContainer}>
-    <h2>Master the Markets with Confidence</h2>
+
+    <h2>Start Your Trading Journey Today</h2>
 
     <p>
-      Join a community of traders who learn real strategies, risk control, and smart investing techniques.
+      Learn proven strategies, risk management, and real market execution 
+      with expert-led courses designed for beginners and professionals.
     </p>
 
-    <button className={styles.tradeCtaButton}>
-      Start Learning Now
-    </button>
+    <Link to="/courses" className={styles.tradeCtaButton}>
+      Explore Courses
+    </Link>
+
   </div>
 </section>
 

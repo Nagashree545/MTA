@@ -9,9 +9,9 @@ export default function WhyUsSection() {
       description: 'Learn from seasoned traders with 10+ years of market experience and proven track record.'
     },
     {
-      icon: '📈',
-      title: 'Live Trading Sessions',
-      description: 'Real-time market analysis and live trading calls to accelerate your learning curve.'
+      icon: '💹',
+      title: 'Expert-Led Trading Sessions',
+      description: 'Join daily live sessions where professionals analyze the market and execute trades with proper strategy and discipline.'
     },
     {
       icon: '🛡️',

@@ -150,7 +150,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   z-index: 900;
 }
 
@@ -179,15 +179,17 @@
   .menuToggle {
     display: flex;
   }
+
   .closeBtn {
 
-  display: block;
+    display: block;
 
-}
+  }
 
-.container{
-  justify-content: space-between;
-}
+  .container {
+    justify-content: space-between;
+  }
+
   /* drawer */
   .rightSection {
     position: fixed;
@@ -226,11 +228,98 @@
   .navLinks li {
     padding: 15px 0;
     width: 100%;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   /* phone spacing */
   .phone {
     margin-top: 20px;
+  }
+}
+
+/* wrapper */
+.dropdown {
+  position: relative;
+}
+
+/* make Courses look like other nav links */
+
+
+/* dropdown menu */
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  /* no gap */
+  left: 0;
+
+  margin: 0;
+  /* remove default ul spacing */
+  padding: 4px 0;
+  /* tight spacing */
+  list-style: none;
+
+  min-width: 180px;
+
+  background: #111;
+  /* match header theme */
+  border-radius: 6px;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(4px);
+  transition: all 0.2s ease;
+
+  z-index: 1000;
+}
+
+/* show dropdown on hover */
+.dropdown:hover .dropdownMenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* remove li spacing */
+.dropdownMenu li {
+  margin: 0;
+  padding: 0px 15px;
+}
+
+/* dropdown items */
+.dropdownMenu a {
+  display: block;
+  padding: 8px 14px;
+  /* compact */
+  font-size: 14px;
+
+  color: #fff;
+  /* same as header */
+  text-decoration: none;
+
+  transition: 0.2s ease;
+}
+
+/* hover effect */
+.dropdownMenu a:hover {
+  background: rgba(212, 175, 55, 0.08);
+  color: #d4af37;
+}
+
+/* 📱 mobile fix */
+@media (max-width: 768px) {
+  .dropdownMenu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+
+    background: transparent;
+    border: none;
+    padding-left: 10px;
+  }
+
+  .dropdownMenu a {
+    padding: 6px 0;
   }
 }

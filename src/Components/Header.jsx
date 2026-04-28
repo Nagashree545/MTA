@@ -76,11 +76,47 @@ export default function Navigation() {
               </Link>
             </li>
 
-            <li>
+            {/* <li>
              <Link to="/courses" onClick={closeMenu} className={isActive("/courses")}>
                 Courses
               </Link>
-            </li>
+            </li> */}
+            <li className={styles.dropdown}>
+  
+  {/* Click goes to /courses */}
+  <Link 
+    to="/courses" 
+    className={styles.navLink}
+    onClick={closeMenu}
+  >
+    Courses ▾
+  </Link>
+
+  {/* Dropdown */}
+  <ul className={styles.dropdownMenu}>
+    <li>
+      <Link to="/courses/master-trader" onClick={closeMenu}>
+        Master Trader
+      </Link>
+    </li>
+    <li>
+      <Link to="/courses/masterclass" onClick={closeMenu}>
+        MasterClass
+      </Link>
+    </li>
+    <li>
+      <Link to="/courses/option-hunter" onClick={closeMenu}>
+        Option Hunter
+      </Link>
+    </li>
+    <li>
+      <Link to="/courses/bigbull" onClick={closeMenu}>
+        The BigBull
+      </Link>
+    </li>
+  </ul>
+
+</li>
 
             <li>
              <Link to="/resources" onClick={closeMenu} className={isActive("/resources")}>

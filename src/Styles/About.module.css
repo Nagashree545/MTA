@@ -1028,123 +1028,60 @@
 
 /* MAIN SECTION */
 .tradeCtaSection {
-  position: relative;
-  padding: 70px 20px;
-  overflow: hidden;
-
-  /* luxury dark trading background */
-  background: radial-gradient(
-    circle at top,
-    #1b1b1b,
-    #0f0f0f
-  );
+  padding: 60px 20px; /* reduced height */
+  background: #0b0b0b;
+  display: flex;
+  justify-content: center;
 }
 
-/* animated moving grid */
-.tradeCtaSection::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
-                    linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
-  background-size: 60px 60px;
-  animation: gridMove 10s linear infinite;
-  opacity: 0.4;
-}
-
-@keyframes gridMove {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(60px);
-  }
-}
-
-/* golden glow overlay */
-.tradeCtaOverlay {
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(
-    circle at center,
-    rgba(212, 175, 55, 0.2),
-    transparent 60%
-  );
-  z-index: 1;
-}
-
-/* container */
 .tradeCtaContainer {
-  position: relative;
-  max-width: 850px;
-  margin: auto;
+  max-width: 700px; /* slightly tighter */
   text-align: center;
-  z-index: 2;
+  padding: 40px 30px; /* reduced padding */
 
-  animation: fadeUp 1s ease;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+
+  border-radius: 16px;
+  border: 1px solid rgba(212, 175, 55, 0.2);
 }
 
 /* heading */
 .tradeCtaContainer h2 {
-  font-size: 44px;
-  font-weight: 800;
-  color: #ffffff;
-  margin-bottom: 20px;
-  letter-spacing: 1px;
+  font-size: 32px; /* reduced */
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
 }
 
-/* paragraph */
+/* text */
 .tradeCtaContainer p {
-  font-size: 18px;
-  color: rgba(255,255,255,0.75);
-  line-height: 1.8;
-  margin-bottom: 35px;
+  font-size: 16px; /* reduced */
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 24px;
+  line-height: 1.6;
 }
 
 /* button */
 .tradeCtaButton {
-  padding: 16px 40px;
-  font-size: 16px;
-  font-weight: 700;
-  border: none;
-  cursor: pointer;
-  border-radius: 50px;
+  display: inline-block;
+  padding: 12px 30px; /* smaller button */
+  border-radius: 30px;
+
+  font-weight: 600;
+  font-size: 15px;
 
   color: #111;
-  background: linear-gradient(
-    135deg,
-    #f5d36b,
-    #d4af37
-  );
+  background: linear-gradient(135deg, #f5d36b, #d4af37);
 
-  box-shadow: 0 20px 50px rgba(212, 175, 55, 0.4);
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-/* button shine effect */
-.tradeCtaButton::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 60%;
-  height: 100%;
-  background: rgba(255,255,255,0.4);
-  transform: skewX(-20deg);
-  transition: 0.5s;
-}
-
-.tradeCtaButton:hover::after {
-  left: 120%;
+  text-decoration: none;
+  transition: 0.3s ease;
 }
 
 .tradeCtaButton:hover {
-  transform: translateY(-4px) scale(1.05);
-  box-shadow: 0 25px 70px rgba(212, 175, 55, 0.6);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);
 }
-
 /* animation */
 @keyframes fadeUp {
   from {
@@ -1423,250 +1360,124 @@
     font-size: 1.5rem;
   }
 }
-.reviewsSection {
-  padding: 100px 20px;
-  background: linear-gradient(180deg, #f8f9fb, #ffffff);
-}
 
-.reviewsContainer {
-  max-width: 1000px;
-  margin: auto;
+.reviewSection {
+  padding: 80px 20px;
+  background: #f8f9fb;
   text-align: center;
 }
 
-/* HEADER */
-.reviewsHeader h2 {
-  font-size: 40px;
-  font-weight: 800;
+/* header */
+.header h2 {
+  font-size: 32px;
   color: #111;
+  margin-bottom: 8px;
 }
 
-.reviewsHeader p {
+.header p {
   color: #666;
-  margin-top: 6px;
+  margin-bottom: 40px;
 }
 
-/* FEATURE CARD (MAIN FOCUS) */
-.featureCard {
-  margin-top: 40px;
-  background: #ffffff;
-  border-radius: 18px;
-  padding: 40px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
-  position: relative;
+/* grid layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* card */
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 22px;
+
+  border: 1px solid #eee;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+
+  text-align: left;
   transition: 0.3s ease;
 }
 
-.featureCard:hover {
+.card:hover {
   transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
 }
 
-/* BIG QUOTE */
-.quote {
-  font-size: 70px;
-  color: #D4AF37;
-  position: absolute;
-  top: -10px;
-  left: 20px;
-  opacity: 0.3;
+/* top section */
+.top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
 }
 
-.featureCard p {
-  font-size: 16px;
-  color: #444;
-  line-height: 1.7;
+/* avatar */
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+
+  background: #d4af37;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
 }
 
-.featureCard h4 {
-  margin-top: 20px;
-  font-weight: 700;
+/* name */
+.card h4 {
+  font-size: 15px;
+  margin: 0;
   color: #111;
 }
 
-.featureCard span {
-  color: #D4AF37;
-  font-size: 18px;
+/* stars */
+.stars {
+  font-size: 14px;
 }
 
-/* MINI REVIEWS ROW */
-.reviewRow {
-  margin-top: 40px;
-  display: flex;
-  gap: 12px;
-  overflow-x: auto;
-  padding-bottom: 10px;
-}
-
-/* HIDE SCROLLBAR */
-.reviewRow::-webkit-scrollbar {
-  display: none;
-}
-
-/* MINI CARD */
-.reviewCard {
-  min-width: 180px;
-  background: #fff;
-  padding: 14px;
-  border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
-  text-align: left;
-  transition: 0.3s;
-}
-
-.reviewCard:hover {
-  transform: translateY(-4px);
-}
-
-.reviewCard p {
-  font-size: 13px;
+/* text */
+.text {
+  font-size: 14px;
   color: #555;
-  margin-top: 6px;
+  line-height: 1.6;
 }
 
-/* BUTTON */
-.viewBtn {
+/* button */
+.viewMore {
   display: inline-block;
   margin-top: 40px;
-  padding: 10px 20px;
-  border: 1px solid #D4AF37;
-  color: #D4AF37;
-  border-radius: 6px;
+  padding: 12px 28px;
+
+  background: #d4af37;
+  color: #111;
+  font-weight: 600;
+
+  border-radius: 30px;
   text-decoration: none;
-  font-weight: 700;
+
   transition: 0.3s;
 }
 
-.viewBtn:hover {
-  background: #D4AF37;
-  color: #fff;
+.viewMore:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(212,175,55,0.3);
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .featureCard {
-    padding: 25px;
-  }
-
-  .reviewRow {
-    flex-wrap: nowrap;
+/* responsive */
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
-.reviewsSection {
-  padding: 120px 20px;
-  background: radial-gradient(circle at top, #f8f9fc, #ffffff);
-  position: relative;
-  overflow: hidden;
-}
 
-.reviewsContainer {
-  max-width: 900px;
-  margin: auto;
-  text-align: center;
-}
-
-/* HEADER */
-.reviewsHeader h2 {
-  font-size: 42px;
-  font-weight: 900;
-  color: #111;
-}
-
-.reviewsHeader p {
-  color: #666;
-  margin-top: 6px;
-}
-
-/* SPOTLIGHT CARD */
-.spotlightCard {
-  margin-top: 50px;
-  background: #111;
-  color: #fff;
-  padding: 50px;
-  border-radius: 22px;
-  position: relative;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.25);
-  transition: 0.4s ease;
-}
-
-.spotlightCard:hover {
-  transform: translateY(-6px);
-}
-
-/* BIG QUOTE */
-.quote {
-  font-size: 90px;
-  position: absolute;
-  top: -20px;
-  left: 20px;
-  color: #D4AF37;
-  opacity: 0.2;
-}
-
-/* TEXT */
-.spotlightCard p {
-  font-size: 17px;
-  line-height: 1.8;
-  opacity: 0.9;
-}
-
-/* NAME ROW */
-.nameRow {
-  margin-top: 20px;
-}
-
-.star {
-  color: #D4AF37;
-  font-size: 18px;
-  display: block;
-}
-
-.nameRow h4 {
-  margin-top: 5px;
-  color: #fff;
-}
-
-/* LINK */
-.spotlightCard a {
-  display: inline-block;
-  margin-top: 15px;
-  color: #D4AF37;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-/* FLOATING BACKGROUND REVIEWS */
-.floatingTrack {
-  margin-top: 60px;
-  display: flex;
-  gap: 12px;
-  animation: scroll 18s linear infinite;
-  white-space: nowrap;
-}
-
-/* FLOAT CARDS */
-.floatCard {
-  background: #fff;
-  padding: 10px 14px;
-  border-radius: 20px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  font-size: 13px;
-  color: #333;
-  display: inline-block;
-}
-
-/* ANIMATION */
-@keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .spotlightCard {
-    padding: 30px;
-  }
-
-  .floatingTrack {
-    display: none; /* cleaner mobile */
+@media (max-width: 576px) {
+  .grid {
+    grid-template-columns: 1fr;
   }
 }
