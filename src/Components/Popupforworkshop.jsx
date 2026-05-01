@@ -54,7 +54,7 @@ export default function WorkshopPopup() {
         <div className={styles.actions}>
           <a href="tel:+919663317167">📞 Call</a>
           <a
-            href="https://wa.me/919187300181"
+            href="https://wa.me/9663317167"
             target="_blank"
             rel="noreferrer"
           >

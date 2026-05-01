@@ -45,7 +45,31 @@ export default function AwardSection() {
         </div>
 
       </div>
+<div className={styles.youtubeSection}>
+  <div className={styles.youtubeCard}>
+    
+    <div className={styles.youtubeIcon}>▶️</div>
+
+    <h2>Join Our YouTube Channel</h2>
+
+    <p>
+      Get free trading knowledge, market insights, and strategy breakdowns.
+      Stay updated and learn consistently with Master Traders Academy.
+    </p>
+
+    <a
+      href="https://www.youtube.com/@MASTERTRADERS-ACADEMY"
+      target="_blank"
+      rel="noopener noreferrer"
+      className={styles.youtubeBtn}
+    >
+      Subscribe Now
+    </a>
+
+  </div>
+</div>
 
     </section>
+    
   );
 }

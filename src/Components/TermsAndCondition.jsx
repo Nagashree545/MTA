@@ -20,11 +20,7 @@ export default function TermsAndConditions() {
 
                 <div className={styles.card}>
                     <h2>Terms & Conditions</h2>
-                    <p>
-                        Please read these Terms and Conditions carefully before enrolling in any course offered by <strong>Master Traders Academy</strong>.
-                        By enrolling, registering, or accessing our website or services, you acknowledge that you have read, understood, and agreed to these Terms and Conditions.
-                        If you do not agree, please discontinue use immediately. Any breach will result in termination of access.
-                    </p>
+                    <p>We encourage you to review these Terms and Conditions to better understand how Master Traders Academy operates and how we can serve you effectively. By enrolling in our courses or using our website and services, you agree to these terms. We’re committed to providing a valuable learning experience, and these guidelines help ensure a smooth and fair environment for everyone.                    </p>
                 </div>
 
                 <div className={styles.card}>

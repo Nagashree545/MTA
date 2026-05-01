@@ -11,7 +11,7 @@ export default function WhyUsSection() {
     {
       icon: '💹',
       title: 'Expert-Led Trading Sessions',
-      description: 'Join daily live sessions where professionals analyze the market and execute trades with proper strategy and discipline.'
+      description: 'Join daily live sessions where professionals analyze the market  with proper strategy and discipline.'
     },
     {
       icon: '🛡️',
@@ -64,7 +64,7 @@ export default function WhyUsSection() {
           </div>
           <div className={styles.certificationItem}>
             <h4>India's Business Iconic  Award </h4>
-            <p>Best Stock Market Institute in banglore Master Traders Academy</p>
+            <p>Best Stock Market Institute in Banglore</p>
           </div>
         </div>
       </div>

@@ -176,3 +176,60 @@
     transform: translateX(-50%);
   }
 }
+.youtubeSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background: #0f172a; /* dark background */
+}
+
+.youtubeCard {
+  background: linear-gradient(135deg, #1e293b, #020617);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease;
+}
+
+.youtubeCard:hover {
+  transform: translateY(-8px);
+}
+
+.youtubeIcon {
+  font-size: 50px;
+  margin-bottom: 15px;
+  color: #ff0000;
+}
+
+.youtubeCard h2 {
+  font-size: 26px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.youtubeCard p {
+  font-size: 15px;
+  color: #cbd5f5;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.youtubeBtn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #ff0000;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.youtubeBtn:hover {
+  background: #e60000;
+  transform: scale(1.05);
+}
