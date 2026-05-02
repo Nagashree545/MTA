@@ -28,10 +28,10 @@ export default function Footer() {
         {/* COURSES */}
         <div className={styles.col}>
           <h3>Courses</h3>
-          <Link to="/courses">Master Trader</Link>
-          <Link to="/courses">Masterclass</Link>
+          <Link to="/mastertrader">Master Trader</Link>
+          <Link to="/masterclass">Masterclass</Link>
           <Link to="/courses">Option Hunter</Link>
-          <Link to="/courses">The Big Bull</Link>
+          <Link to="/thebigbull">The Big Bull</Link>
         </div>
 
         {/* LINKS */}

@@ -1,0 +1,221 @@
+/* ================= GLOBAL ================= */
+.page {
+  font-family: "Poppins", sans-serif;
+  background: #f5f7ff;
+  color: #111;
+  overflow-x: hidden;
+}
+
+/* ================= HERO ================= */
+.hero {
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  background: radial-gradient(circle at top, #0b1220, #020617);
+  overflow: hidden;
+  padding: 40px 20px;
+}
+
+/* glow effect */
+.overlay {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(250,204,21,0.25), transparent);
+  filter: blur(60px);
+  top: -120px;
+  left: -120px;
+  animation: float 7s ease-in-out infinite alternate;
+}
+
+/* HERO TEXT */
+.heroContent {
+  max-width: 800px;
+  z-index: 2;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 46px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: -0.5px;
+}
+
+.hero span {
+  color: #facc15;
+}
+
+.hero p {
+  font-size: 15px;
+  opacity: 0.78;
+  max-width: 600px;
+  margin: 0 auto 18px;
+}
+
+/* BUTTON */
+.ctaBtn {
+  padding: 12px 26px;
+  background: linear-gradient(135deg, #facc15, #f59e0b);
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.ctaBtn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(250,204,21,0.25);
+}
+
+/* ================= INFO STRIP ================= */
+.infoBar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(12px);
+
+  width: fit-content;
+  margin: -25px auto 0;
+  padding: 14px 18px;
+  border-radius: 16px;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+.infoBar div {
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.infoBar div:hover {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+/* ================= SECTION ================= */
+.section {
+  padding: 55px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 28px;
+  margin-bottom: 12px;
+  letter-spacing: -0.3px;
+}
+
+/* ================= BULLET BOX ================= */
+.bulletBox {
+  max-width: 650px;
+  margin: 20px auto 0;
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.bulletBox div {
+  padding: 8px 0;
+  font-size: 14px;
+}
+
+/* ================= DARK SECTION ================= */
+.sectionDark {
+  padding: 60px 20px;
+  background: #eef2ff;
+  text-align: center;
+}
+
+/* ================= GRID ================= */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 20px;
+}
+
+/* ================= CARD ================= */
+.card {
+  background: white;
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.04);
+  transition: 0.25s;
+  font-size: 14px;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: #facc15;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+}
+
+/* ================= APP ================= */
+.app {
+  background: white;
+  text-align: center;
+  padding: 40px 20px;
+  margin: 40px auto;
+  max-width: 850px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.05);
+}
+
+.phone {
+  margin-top: 8px;
+  font-weight: 600;
+  color: #f59e0b;
+}
+
+/* ================= CTA ================= */
+.cta {
+  background: #0b1220;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 25px 25px 0 0;
+}
+
+/* ================= ANIMATION ================= */
+@keyframes float {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(50px, 40px);
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .infoBar {
+    flex-direction: column;
+  }
+}

@@ -83,56 +83,47 @@ export default function Navigation() {
                 Courses
               </Link>
             </li> */}
-            <li className={styles.dropdown}>
+         <li className={styles.dropdown}>
 
-              {/* Click goes to /courses */}
-              <li className={styles.dropdown}>
+  {/* Header */}
+  <div className={styles.dropdownHeader} onClick={toggleCourses}>
+    <Link to="/courses" onClick={closeMenu}>
+      Courses
+    </Link>
+    <span className={`${styles.arrow} ${courseOpen ? styles.rotate : ""}`}>
+      ▾
+    </span>
+  </div>
 
-                {/* Clickable row */}
-                <div className={styles.dropdownHeader} onClick={toggleCourses}>
-                  <Link to="/courses" onClick={closeMenu}>
-                    Courses
-                  </Link>
-                  <span className={`${styles.arrow} ${courseOpen ? styles.rotate : ""}`}>
-                    ▾
-                  </span>
-                </div>
+  {/* Dropdown */}
+  <ul className={`${styles.dropdownMenu} ${courseOpen ? styles.show : ""}`}>
+    <li>
+      <Link to="mastertrader" onClick={closeMenu}>
+        Master Trader
+      </Link>
+    </li>
 
-                {/* Dropdown items */}
-                <ul className={`${styles.dropdownMenu} ${courseOpen ? styles.show : ""}`}>
-                  <li><Link to="/courses/master-trader" onClick={closeMenu}>Master Trader</Link></li>
-                  <li><Link to="/courses/masterclass" onClick={closeMenu}>MasterClass</Link></li>
-                  <li><Link to="/courses/option-hunter" onClick={closeMenu}>Option Hunter</Link></li>
-                  <li><Link to="/courses/bigbull" onClick={closeMenu}>The BigBull</Link></li>
-                </ul>
+    <li>
+      <Link to="/masterclass" onClick={closeMenu}>
+        MasterClass
+      </Link>
+    </li>
 
-              </li>
+    <li>
+      <Link to="/courses/option-hunter" onClick={closeMenu}>
+        Option Hunter
+      </Link>
+    </li>
 
-              {/* Dropdown */}
-              <ul className={styles.dropdownMenu}>
-                <li>
-                  <Link to="/courses/master-trader" onClick={closeMenu}>
-                    Master Trader
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/courses/masterclass" onClick={closeMenu}>
-                    MasterClass
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/courses/option-hunter" onClick={closeMenu}>
-                    Option Hunter
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/courses/bigbull" onClick={closeMenu}>
-                    The BigBull
-                  </Link>
-                </li>
-              </ul>
+    <li>
+      <Link to="/thebigbull" onClick={closeMenu}>
+        The BigBull
+      </Link>
+    </li>
+  </ul>
 
-            </li>
+</li>
+
 
             <li>
               <Link to="/resources" onClick={closeMenu} className={isActive("/resources")}>

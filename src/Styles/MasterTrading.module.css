@@ -1,0 +1,243 @@
+.page {
+  font-family: "Poppins", sans-serif;
+  background: #f6f8fb;
+  color: #1a1a1a;
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* animated glow */
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(212,175,55,0.25), transparent);
+  top: -120px;
+  right: -120px;
+  animation: floatGlow 6s ease-in-out infinite;
+}
+
+@keyframes floatGlow {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(20px); }
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(212,175,55,0.15);
+  color: #D4AF37;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-bottom: 18px;
+  letter-spacing: 0.5px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.hero span {
+  color: #D4AF37;
+}
+
+.hero p {
+  max-width: 620px;
+  margin: auto;
+  opacity: 0.85;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* BUTTON */
+.ctaBtn {
+  margin-top: 28px;
+  background: linear-gradient(135deg, #D4AF37, #f0c94d);
+  color: #000;
+  padding: 13px 32px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ctaBtn:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(212,175,55,0.4);
+}
+
+/* ===== SECTION ===== */
+.section {
+  padding: 30px 10%;
+  text-align: center;
+}
+
+.lightSection {
+  padding: 70px 10%;
+  background: #ffffff;
+  text-align: center;
+}
+
+/* ===== GRID ===== */
+.grid4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: 10px;
+}
+
+/* PREMIUM CARD */
+.card {
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(10px);
+  padding: 28px;
+  border-radius: 14px;
+  border: 1px solid rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+.card h4 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.note {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* ===== TEXT ===== */
+.centerText {
+  max-width: 750px;
+  margin: 15px auto;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* ===== CURRICULUM ===== */
+.curriculumGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-top: 15px;
+}
+
+.curriculumCard {
+  background: #fff;
+  padding: 22px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* accent line */
+.curriculumCard::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background: linear-gradient(#D4AF37, #f0c94d);
+}
+
+.curriculumCard:hover {
+  transform: translateX(6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+/* ===== OUTCOMES ===== */
+.outcomes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.outcomes span {
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.outcomes span:hover {
+  background: #D4AF37;
+  color: #000;
+  transform: scale(1.05);
+}
+
+/* ===== CTA ===== */
+.cta {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #fff;
+  text-align: center;
+  padding: 90px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* subtle CTA glow */
+.cta::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(212,175,55,0.2), transparent);
+  bottom: -120px;
+  left: -120px;
+}
+
+.cta h2 {
+  margin-bottom: 12px;
+  font-size: 32px;
+}
+
+.cta p {
+  opacity: 0.8;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .grid4 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .curriculumGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid4 {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+}

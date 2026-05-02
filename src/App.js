@@ -13,6 +13,9 @@ import RefundPolicy from './Components/RefundPolicy';
 import TermsAndConditions from './Components/TermsAndCondition';
 import ScrollToTop from './Components/ScrollToTop';
 import Resources from './Components/Resourcespage';
+import MAsterClass from './Components/MasterClass';
+import MasterTrading from './Components/MasterTrading';
+import BigBull from './Components/TheBigBull';
 
 function App() {
   return (
@@ -29,6 +32,9 @@ function App() {
         <Route path="/refundpolicy" element={<RefundPolicy/>}/>
         <Route path='/termsandcondition' element={<TermsAndConditions/>}/>
         <Route path='/resources' element={<Resources/>}/>
+        <Route path='/masterclass' element={<MAsterClass/>}/>
+        <Route path='/mastertrader' element={<MasterTrading/>}/>
+        <Route path='/thebigbull' element={<BigBull/>}/>
 
       </Routes>
       <Footer/>

@@ -1,0 +1,367 @@
+:root {
+  --primary-gold: #D4AF37;
+  --accent-gold: #E8C547;
+  --dark-bg: #0f0f0f;
+  --light-bg: #f8f6f1;
+  --card-bg: rgba(255, 255, 255, 0.7);
+  --text-dark: #1a1a1a;
+  --text-light: #ffffff;
+}
+
+/* 🌍 PAGE */
+.page {
+  font-family: "Poppins", sans-serif;
+  background: var(--light-bg);
+  color: var(--text-dark);
+  overflow-x: hidden;
+}
+
+/* 🔥 HERO */
+.hero {
+  background: radial-gradient(circle at top, #1f1f1f, #0f0f0f);
+  padding: 110px 20px;
+  text-align: center;
+  color: var(--text-light);
+}
+
+.hero h1 {
+  font-size: 44px;
+  margin-bottom: 15px;
+  animation: fadeUp 1s ease;
+}
+
+.hero span {
+  color: var(--primary-gold);
+}
+
+.hero p {
+  max-width: 600px;
+  margin: auto;
+  opacity: 0.8;
+  animation: fadeUp 1.2s ease;
+}
+
+/* 🎯 BUTTON */
+.ctaBtn {
+  margin-top: 25px;
+  padding: 12px 32px;
+  border-radius: 30px;
+  border: none;
+  background: var(--primary-gold);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ctaBtn:hover {
+  background: var(--accent-gold);
+  transform: translateY(-4px) scale(1.05);
+}
+
+/* 📊 INFO STRIP */
+.info {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 18px;
+  background: white;
+  border-radius: 12px;
+  margin: -30px auto 40px;
+  width: fit-content;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  flex-wrap: wrap;
+  animation: fadeUp 1s ease;
+}
+
+/* 💎 SECTION */
+.section {
+  max-width: 750px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.section h2 {
+  margin-bottom: 12px;
+}
+
+/* ===== FEATURES SECTION ===== */
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 60px 8%;
+  background: var(--light-bg);
+}
+
+.feature {
+  background: white;
+  padding: 30px 25px;
+  border-radius: 16px;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* gold top line animation */
+.feature::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 0%;
+  background: var(--primary-gold);
+  transition: 0.4s;
+}
+
+.feature:hover::before {
+  width: 100%;
+}
+
+.feature:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.feature h3 {
+  font-size: 20px;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+}
+
+.feature p {
+  color: #555;
+  font-size: 14px;
+}
+
+
+/* ===== PROGRAM SECTION ===== */
+.program {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 60px 8%;
+  background: linear-gradient(to bottom, #ffffff, #f9f9f9);
+}
+
+/* CARD STYLE */
+.programBox {
+  background: white;
+  border-radius: 18px;
+  padding: 30px;
+  border: 1px solid rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* subtle glow effect */
+.programBox::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(212,175,55,0.08), transparent 70%);
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.programBox:hover::after {
+  opacity: 1;
+}
+
+.programBox:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+}
+
+/* HEADINGS */
+.programBox h3 {
+  color: var(--primary-gold);
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+/* LIST STYLE */
+.programBox ul {
+  padding-left: 0;
+}
+
+.programBox li {
+  list-style: none;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #444;
+  position: relative;
+  padding-left: 20px;
+}
+
+/* custom bullet */
+.programBox li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: var(--primary-green);
+  font-size: 12px;
+}
+
+/* PARAGRAPH */
+.programBox p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .program {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* 🚀 CTA */
+.cta {
+  background: linear-gradient(135deg, #0f0f0f, #000);
+  color: white;
+  text-align: center;
+  padding: 90px 20px;
+}
+
+.cta h2 {
+  margin-bottom: 10px;
+}
+
+.cta p {
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+
+/* ✨ ANIMATION */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .program {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .info {
+    width: 90%;
+    gap: 10px;
+    font-size: 13px;
+  }
+}
+
+/* 💎 ABOUT SECTION */
+.aboutSection {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* 🔥 MAIN CARD */
+.aboutCard {
+  max-width: 800px;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  position: relative;
+  transition: 0.3s ease;
+}
+
+/* ✨ SUBTLE GLOW BORDER */
+.aboutCard::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 1px;
+  background: linear-gradient(120deg, transparent, var(--primary-gold), transparent);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  pointer-events: none;
+}
+
+.aboutCard:hover {
+  transform: translateY(-6px);
+}
+
+/* 🔤 TEXT */
+.aboutCard h2 {
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.aboutText {
+  margin-bottom: 12px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* 🔥 POINTS GRID */
+.aboutPoints {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.aboutPoints div {
+  background: #f8f6f1;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.aboutPoints div:hover {
+  background: var(--primary-gold);
+  color: white;
+  transform: scale(1.05);
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+  .aboutCard {
+    padding: 25px;
+  }
+
+  .aboutPoints {
+    flex-direction: column;
+    align-items: center;
+  }
+}
