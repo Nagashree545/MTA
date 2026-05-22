@@ -222,7 +222,7 @@ export default function MasterTrader() {
 
             <h2>
               What You Will Learn
-              <span> In The Program</span>
+              <span> In This Program</span>
             </h2>
 
           </div>
