@@ -1,0 +1,214 @@
+.blogSection {
+  background-color: var(--light-bg);
+}
+
+/* =========================
+   🔥 DARK BANNER (MAIN FOCUS)
+========================= */
+.banner {
+  width: 100%;
+  height: 360px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* DARK PREMIUM BACKGROUND */
+  background: linear-gradient(
+    135deg,
+    #0a0a0a,
+    var(--dark-bg),
+    #1b1b1b
+  );
+
+  overflow: hidden;
+}
+
+/* glowing gold effect */
+.banner::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: rgba(212, 175, 55, 0.15);
+  border-radius: 50%;
+  filter: blur(120px);
+  animation: glowMove 6s infinite ease-in-out;
+}
+
+/* subtle grid overlay */
+.bannerOverlay {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.03) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  opacity: 0.3;
+}
+
+/* content */
+.bannerContent {
+  text-align: center;
+  z-index: 2;
+  animation: fadeUp 1s ease;
+}
+
+.bannerContent h1 {
+  font-size: 60px;
+  font-weight: 800;
+  color: var(--primary-gold);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-shadow: 0 0 25px rgba(212, 175, 55, 0.3);
+}
+
+.bannerContent p {
+  font-size: 18px;
+  color: var(--accent-gold);
+  margin-top: 10px;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 20px;
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+  animation: fadeUp 1s ease;
+}
+
+.header h2 {
+  font-size: 2.5rem;
+  color: var(--primary-green);
+}
+
+.header p {
+  color: #666;
+  margin-top: 15px;
+}
+
+/* =========================
+   BLOG GRID
+========================= */
+.blogGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* CARD */
+.blogCard {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  transition: 0.4s ease;
+}
+
+.blogCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  border-color: var(--primary-gold);
+}
+
+/* IMAGE */
+.imageArea {
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(
+    135deg,
+    rgba(27, 94, 32, 0.1),
+    rgba(212, 175, 55, 0.1)
+  );
+}
+
+.emoji {
+  font-size: 3.5rem;
+  animation: float 3s infinite ease-in-out;
+}
+
+/* CONTENT */
+.content {
+  padding: 20px;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.category {
+  background: var(--primary-green);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+}
+
+.date {
+  font-size: 12px;
+  color: #999;
+}
+
+.blogCard h3 {
+  margin: 10px 0;
+  color: var(--dark-bg);
+}
+
+.excerpt {
+  font-size: 14px;
+  color: #666;
+}
+
+/* READ MORE */
+.readMore {
+  display: inline-block;
+  margin-top: 15px;
+  color: var(--primary-gold);
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.readMore:hover {
+  transform: translateX(6px);
+  color: var(--accent-gold);
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes glowMove {
+  0% { transform: translate(-80px, -60px); }
+  50% { transform: translate(100px, 80px); }
+  100% { transform: translate(-80px, -60px); }
+}

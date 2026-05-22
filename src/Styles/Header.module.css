@@ -1,0 +1,383 @@
+/* =======================
+   NAVBAR BASE
+======================= */
+.navbar {
+  background: linear-gradient(135deg, #1f1f1f, #2c2c2c);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.4);
+}
+
+/* =======================
+   CONTAINER
+======================= */
+.container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 85px;
+  position: relative;
+}
+
+/* =======================
+   LOGO
+======================= */
+.logo img {
+  height: 60px;
+  border-radius: 10px;
+}
+
+/* =======================
+   CENTER NAVIGATION
+======================= */
+.centerNav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+}
+
+/* =======================
+   NAV LINKS
+======================= */
+.navLinks {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+  align-items: center;
+}
+
+/* LINKS */
+.navLinks li a {
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  text-decoration: none;
+  padding: 6px 2px;
+  position: relative;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+
+/* underline */
+.navLinks li a::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #D4AF37;
+  transition: 0.3s;
+}
+
+.navLinks li a:hover {
+  color: #D4AF37;
+}
+
+.navLinks li a:hover::after {
+  width: 100%;
+}
+
+.activeLink {
+  color: #D4AF37 !important;
+}
+
+/* =======================
+   PHONE
+======================= */
+.phone {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 8px 14px;
+  border-radius: 30px;
+  border: 1.5px solid #D4AF37;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.phone:hover {
+  background: #D4AF37;
+  color: #1f1f1f;
+}
+
+/* =======================
+   MENU BUTTON
+======================= */
+.menuToggle {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menuToggle span {
+  width: 25px;
+  height: 3px;
+  background: #D4AF37;
+}
+
+/* =======================
+   OVERLAY
+======================= */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 900;
+}
+
+/* =======================
+   CLOSE BTN
+======================= */
+.closeBtn {
+  display: none;
+}
+
+/* =======================
+   DROPDOWN
+======================= */
+.dropdown {
+  position: relative;
+}
+
+.dropdownHeader {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.arrow {
+  color: #D4AF37;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  margin: 0;
+  padding: 6px 10px;
+  list-style: none;
+
+  min-width: 220px;
+
+  background: #111;
+  border-radius: 10px;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: 0.25s;
+  z-index: 1000;
+}
+
+/* DESKTOP HOVER */
+.dropdown:hover .dropdownMenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdownMenu li {
+  padding: 0;
+}
+
+.dropdownMenu a {
+  display: block;
+  padding: 12px 14px;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.dropdownMenu a:hover {
+  background: rgba(212, 175, 55, 0.1);
+  color: #D4AF37;
+}
+.fireText {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  color: #ffcc70;
+  font-weight: 800;
+
+  animation: fireGlow 1.8s infinite alternate;
+}
+
+.fireIcon {
+  display: inline-block;
+  animation: flameMove 1s infinite ease-in-out;
+  filter: drop-shadow(0 0 8px rgba(255, 120, 0, 0.9));
+}
+
+@keyframes fireGlow {
+  0% {
+    text-shadow:
+      0 0 5px rgba(255, 140, 0, 0.7),
+      0 0 10px rgba(255, 90, 0, 0.5);
+  }
+
+  100% {
+    text-shadow:
+      0 0 12px rgba(255, 180, 0, 1),
+      0 0 22px rgba(255, 90, 0, 0.9);
+  }
+}
+
+@keyframes flameMove {
+  0% {
+    transform: translateY(0px) scale(1);
+  }
+
+  25% {
+    transform: translateY(-2px) scale(1.08);
+  }
+
+  50% {
+    transform: translateY(1px) scale(0.95);
+  }
+
+  75% {
+    transform: translateY(-1px) scale(1.1);
+  }
+
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+}
+
+/* =======================
+   MOBILE DESIGN
+======================= */
+@media (max-width: 768px) {
+
+  .container {
+    justify-content: space-between;
+padding: 0px 10px;
+
+  }
+
+  /* MENU BUTTON */
+  .menuToggle {
+    display: flex;
+  }
+
+  /* PHONE HIDE */
+  .phone {
+    display: none;
+  }
+
+  /* CLOSE BTN */
+  .closeBtn {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 26px;
+    color: #D4AF37;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* MOBILE NAV */
+  .centerNav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 75%;
+    height: 100vh;
+    background: #2c2c2c;
+    flex-direction: column;
+    padding-top: 80px;
+    transition: 0.3s;
+    z-index: 1000;
+
+    left: auto;
+    transform: none;
+  }
+
+  .centerNav.active {
+    right: 0;
+  }
+
+  .navLinks {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+
+  .navLinks li {
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .navLinks li a {
+    display: block;
+    padding: 16px 22px;
+  }
+
+  /* MOBILE DROPDOWN */
+  .dropdownHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  .dropdownMenu {
+    position: static;
+    background: transparent;
+    border: none;
+
+    max-height: 0;
+    overflow: hidden;
+
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+
+    transition: max-height 0.3s ease;
+  }
+
+  .dropdownMenu.show {
+    max-height: 300px;
+  }
+
+  .dropdownMenu li {
+    border: none;
+  }
+
+  .dropdownMenu a {
+    padding-left: 40px !important;
+    color: #ccc;
+  }
+
+  .dropdownMenu a:hover {
+    background: none;
+    color: #D4AF37;
+  }
+}

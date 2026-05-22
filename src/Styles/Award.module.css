@@ -1,0 +1,235 @@
+.awardSection {
+  padding: 80px 8%;
+  background: #0d1117;
+  color: white;
+}
+
+/* HEADING */
+.heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.heading h2 {
+  font-size: 2.4rem;
+  color: #ffd700;
+}
+
+.heading p {
+  color: #aaa;
+  margin-top: 5px;
+}
+
+/* CARD LAYOUT */
+.card {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  border-radius: 20px;
+  padding: 50px;
+  backdrop-filter: blur(10px);
+
+  /* smooth entry */
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeUp 1s ease forwards;
+}
+
+/* IMAGE (BIGGER) */
+.imageBox {
+  flex: 1.4; /* 👈 bigger than content */
+  position: relative;
+}
+
+.imageBox img {
+  width: 100%;
+  max-width: 500px; /* 👈 bigger image */
+  border-radius: 18px;
+  transition: 0.4s ease;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+
+/* Hover zoom */
+.imageBox:hover img {
+  transform: scale(1.05);
+}
+
+/* Glow */
+.imageBox::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  background: radial-gradient(circle, rgba(255,215,0,0.25), transparent 70%);
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.imageBox:hover::after {
+  opacity: 1;
+}
+
+/* FLOATING BADGE */
+.floatingBadge {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background: linear-gradient(135deg, #ffd700, #ffb300);
+  color: black;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* CONTENT */
+.content {
+  flex: 1;
+}
+
+/* SMALL TAG */
+.badge {
+  display: inline-block;
+  background: rgba(255,215,0,0.15);
+  color: #ffd700;
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  margin-bottom: 12px;
+}
+
+/* TITLE */
+.title {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, #ffd700, transparent);
+  transition: 0.4s;
+}
+
+.card:hover .title::after {
+  width: 120px;
+}
+
+/* TEXT */
+.content p {
+  color: #bbb;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  gap: 40px;
+}
+
+.stats h4 {
+  font-size: 1.6rem;
+  color: #ffd700;
+}
+
+.stats span {
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .card {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .imageBox img {
+    max-width: 100%;
+  }
+
+  .title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.youtubeSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background: #0f172a; /* dark background */
+}
+
+.youtubeCard {
+  background: linear-gradient(135deg, #1e293b, #020617);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease;
+}
+
+.youtubeCard:hover {
+  transform: translateY(-8px);
+}
+
+.youtubeIcon {
+  font-size: 50px;
+  margin-bottom: 15px;
+  color: #ff0000;
+}
+
+.youtubeCard h2 {
+  font-size: 26px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.youtubeCard p {
+  font-size: 15px;
+  color: #cbd5f5;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.youtubeBtn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #ff0000;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.youtubeBtn:hover {
+  background: #e60000;
+  transform: scale(1.05);
+}

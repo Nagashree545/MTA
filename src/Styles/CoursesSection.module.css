@@ -1,0 +1,312 @@
+/* =========================
+   WRAPPER
+========================= */
+.wrapper {
+  background: #f6f8fc;
+}
+
+/* =========================
+   HERO (unchanged feel but clean)
+========================= */
+.hero {
+  width: 100%;
+  height: 320px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+  background: #0b0b0b;
+}
+
+.heroBg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, #0b0b0b, #1b1b1b, #0b0b0b);
+  background-size: 300% 300%;
+  animation: move 8s ease infinite;
+}
+
+@keyframes move {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.heroContent {
+  z-index: 2;
+  color: white;
+}
+
+.badge {
+  padding: 6px 14px;
+  background: rgba(212,175,55,0.15);
+  color: #e8c547;
+  border-radius: 20px;
+  font-size: 12px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.heroContent h1 {
+  font-size: 42px;
+}
+
+.stats {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.stats div {
+  font-size: 12px;
+  padding: 7px 12px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* floating cards */
+.floatCard1,
+.floatCard2 {
+  position: absolute;
+  padding: 10px 14px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(212,175,55,0.2);
+  color: white;
+  border-radius: 12px;
+  animation: float 5s ease-in-out infinite;
+}
+
+.floatCard1 { top: 90px; right: 120px; }
+.floatCard2 { bottom: 90px; right: 180px; }
+
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+/* =========================
+   NEW COURSES GRID (IMPORTANT)
+========================= */
+.courseGrid {
+  max-width: 1100px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+/* TILE DESIGN */
+.courseTile {
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  transition: 0.35s;
+}
+
+.courseTile:hover {
+  transform: translateY(-8px);
+}
+
+/* IMAGE */
+.imageWrap {
+  height: 280px;
+  overflow: hidden;
+}
+
+.imageWrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.courseTile:hover img {
+  transform: scale(1.08);
+}
+
+/* CONTENT */
+.content {
+  padding: 18px;
+}
+
+.content h2 {
+  color: #1b5e20;
+  font-size: 20px;
+}
+
+.content p {
+  color: #555;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+/* TAGS */
+.tagRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.tagRow span {
+  font-size: 11px;
+  padding: 5px 10px;
+  background: #f1f3f6;
+  border-radius: 20px;
+}
+
+/* BUTTON */
+.readMoreBtn {
+  margin-top: 12px;
+  padding: 10px 16px;
+  border: none;
+  background: linear-gradient(135deg, #1b5e20, #2e7d32);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.readMoreBtn:hover {
+  transform: scale(1.05);
+}
+.sectionBlock {
+  margin-top: 70px;
+  position: relative;
+}
+
+.sectionHeading {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+
+.sectionHeading h1 {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 14px;
+  letter-spacing: 0.3px;
+  position: relative;
+  display: inline-block;
+
+  background: var(--accent-gold);
+
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow:
+    0 2px 8px rgba(212, 175, 55, 0.15);
+}
+
+.sectionHeading h1::after {
+  content: "";
+  width: 85px;
+  height: 3px;
+  border-radius: 20px;
+
+  background: linear-gradient(
+    90deg,
+    var(--primary-gold),
+    var(--accent-gold)
+  );
+
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+}
+
+.sectionHeading p {
+  max-width: 720px;
+  margin: 0px auto 0;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
+
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width: 992px) {
+
+  .sectionHeading h1 {
+    font-size: 30px;
+  }
+
+  .sectionHeading p {
+    font-size: 14px;
+  }
+
+}
+
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .sectionBlock {
+    margin-top: 55px;
+  }
+
+  .sectionHeading {
+    margin-bottom: 32px;
+    padding: 0 15px;
+  }
+
+  .sectionHeading h1 {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  .sectionHeading h1::after {
+    width: 65px;
+  }
+
+  .sectionHeading p {
+    font-size: 13.5px;
+    line-height: 1.7;
+    margin-top: 18px;
+  }
+
+}
+
+
+/* ========================= */
+/* SMALL MOBILE */
+/* ========================= */
+
+@media (max-width: 480px) {
+
+  .sectionHeading h1 {
+    font-size: 20px;
+  }
+
+  .sectionHeading p {
+    font-size: 13px;
+  }
+
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .heroContent h1 {
+    font-size: 28px;
+  }
+
+  .courseGrid {
+    grid-template-columns: 1fr;
+  }
+}
