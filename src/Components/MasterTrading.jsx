@@ -95,10 +95,10 @@ export default function MasterTrader() {
             </h1>
 
             <p className={styles.subtitle}>
-              Master Trader is designed for individuals who want
-              structured stock market education, disciplined learning,
-              and strong market understanding through a professional
-              and confidence-focused environment.
+               The Master Trader Course by Master Traders Academy is specially
+              designed for beginners who want to start their stock market
+              journey from basic to intermediate level with proper clarity
+              and guidance.
             </p>
 
             <div className={styles.keywordBox}>
@@ -182,12 +182,7 @@ export default function MasterTrader() {
 
           <div className={styles.overviewCard}>
 
-            <p>
-              The Master Trader Course by Master Traders Academy is specially
-              designed for beginners who want to start their stock market
-              journey from basic to intermediate level with proper clarity
-              and guidance.
-            </p>
+          
 
             <p>
               This course is ideal for individuals who want to understand
