@@ -162,46 +162,7 @@ export default function MasterTrader() {
       </section>
 
 
-      {/* ABOUT SECTION */}
-      <section className={styles.aboutSection}>
-
-        <div className={styles.sectionContainer}>
-
-          <div className={styles.sectionHeading}>
-
-            <p>ABOUT MASTER TRADER</p>
-
-            <h2>
-              Learn Stock Market Concepts With Confidence
-            </h2>
-
-          </div>
-
-          <div className={styles.aboutGrid}>
-
-            {features.map((item, index) => (
-              <div
-                key={index}
-                className={styles.aboutCard}
-              >
-
-                <div className={styles.aboutIcon}>
-                  {item.icon}
-                </div>
-
-                <h3>{item.title}</h3>
-
-                <p>{item.desc}</p>
-
-              </div>
-            ))}
-
-          </div>
-
-        </div>
-
-      </section>
-
+   
 
       {/* COURSE OVERVIEW */}
       <section className={styles.courseOverviewSection}>
@@ -362,6 +323,45 @@ export default function MasterTrader() {
 
       </section>
 
+   {/* ABOUT SECTION */}
+      <section className={styles.aboutSection}>
+
+        <div className={styles.sectionContainer}>
+
+          <div className={styles.sectionHeading}>
+
+            <p>ABOUT MASTER TRADER</p>
+
+            <h2>
+              Learn Stock Market Concepts With Confidence
+            </h2>
+
+          </div>
+
+          <div className={styles.aboutGrid}>
+
+            {features.map((item, index) => (
+              <div
+                key={index}
+                className={styles.aboutCard}
+              >
+
+                <div className={styles.aboutIcon}>
+                  {item.icon}
+                </div>
+
+                <h3>{item.title}</h3>
+
+                <p>{item.desc}</p>
+
+              </div>
+            ))}
+
+          </div>
+
+        </div>
+
+      </section>
 
       {/* PRICE SECTION */}
       <section
