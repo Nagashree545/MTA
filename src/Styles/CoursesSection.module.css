@@ -108,7 +108,7 @@
 }
 
 .courseTile:hover {
-  transform: translateY(-8px);
+  transform: translateY(-8px) ;
 }
 
 /* IMAGE */
