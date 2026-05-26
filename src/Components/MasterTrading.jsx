@@ -37,39 +37,51 @@ export default function MasterTrader() {
     {
       icon: "📚",
       badge: "Beginner Friendly",
-      title: "Course Duration & Structure",
-      desc: "Structured learning program with 3 days of theory sessions and 2 months of support for implementation and market understanding.",
+      title: "Course Duration & Learning Structure",
+      desc: "Structured learning program with 3 days of theory sessions and 2 months of support for better understanding and implementation.",
     },
     {
       icon: "🚀",
       badge: "No Experience Needed",
       title: "Learn From Scratch",
-      desc: "No prior stock market knowledge is required. This course is specially designed for beginners.",
+      desc: "No prior stock market knowledge is required to start this course.",
     },
     {
       icon: "📈",
       badge: "Market Reading",
       title: "Price Action & Candle Science",
-      desc: "Learn support, resistance, trend reading, candle science, and swing trading concepts practically.",
+      desc: "Understand support, resistance, trends, candle science, and swing logic for practical market reading.",
     },
     {
       icon: "💹",
       badge: "Derivatives Basics",
       title: "Futures & Options Basics",
-      desc: "Understand futures trading, options trading, and derivatives market basics in a simple way.",
+      desc: "Get a beginner-friendly understanding of the derivatives market, futures trading, and options trading.",
     },
     {
       icon: "🎯",
       badge: "Strategic Learning",
       title: "Option Chain & Greeks",
-      desc: "Learn premium, Greeks, moneyness, CE/PE concepts, and option chain analysis clearly.",
+      desc: "Learn important concepts like premium, Greeks, moneyness, CE/PE, and option chain analysis for better decision-making.",
     },
     {
       icon: "🛡️",
       badge: "Capital Protection",
       title: "Hedging & Risk Management",
-      desc: "Build understanding of hedging strategies and disciplined risk management techniques.",
+      desc: "Understand the basics of hedging and methods to manage risk during market fluctuations.",
     },
+    {
+    icon: "⚡",
+    badge: "Execution Skills",
+    title: "Trade Execution Logic",
+    desc: "Learn entry, exit, averaging, and trade execution methods for better confidence in trading.",
+  },
+  {
+    icon: "🧠",
+    badge: "Mindset Building",
+    title: "Trading Psychology & Practical Support",
+    desc: "Develop trading discipline, emotional control, and confidence while receiving practical support to improve learning outcomes.",
+  },
   ];
 
   return (
@@ -96,31 +108,18 @@ export default function MasterTrader() {
             </h1>
 
             <p className={styles.subtitle}>
-              The Master Trader Course by Master Traders Academy is specially
-              designed for beginners who want to start their stock market
-              journey from basic to intermediate level with proper clarity
-              and guidance.
+              The Master Trader Course by Master Traders Academy is specially designed for beginners who want to start their stock market journey from basic to intermediate level with proper clarity and guidance. This course is ideal for individuals who want to understand the stock market in a simple and practical way before committing to advanced-level learning.
             </p>
 
             <p className={styles.subtitle}>
-              This course is ideal for individuals who want to understand
-              the stock market in a simple and practical way before moving
-              toward advanced-level learning and market participation.
+              It is especially suitable for people who may not be sure about continuing advanced learning in the future due to timing constraints, job commitments, business responsibilities, or capital limitations. The course helps learners build a strong foundation by covering all major stock market concepts including price action, swing trading, investing, futures & options, hedging, and trading psychology.
             </p>
 
             <p className={styles.subtitle}>
-              It is especially suitable for people who may not be sure about
-              continuing advanced learning in the future due to timing
-              constraints, job commitments, business responsibilities,
-              or capital limitations.
+              Once learners gain confidence, clarity, and practical understanding of the market, they can later upgrade to advanced programs for deeper mastery and specialized strategies. The course is structured to make learning simple, practical and beginner-friendly
             </p>
 
-            <p className={styles.subtitle}>
-              The course helps learners build a strong foundation by covering
-              all major stock market concepts including price action,
-              swing trading, investing, futures & options, hedging,
-              and trading psychology.
-            </p>
+          
 
             {/* KEYWORDS */}
             <div className={styles.keywordBox}>
@@ -193,7 +192,7 @@ export default function MasterTrader() {
 
 
 
-   
+
 
 
 
@@ -207,7 +206,7 @@ export default function MasterTrader() {
             <p>IMPORTANT HIGHLIGHTS</p>
 
             <h2>
-              What You Will Learn
+             What You’ll Learn 
               <span> In This Program</span>
             </h2>
 
@@ -254,58 +253,58 @@ export default function MasterTrader() {
 
 
       {/* EXPERIENCE SECTION */}
-    <section className={styles.cleanExperienceSection}>
+      <section className={styles.cleanExperienceSection}>
 
-  <div className={styles.sectionContainer}>
+        <div className={styles.sectionContainer}>
 
-    {/* HEADING */}
-    <div className={styles.cleanHeading}>
+          {/* HEADING */}
+          <div className={styles.cleanHeading}>
 
-      <p className={styles.cleanTag}>
-        WHY MASTER TRADER
-      </p>
+            <p className={styles.cleanTag}>
+              WHY MASTER TRADER
+            </p>
 
-      <h2>
-        Learn The Market With
-        <span> Confidence & Clarity</span>
-      </h2>
+            <h2>
+              Learn The Market With
+              <span> Confidence & Clarity</span>
+            </h2>
 
-      <p className={styles.cleanText}>
-        A beginner-friendly stock market program focused on
-        practical learning, discipline, and market understanding.
-      </p>
+            <p className={styles.cleanText}>
+              A beginner-friendly stock market program focused on
+              practical learning, discipline, and market understanding.
+            </p>
 
-    </div>
-
-    {/* CARDS */}
-    <div className={styles.cleanGrid}>
-
-      {benefits.map((item, index) => (
-
-        <div
-          key={index}
-          className={styles.cleanCard}
-        >
-
-          <div className={styles.cleanIcon}>
-            ✔
           </div>
 
-          <h3>
-            {item}
-          </h3>
+          {/* CARDS */}
+          <div className={styles.cleanGrid}>
+
+            {benefits.map((item, index) => (
+
+              <div
+                key={index}
+                className={styles.cleanCard}
+              >
+
+                <div className={styles.cleanIcon}>
+                  ✔
+                </div>
+
+                <h3>
+                  {item}
+                </h3>
+
+              </div>
+
+            ))}
+
+          </div>
 
         </div>
 
-      ))}
+      </section>
 
-    </div>
-
-  </div>
-
-</section>
-
-   {/* ABOUT SECTION */}
+      {/* ABOUT SECTION */}
       <section className={styles.aboutSection}>
 
         <div className={styles.sectionContainer}>
@@ -351,56 +350,56 @@ export default function MasterTrader() {
         className={styles.priceSection}
       >
 
-       <section className={styles.masterPriceSection}>
+        <section className={styles.masterPriceSection}>
 
-  <div className={styles.masterPriceContainer}>
+          <div className={styles.masterPriceContainer}>
 
-    <div className={styles.masterPriceCard}>
+            <div className={styles.masterPriceCard}>
 
-      {/* LEFT */}
-      <div className={styles.masterPriceLeft}>
+              {/* LEFT */}
+              <div className={styles.masterPriceLeft}>
 
-        <p className={styles.masterPriceTag}>
-          ONLINE & OFFLINE LEARNING
-        </p>
+                <p className={styles.masterPriceTag}>
+                  ONLINE & OFFLINE LEARNING
+                </p>
 
-        <h2 className={styles.masterPriceTitle}>
-          Join Master Trader Program
-        </h2>
+                <h2 className={styles.masterPriceTitle}>
+                  Join Master Trader Program
+                </h2>
 
-        <p className={styles.masterPriceDesc}>
-          Flexible learning options with practical market education,
-          beginner-friendly guidance, and structured mentorship support.
-        </p>
+                <p className={styles.masterPriceDesc}>
+                  Flexible learning options with practical market education,
+                  beginner-friendly guidance, and structured mentorship support.
+                </p>
 
-      </div>
+              </div>
 
-      {/* RIGHT */}
-      <div className={styles.masterPriceRight}>
+              {/* RIGHT */}
+              <div className={styles.masterPriceRight}>
 
-        <div className={styles.masterOldPrice}>
-          ₹5000
-        </div>
+                <div className={styles.masterOldPrice}>
+                  ₹5000
+                </div>
 
-        <div className={styles.masterNewPrice}>
-          ₹2999
-        </div>
+                <div className={styles.masterNewPrice}>
+                  ₹2999
+                </div>
 
-        <Link
-          to="/contactpage"
-          className={styles.masterEnrollBtn}
-        >
-          Enroll Now
-        </Link>
+                <Link
+                  to="/contactpage"
+                  className={styles.masterEnrollBtn}
+                >
+                  Enroll Now
+                </Link>
 
-      </div>
-      
+              </div>
 
-    </div>
 
-  </div>
+            </div>
 
-</section>
+          </div>
+
+        </section>
 
       </section>
 
