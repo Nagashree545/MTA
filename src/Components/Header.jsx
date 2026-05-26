@@ -97,7 +97,7 @@ export default function Navigation() {
 
                 <li>
                   <Link
-                    to="/courses/option-hunter"
+                    to="/optionmastery"
                     onClick={closeMenu}
                   >
                     Option Mastery
