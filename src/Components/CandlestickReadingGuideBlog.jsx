@@ -4,31 +4,31 @@ import { Link } from "react-router-dom";
 
 import styles from "../Styles/BlogDetails.module.css";
 
-export default function TradingMistakesBlog() {
+export default function CandlestickReadingGuide() {
 
   return (
 
     <>
-    
+
       <Helmet>
 
         <title>
-          5 Trading Mistakes Beginners Make | Master Traders Academy
+          Candlestick Reading Guide | Master Traders Academy
         </title>
 
         <meta
           name="description"
-          content="Learn the 5 most common trading mistakes beginners make in the stock market and discover how proper risk management and discipline can improve trading consistency."
+          content="Learn candlestick patterns like doji, hammer, engulfing, and pin bar formations to improve technical analysis and market trend identification."
         />
 
         <meta
           name="keywords"
-          content="Trading Mistakes, Beginner Trading Mistakes, Stock Market Learning, Trading Psychology, Risk Management"
+          content="Candlestick Patterns, Candlestick Analysis, Doji Pattern, Hammer Candlestick, Engulfing Pattern, Technical Analysis, Price Action Trading"
         />
 
         <link
           rel="canonical"
-          href="https://mastertradersacademy.in/blog/5tradingmistake"
+          href="https://mastertradersacademy.in/blog/candlestickreadingblog"
         />
 
       </Helmet>
@@ -37,7 +37,7 @@ export default function TradingMistakesBlog() {
       <section className={styles.blogDetails}>
 
 
-        {/* HERO */}
+        {/* HERO SECTION */}
 
         <div className={styles.heroSection}>
 
@@ -46,27 +46,27 @@ export default function TradingMistakesBlog() {
           <div className={styles.heroContent}>
 
             <span className={styles.badge}>
-              Trading Psychology
+              Candlestick Analysis
             </span>
 
             <h1>
-              5 Trading Mistakes Beginners Make
+              Candlestick Reading Guide
             </h1>
 
             <p>
-              Learn the most common stock market mistakes beginners make
-              and understand how discipline, patience, and risk management
-              can improve trading consistency.
+              Learn candlestick patterns like doji, hammer, engulfing,
+              and pin bar formations to improve technical analysis
+              and market trend identification.
             </p>
 
             <div className={styles.metaInfo}>
 
               <span>
-                📅 April 15, 2025
+                📅 February 28, 2025
               </span>
 
               <span>
-                ⏱️ 8 Min Read
+                ⏱️ 9 Min Read
               </span>
 
             </div>
@@ -89,14 +89,16 @@ export default function TradingMistakesBlog() {
             <div className={styles.blogContent}>
 
 
+              {/* INTRO */}
+
               <div className={styles.introCard}>
 
                 <p>
-                  Many beginners enter the stock market with excitement,
-                  but without proper knowledge and discipline they often
-                  repeat common trading mistakes. Understanding these mistakes
-                  early can help traders build consistency and improve their
-                  decision-making process.
+                  Candlestick patterns are one of the most important tools
+                  in technical analysis. They help traders understand market
+                  sentiment, price behavior, and potential trend reversals.
+                  Learning candlestick reading can improve decision-making
+                  and market observation skills.
                 </p>
 
               </div>
@@ -113,19 +115,19 @@ export default function TradingMistakesBlog() {
                 <div>
 
                   <h2>
-                    Trading Without A Proper Plan
+                    Understanding Candlesticks
                   </h2>
 
                   <p>
-                    One of the biggest mistakes beginners make is entering
-                    trades without a structured trading plan. Professional
-                    traders always define entry, exit, stop loss, and risk
-                    management rules before taking any position.
+                    A candlestick represents price movement during a
+                    specific time period. It shows the opening price,
+                    closing price, highest price, and lowest price
+                    within that timeframe.
                   </p>
 
                   <p>
-                    A proper trading plan helps reduce emotional decisions
-                    and improves long-term consistency in the stock market.
+                    Candlestick structures help traders identify buying
+                    and selling pressure in the market.
                   </p>
 
                 </div>
@@ -144,18 +146,20 @@ export default function TradingMistakesBlog() {
                 <div>
 
                   <h2>
-                    Ignoring Risk Management
+                    Doji Candlestick Pattern
                   </h2>
 
                   <p>
-                    Many beginners focus only on profits and completely ignore
-                    risk management. Protecting capital is more important than
-                    chasing quick returns in trading.
+                    A doji pattern forms when the opening and closing
+                    prices are very close to each other. It often
+                    represents market indecision between buyers
+                    and sellers.
                   </p>
 
                   <p>
-                    Using stop losses, position sizing, and disciplined risk
-                    control techniques can help traders survive market volatility.
+                    Traders use doji patterns to identify possible
+                    reversals or trend continuation zones depending
+                    on market context.
                   </p>
 
                 </div>
@@ -174,18 +178,19 @@ export default function TradingMistakesBlog() {
                 <div>
 
                   <h2>
-                    Emotional Trading Decisions
+                    Hammer & Pin Bar Formations
                   </h2>
 
                   <p>
-                    Fear and greed are two major emotions that affect trading
-                    performance. Beginners often panic during losses or become
-                    overconfident after profits.
+                    Hammer and pin bar candlestick patterns indicate
+                    rejection from important support or resistance
+                    zones. These patterns are commonly used in
+                    price action trading.
                   </p>
 
                   <p>
-                    Successful traders focus on discipline, patience, and
-                    following their trading system rather than reacting emotionally.
+                    Traders often combine these patterns with trend
+                    analysis and market structure for better confirmation.
                   </p>
 
                 </div>
@@ -204,18 +209,19 @@ export default function TradingMistakesBlog() {
                 <div>
 
                   <h2>
-                    Overtrading The Market
+                    Engulfing Candlestick Pattern
                   </h2>
 
                   <p>
-                    Taking too many trades without quality setups is another
-                    common mistake. Overtrading increases stress, emotional
-                    pressure, and unnecessary losses.
+                    An engulfing pattern occurs when one candlestick
+                    completely covers the previous candle body.
+                    Bullish and bearish engulfing patterns can
+                    signal momentum shifts in the market.
                   </p>
 
                   <p>
-                    Traders should focus on high-probability opportunities
-                    instead of trading continuously throughout the day.
+                    These patterns are useful for identifying
+                    potential trend reversals and breakout opportunities.
                   </p>
 
                 </div>
@@ -234,18 +240,19 @@ export default function TradingMistakesBlog() {
                 <div>
 
                   <h2>
-                    Lack Of Trading Education
+                    Combining Candlestick Patterns With Price Action
                   </h2>
 
                   <p>
-                    Entering the stock market without learning technical
-                    analysis, price action, and market psychology can lead
-                    to inconsistent results.
+                    Candlestick patterns become more effective when
+                    combined with support resistance zones, trend
+                    analysis, and volume observation.
                   </p>
 
                   <p>
-                    Continuous learning and structured education help traders
-                    understand market behavior and improve decision-making skills.
+                    Professional traders focus on overall market
+                    structure instead of relying on a single
+                    candlestick pattern alone.
                   </p>
 
                 </div>
@@ -262,14 +269,17 @@ export default function TradingMistakesBlog() {
                 </h2>
 
                 <p>
-                  Every successful trader was once a beginner. The key is to
-                  avoid repeating common mistakes and focus on discipline,
-                  patience, risk management, and continuous learning.
+                  Candlestick reading is an essential skill for
+                  traders interested in technical analysis and
+                  price action trading. Understanding these
+                  formations can improve market awareness and
+                  trade planning.
                 </p>
 
                 <p>
-                  With proper stock market education and structured practice,
-                  beginners can gradually improve confidence and trading consistency.
+                  With consistent practice and proper guidance,
+                  traders can use candlestick patterns to identify
+                  high-probability trading opportunities more effectively.
                 </p>
 
               </div>
@@ -280,13 +290,14 @@ export default function TradingMistakesBlog() {
               <div className={styles.ctaBox}>
 
                 <h3>
-                  Want To Learn Trading Professionally?
+                  Learn Technical Analysis Professionally
                 </h3>
 
                 <p>
-                  Join Master Traders Academy and learn stock market concepts,
-                  technical analysis, futures & options, and trading psychology
-                  with structured guidance.
+                  Join Master Traders Academy and learn candlestick
+                  analysis, price action, intraday trading,
+                  futures & options, and practical stock market
+                  concepts with structured guidance.
                 </p>
 
                 <Link
@@ -315,11 +326,11 @@ export default function TradingMistakesBlog() {
                 <ul>
 
                   <li>
-                    Risk Management Basics
+                    Price Action Trading
                   </li>
 
                   <li>
-                    Trading Psychology
+                    Support & Resistance
                   </li>
 
                   <li>
@@ -331,7 +342,7 @@ export default function TradingMistakesBlog() {
                   </li>
 
                   <li>
-                    Price Action Strategies
+                    Trading Psychology
                   </li>
 
                 </ul>
@@ -347,11 +358,11 @@ export default function TradingMistakesBlog() {
 
                 <div className={styles.tags}>
 
-                  <span>Trading</span>
+                  <span>Candlestick Patterns</span>
                   <span>Technical Analysis</span>
-                  <span>Options</span>
-                  <span>Swing Trading</span>
-                  <span>Risk Management</span>
+                  <span>Price Action</span>
+                  <span>Stock Market</span>
+                  <span>Trading Education</span>
 
                 </div>
 

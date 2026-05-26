@@ -4,31 +4,31 @@ import { Link } from "react-router-dom";
 
 import styles from "../Styles/BlogDetails.module.css";
 
-export default function TradingMistakesBlog() {
+export default function SupportResistanceZones() {
 
   return (
 
     <>
-    
+
       <Helmet>
 
         <title>
-          5 Trading Mistakes Beginners Make | Master Traders Academy
+          Support & Resistance Zones | Master Traders Academy
         </title>
 
         <meta
           name="description"
-          content="Learn the 5 most common trading mistakes beginners make in the stock market and discover how proper risk management and discipline can improve trading consistency."
+          content="Learn how support and resistance zones help traders identify high-probability entry and exit points using price action analysis and market structure."
         />
 
         <meta
           name="keywords"
-          content="Trading Mistakes, Beginner Trading Mistakes, Stock Market Learning, Trading Psychology, Risk Management"
+          content="Support and Resistance, Price Action Trading, Stock Market Learning, Technical Analysis, Trading Zones, Market Structure, Trading Education"
         />
 
         <link
           rel="canonical"
-          href="https://mastertradersacademy.in/blog/5tradingmistake"
+          href="https://mastertradersacademy.in/blog/supportresistanceblog"
         />
 
       </Helmet>
@@ -37,7 +37,7 @@ export default function TradingMistakesBlog() {
       <section className={styles.blogDetails}>
 
 
-        {/* HERO */}
+        {/* HERO SECTION */}
 
         <div className={styles.heroSection}>
 
@@ -46,23 +46,23 @@ export default function TradingMistakesBlog() {
           <div className={styles.heroContent}>
 
             <span className={styles.badge}>
-              Trading Psychology
+              Technical Analysis
             </span>
 
             <h1>
-              5 Trading Mistakes Beginners Make
+              Support & Resistance Zones
             </h1>
 
             <p>
-              Learn the most common stock market mistakes beginners make
-              and understand how discipline, patience, and risk management
-              can improve trading consistency.
+              Learn how support and resistance zones help traders identify
+              high-probability market entry and exit points using price
+              action analysis and market structure.
             </p>
 
             <div className={styles.metaInfo}>
 
               <span>
-                📅 April 15, 2025
+                📅 March 10, 2025
               </span>
 
               <span>
@@ -89,14 +89,16 @@ export default function TradingMistakesBlog() {
             <div className={styles.blogContent}>
 
 
+              {/* INTRO */}
+
               <div className={styles.introCard}>
 
                 <p>
-                  Many beginners enter the stock market with excitement,
-                  but without proper knowledge and discipline they often
-                  repeat common trading mistakes. Understanding these mistakes
-                  early can help traders build consistency and improve their
-                  decision-making process.
+                  Support and resistance zones are among the most important
+                  concepts in technical analysis. These zones help traders
+                  understand market behavior, identify potential reversal
+                  areas, and improve decision-making while trading stocks,
+                  futures, and options.
                 </p>
 
               </div>
@@ -113,19 +115,20 @@ export default function TradingMistakesBlog() {
                 <div>
 
                   <h2>
-                    Trading Without A Proper Plan
+                    What Is Support?
                   </h2>
 
                   <p>
-                    One of the biggest mistakes beginners make is entering
-                    trades without a structured trading plan. Professional
-                    traders always define entry, exit, stop loss, and risk
-                    management rules before taking any position.
+                    Support is a price zone where buying interest becomes
+                    strong enough to prevent the market from falling further.
+                    Traders often observe price bouncing from these areas
+                    multiple times.
                   </p>
 
                   <p>
-                    A proper trading plan helps reduce emotional decisions
-                    and improves long-term consistency in the stock market.
+                    Support zones can help traders identify potential buying
+                    opportunities and improve entry planning during market
+                    pullbacks.
                   </p>
 
                 </div>
@@ -144,18 +147,19 @@ export default function TradingMistakesBlog() {
                 <div>
 
                   <h2>
-                    Ignoring Risk Management
+                    What Is Resistance?
                   </h2>
 
                   <p>
-                    Many beginners focus only on profits and completely ignore
-                    risk management. Protecting capital is more important than
-                    chasing quick returns in trading.
+                    Resistance is a price zone where selling pressure increases
+                    and prevents the market from moving higher. Traders often
+                    use resistance areas to identify possible profit booking
+                    or reversal zones.
                   </p>
 
                   <p>
-                    Using stop losses, position sizing, and disciplined risk
-                    control techniques can help traders survive market volatility.
+                    Understanding resistance levels can help traders avoid
+                    emotional buying near overextended price areas.
                   </p>
 
                 </div>
@@ -174,18 +178,19 @@ export default function TradingMistakesBlog() {
                 <div>
 
                   <h2>
-                    Emotional Trading Decisions
+                    Importance Of Price Action
                   </h2>
 
                   <p>
-                    Fear and greed are two major emotions that affect trading
-                    performance. Beginners often panic during losses or become
-                    overconfident after profits.
+                    Price action analysis helps traders understand how buyers
+                    and sellers behave around support and resistance zones.
+                    Candlestick patterns and market structure provide important
+                    confirmation signals.
                   </p>
 
                   <p>
-                    Successful traders focus on discipline, patience, and
-                    following their trading system rather than reacting emotionally.
+                    Combining support and resistance with price action can
+                    improve trade accuracy and market understanding.
                   </p>
 
                 </div>
@@ -204,18 +209,19 @@ export default function TradingMistakesBlog() {
                 <div>
 
                   <h2>
-                    Overtrading The Market
+                    Breakouts & Fakeouts
                   </h2>
 
                   <p>
-                    Taking too many trades without quality setups is another
-                    common mistake. Overtrading increases stress, emotional
-                    pressure, and unnecessary losses.
+                    Markets sometimes break important support or resistance
+                    zones and continue trending strongly. These are known as
+                    breakouts and can create trading opportunities.
                   </p>
 
                   <p>
-                    Traders should focus on high-probability opportunities
-                    instead of trading continuously throughout the day.
+                    However, traders should also understand fake breakouts,
+                    where price briefly crosses a zone before reversing back
+                    into the original range.
                   </p>
 
                 </div>
@@ -234,18 +240,18 @@ export default function TradingMistakesBlog() {
                 <div>
 
                   <h2>
-                    Lack Of Trading Education
+                    Better Entry & Exit Planning
                   </h2>
 
                   <p>
-                    Entering the stock market without learning technical
-                    analysis, price action, and market psychology can lead
-                    to inconsistent results.
+                    Support and resistance zones help traders improve trade
+                    planning by identifying logical entry, exit, and stop-loss
+                    areas before entering a position.
                   </p>
 
                   <p>
-                    Continuous learning and structured education help traders
-                    understand market behavior and improve decision-making skills.
+                    Professional traders focus on disciplined execution and
+                    risk management rather than emotional decision-making.
                   </p>
 
                 </div>
@@ -262,14 +268,16 @@ export default function TradingMistakesBlog() {
                 </h2>
 
                 <p>
-                  Every successful trader was once a beginner. The key is to
-                  avoid repeating common mistakes and focus on discipline,
-                  patience, risk management, and continuous learning.
+                  Support and resistance zones are essential tools in stock
+                  market trading and technical analysis. Understanding these
+                  concepts can help traders improve market reading skills,
+                  confidence, and trade execution.
                 </p>
 
                 <p>
-                  With proper stock market education and structured practice,
-                  beginners can gradually improve confidence and trading consistency.
+                  With consistent practice and proper learning, traders can
+                  use support and resistance effectively to identify
+                  high-probability trading opportunities.
                 </p>
 
               </div>
@@ -280,13 +288,13 @@ export default function TradingMistakesBlog() {
               <div className={styles.ctaBox}>
 
                 <h3>
-                  Want To Learn Trading Professionally?
+                  Learn Technical Analysis Professionally
                 </h3>
 
                 <p>
-                  Join Master Traders Academy and learn stock market concepts,
-                  technical analysis, futures & options, and trading psychology
-                  with structured guidance.
+                  Join Master Traders Academy and learn support resistance,
+                  price action, futures & options, risk management, and
+                  practical stock market concepts with structured guidance.
                 </p>
 
                 <Link
@@ -315,11 +323,7 @@ export default function TradingMistakesBlog() {
                 <ul>
 
                   <li>
-                    Risk Management Basics
-                  </li>
-
-                  <li>
-                    Trading Psychology
+                    Price Action Trading
                   </li>
 
                   <li>
@@ -327,11 +331,15 @@ export default function TradingMistakesBlog() {
                   </li>
 
                   <li>
-                    Intraday Trading
+                    Candlestick Patterns
                   </li>
 
                   <li>
-                    Price Action Strategies
+                    Market Structure
+                  </li>
+
+                  <li>
+                    Risk Management
                   </li>
 
                 </ul>
@@ -347,11 +355,11 @@ export default function TradingMistakesBlog() {
 
                 <div className={styles.tags}>
 
-                  <span>Trading</span>
                   <span>Technical Analysis</span>
-                  <span>Options</span>
-                  <span>Swing Trading</span>
-                  <span>Risk Management</span>
+                  <span>Price Action</span>
+                  <span>Stock Market</span>
+                  <span>Trading Education</span>
+                  <span>Support Resistance</span>
 
                 </div>
 

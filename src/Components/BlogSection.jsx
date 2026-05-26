@@ -32,7 +32,7 @@ export default function MarketcyclesBlog() {
 
     {
       id: 3,
-      slug: "risk-management-strategy",
+      slug: "riskmanagementblog",
       title: "Risk Management Strategy",
       date: "Apr 05, 2025",
       category: "Risk",
@@ -43,7 +43,7 @@ export default function MarketcyclesBlog() {
 
     {
       id: 4,
-      slug: "options-trading-basics",
+      slug: "optiontradingbasicsblog",
       title: "Options Trading Basics",
       date: "Mar 28, 2025",
       category: "Options",
@@ -54,7 +54,7 @@ export default function MarketcyclesBlog() {
 
     {
       id: 5,
-      slug: "technical-analysis-patterns",
+      slug: "technicalanalysisblog",
       title: "Technical Analysis Patterns",
       date: "Mar 20, 2025",
       category: "TA",
@@ -65,7 +65,7 @@ export default function MarketcyclesBlog() {
 
     {
       id: 6,
-      slug: "trader-psychology-mastery",
+      slug: "traderpsychologyblog",
       title: "Trader Psychology Mastery",
       date: "Mar 15, 2025",
       category: "Mindset",
@@ -76,7 +76,7 @@ export default function MarketcyclesBlog() {
 
     {
       id: 7,
-      slug: "support-and-resistance-zones",
+      slug: "supportresistanceblog",
       title: "Support & Resistance Zones",
       date: "Mar 10, 2025",
       category: "Strategy",
@@ -87,7 +87,7 @@ export default function MarketcyclesBlog() {
 
     {
       id: 8,
-      slug: "intraday-trading-setup",
+      slug: "intradaytradingblog",
       title: "Intraday Trading Setup",
       date: "Mar 05, 2025",
       category: "Intraday",
@@ -98,7 +98,7 @@ export default function MarketcyclesBlog() {
 
     {
       id: 9,
-      slug: "candlestick-reading-guide",
+      slug: "candlestickreadingblog",
       title: "Candlestick Reading Guide",
       date: "Feb 28, 2025",
       category: "TA",

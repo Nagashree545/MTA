@@ -4,31 +4,31 @@ import { Link } from "react-router-dom";
 
 import styles from "../Styles/BlogDetails.module.css";
 
-export default function TradingMistakesBlog() {
+export default function IntradayTradingSetup() {
 
   return (
 
     <>
-    
+
       <Helmet>
 
         <title>
-          5 Trading Mistakes Beginners Make | Master Traders Academy
+          Intraday Trading Setup | Master Traders Academy
         </title>
 
         <meta
           name="description"
-          content="Learn the 5 most common trading mistakes beginners make in the stock market and discover how proper risk management and discipline can improve trading consistency."
+          content="Learn beginner-friendly intraday trading setups, market timing strategies, price action concepts, and risk management techniques for day trading in the stock market."
         />
 
         <meta
           name="keywords"
-          content="Trading Mistakes, Beginner Trading Mistakes, Stock Market Learning, Trading Psychology, Risk Management"
+          content="Intraday Trading, Day Trading Setup, Stock Market Trading, Intraday Strategy, Risk Management, Technical Analysis, Trading Education"
         />
 
         <link
           rel="canonical"
-          href="https://mastertradersacademy.in/blog/5tradingmistake"
+          href="https://mastertradersacademy.in/blog/intradaytradingblog"
         />
 
       </Helmet>
@@ -37,7 +37,7 @@ export default function TradingMistakesBlog() {
       <section className={styles.blogDetails}>
 
 
-        {/* HERO */}
+        {/* HERO SECTION */}
 
         <div className={styles.heroSection}>
 
@@ -46,23 +46,23 @@ export default function TradingMistakesBlog() {
           <div className={styles.heroContent}>
 
             <span className={styles.badge}>
-              Trading Psychology
+              Intraday Trading
             </span>
 
             <h1>
-              5 Trading Mistakes Beginners Make
+              Intraday Trading Setup
             </h1>
 
             <p>
-              Learn the most common stock market mistakes beginners make
-              and understand how discipline, patience, and risk management
-              can improve trading consistency.
+              Understand beginner-friendly intraday trading setups,
+              market timing techniques, and risk control methods for
+              day trading in the stock market.
             </p>
 
             <div className={styles.metaInfo}>
 
               <span>
-                📅 April 15, 2025
+                📅 March 05, 2025
               </span>
 
               <span>
@@ -89,14 +89,16 @@ export default function TradingMistakesBlog() {
             <div className={styles.blogContent}>
 
 
+              {/* INTRO */}
+
               <div className={styles.introCard}>
 
                 <p>
-                  Many beginners enter the stock market with excitement,
-                  but without proper knowledge and discipline they often
-                  repeat common trading mistakes. Understanding these mistakes
-                  early can help traders build consistency and improve their
-                  decision-making process.
+                  Intraday trading involves buying and selling stocks
+                  within the same trading day. It requires discipline,
+                  proper market understanding, and risk management.
+                  Beginner traders should focus on structured setups
+                  instead of emotional decision-making.
                 </p>
 
               </div>
@@ -113,19 +115,19 @@ export default function TradingMistakesBlog() {
                 <div>
 
                   <h2>
-                    Trading Without A Proper Plan
+                    Understanding Intraday Trading
                   </h2>
 
                   <p>
-                    One of the biggest mistakes beginners make is entering
-                    trades without a structured trading plan. Professional
-                    traders always define entry, exit, stop loss, and risk
-                    management rules before taking any position.
+                    Intraday trading focuses on capturing short-term
+                    price movements during market hours. Traders enter
+                    and exit positions on the same day without carrying
+                    overnight risk.
                   </p>
 
                   <p>
-                    A proper trading plan helps reduce emotional decisions
-                    and improves long-term consistency in the stock market.
+                    Proper planning and market observation are important
+                    for improving consistency in day trading.
                   </p>
 
                 </div>
@@ -144,18 +146,20 @@ export default function TradingMistakesBlog() {
                 <div>
 
                   <h2>
-                    Ignoring Risk Management
+                    Importance Of Market Timing
                   </h2>
 
                   <p>
-                    Many beginners focus only on profits and completely ignore
-                    risk management. Protecting capital is more important than
-                    chasing quick returns in trading.
+                    Timing plays a major role in intraday trading.
+                    Many professional traders focus on high-volume
+                    market hours when price movement and liquidity
+                    are stronger.
                   </p>
 
                   <p>
-                    Using stop losses, position sizing, and disciplined risk
-                    control techniques can help traders survive market volatility.
+                    Understanding market opening behavior and trend
+                    direction can help traders identify better
+                    opportunities.
                   </p>
 
                 </div>
@@ -174,18 +178,19 @@ export default function TradingMistakesBlog() {
                 <div>
 
                   <h2>
-                    Emotional Trading Decisions
+                    Using Price Action Setups
                   </h2>
 
                   <p>
-                    Fear and greed are two major emotions that affect trading
-                    performance. Beginners often panic during losses or become
-                    overconfident after profits.
+                    Price action analysis helps traders understand
+                    market structure, support resistance zones,
+                    breakouts, and trend continuation setups.
                   </p>
 
                   <p>
-                    Successful traders focus on discipline, patience, and
-                    following their trading system rather than reacting emotionally.
+                    Beginner traders should focus on simple and
+                    high-probability setups rather than using too
+                    many indicators.
                   </p>
 
                 </div>
@@ -204,18 +209,19 @@ export default function TradingMistakesBlog() {
                 <div>
 
                   <h2>
-                    Overtrading The Market
+                    Risk Management In Day Trading
                   </h2>
 
                   <p>
-                    Taking too many trades without quality setups is another
-                    common mistake. Overtrading increases stress, emotional
-                    pressure, and unnecessary losses.
+                    Risk management is essential for protecting
+                    trading capital during volatile market conditions.
+                    Traders should always use stop-loss levels and
+                    proper position sizing.
                   </p>
 
                   <p>
-                    Traders should focus on high-probability opportunities
-                    instead of trading continuously throughout the day.
+                    Avoiding overtrading and emotional decisions
+                    can improve long-term trading discipline.
                   </p>
 
                 </div>
@@ -234,18 +240,19 @@ export default function TradingMistakesBlog() {
                 <div>
 
                   <h2>
-                    Lack Of Trading Education
+                    Building Trading Discipline
                   </h2>
 
                   <p>
-                    Entering the stock market without learning technical
-                    analysis, price action, and market psychology can lead
-                    to inconsistent results.
+                    Successful intraday trading requires patience,
+                    discipline, and consistency. Traders should
+                    focus on following a proper trading plan rather
+                    than chasing quick profits.
                   </p>
 
                   <p>
-                    Continuous learning and structured education help traders
-                    understand market behavior and improve decision-making skills.
+                    Continuous learning and practice can help traders
+                    improve confidence and market understanding over time.
                   </p>
 
                 </div>
@@ -262,14 +269,16 @@ export default function TradingMistakesBlog() {
                 </h2>
 
                 <p>
-                  Every successful trader was once a beginner. The key is to
-                  avoid repeating common mistakes and focus on discipline,
-                  patience, risk management, and continuous learning.
+                  Intraday trading can provide learning opportunities
+                  for traders who focus on discipline, strategy, and
+                  risk management. Understanding price action and
+                  market timing is important for improving trading skills.
                 </p>
 
                 <p>
-                  With proper stock market education and structured practice,
-                  beginners can gradually improve confidence and trading consistency.
+                  Beginner traders should focus on consistency and
+                  structured learning rather than emotional trading
+                  decisions.
                 </p>
 
               </div>
@@ -280,13 +289,13 @@ export default function TradingMistakesBlog() {
               <div className={styles.ctaBox}>
 
                 <h3>
-                  Want To Learn Trading Professionally?
+                  Learn Intraday Trading Professionally
                 </h3>
 
                 <p>
-                  Join Master Traders Academy and learn stock market concepts,
-                  technical analysis, futures & options, and trading psychology
-                  with structured guidance.
+                  Join Master Traders Academy and learn intraday trading,
+                  price action, technical analysis, futures & options,
+                  and practical market concepts with structured guidance.
                 </p>
 
                 <Link
@@ -315,11 +324,11 @@ export default function TradingMistakesBlog() {
                 <ul>
 
                   <li>
-                    Risk Management Basics
+                    Price Action Trading
                   </li>
 
                   <li>
-                    Trading Psychology
+                    Risk Management
                   </li>
 
                   <li>
@@ -327,11 +336,11 @@ export default function TradingMistakesBlog() {
                   </li>
 
                   <li>
-                    Intraday Trading
+                    Support & Resistance
                   </li>
 
                   <li>
-                    Price Action Strategies
+                    Trading Psychology
                   </li>
 
                 </ul>
@@ -347,11 +356,11 @@ export default function TradingMistakesBlog() {
 
                 <div className={styles.tags}>
 
-                  <span>Trading</span>
+                  <span>Intraday Trading</span>
+                  <span>Day Trading</span>
                   <span>Technical Analysis</span>
-                  <span>Options</span>
-                  <span>Swing Trading</span>
-                  <span>Risk Management</span>
+                  <span>Stock Market</span>
+                  <span>Trading Education</span>
 
                 </div>
 

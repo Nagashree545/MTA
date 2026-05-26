@@ -28,7 +28,7 @@ export default function MarketCyclesBlog() {
 
         <link
           rel="canonical"
-          href="https://mastertradersacademy.in/blog/market-cycles-explained-simply"
+          href="https://mastertradersacademy.in/blog/marketcycleblog"
         />
 
       </Helmet>

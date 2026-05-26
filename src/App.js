@@ -19,6 +19,13 @@ import BigBull from './Components/TheBigBull';
 import OptionMastery from './Components/OptionMastery';
 import TradingMistakesBlog from './Components/TradingMistakesBlog';
 import MarketCyclesBlog from './Components/MarketCyclesBlog';
+import RiskManagementStrategy from './Components/RiskManagementStrategy';
+import OptionsTradingBasics from './Components/OptionsTradingBasicsBlog';
+import TechnicalAnalysisPatterns from './Components/TechnicalAnalysisPatternsBlog';
+import TraderPsychologyMastery from './Components/TraderPsychologyMastery';
+import SupportResistanceZones from './Components/SupportResistanceZonesBlog';
+import IntradayTradingSetup from './Components/IntradayTradingSetup';
+import CandlestickReadingGuide from './Components/CandlestickReadingGuideBlog';
 
 function App() {
   return (
@@ -42,6 +49,13 @@ function App() {
         <Route path="/optionmastery" element={<OptionMastery />} />
         <Route path="/blog/5tradingmistake" element={<TradingMistakesBlog/>} />
         <Route path="/blog/marketcycleblog" element={<MarketCyclesBlog/>} />
+        <Route path="/blog/riskmanagementblog" element={<RiskManagementStrategy/>} />
+        <Route path="/blog/optiontradingbasicsblog" element={<OptionsTradingBasics/>} />
+        <Route path="/blog/technicalanalysisblog" element={<TechnicalAnalysisPatterns/>} />
+        <Route path="/blog/traderpsychologyblog" element={<TraderPsychologyMastery/>} />
+        <Route path="/blog/supportresistanceblog" element={<SupportResistanceZones/>} />
+        <Route path="/blog/intradaytradingblog" element={<IntradayTradingSetup/>} />
+        <Route path="/blog/candlestickreadingblog" element={<CandlestickReadingGuide/>} />
       </Routes>
 
       <Footer />
