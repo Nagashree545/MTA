@@ -75,6 +75,7 @@ export default function MasterTrader() {
   return (
     <div className={styles.page}>
 
+
       {/* HERO SECTION */}
       <section className={styles.hero}>
 
@@ -95,12 +96,33 @@ export default function MasterTrader() {
             </h1>
 
             <p className={styles.subtitle}>
-               The Master Trader Course by Master Traders Academy is specially
+              The Master Trader Course by Master Traders Academy is specially
               designed for beginners who want to start their stock market
               journey from basic to intermediate level with proper clarity
               and guidance.
             </p>
 
+            <p className={styles.subtitle}>
+              This course is ideal for individuals who want to understand
+              the stock market in a simple and practical way before moving
+              toward advanced-level learning and market participation.
+            </p>
+
+            <p className={styles.subtitle}>
+              It is especially suitable for people who may not be sure about
+              continuing advanced learning in the future due to timing
+              constraints, job commitments, business responsibilities,
+              or capital limitations.
+            </p>
+
+            <p className={styles.subtitle}>
+              The course helps learners build a strong foundation by covering
+              all major stock market concepts including price action,
+              swing trading, investing, futures & options, hedging,
+              and trading psychology.
+            </p>
+
+            {/* KEYWORDS */}
             <div className={styles.keywordBox}>
 
               <span>Technical Analysis</span>
@@ -110,48 +132,56 @@ export default function MasterTrader() {
               <span>Stock Market Learning</span>
 
             </div>
-<div className={styles.buttonGroup}>
-
-  <Link
-    to="/contactpage"
-    className={styles.primaryBtn}
-  >
-    Join Now
-  </Link>
-
-  <div className={styles.inlinePrice}>
-
-    <span className={styles.offerText}>
-      Limited Offer
-    </span>
-
-    <div className={styles.priceWrap}>
-
-      <span className={styles.oldPrice}>
-        ₹5000
-      </span>
-
-      <span className={styles.newPrice}>
-        ₹2999
-      </span>
-
-    </div>
-
-  </div>
-
-</div>
 
           </div>
 
           {/* RIGHT */}
           <div className={styles.right}>
 
-            <div className={styles.imageCard}>
+            <div className={styles.rightContent}>
 
-              <img
-                src={heroImage}
-                alt="Master Trader Stock Market Learning"
-              />
+              {/* IMAGE */}
+              <div className={styles.imageCard}>
+
+                <img
+                  src={heroImage}
+                  alt="Master Trader Stock Market Learning"
+                />
+
+              </div>
+
+              {/* PRICE CARD */}
+              <div className={styles.inlinePrice}>
+
+                <span className={styles.offerText}>
+                  Limited Offer
+                </span>
+
+                <div className={styles.priceWrap}>
+
+                  <span className={styles.oldPrice}>
+                    ₹5000
+                  </span>
+
+                  <span className={styles.newPrice}>
+                    ₹2999
+                  </span>
+
+                </div>
+
+              </div>
+
+              {/* BUTTON */}
+              <div className={styles.buttonGroup}>
+
+                <Link
+                  to="/contactpage"
+                  className={styles.primaryBtn}
+                >
+                  Join Now
+                </Link>
+
+              </div>
 
             </div>
 
@@ -162,53 +192,9 @@ export default function MasterTrader() {
       </section>
 
 
+
    
 
-      {/* COURSE OVERVIEW */}
-      <section className={styles.courseOverviewSection}>
-
-        <div className={styles.sectionContainer}>
-
-          <div className={styles.sectionHeading}>
-
-            <p>MASTER TRADER COURSE OVERVIEW</p>
-
-            <h2>
-              Beginner To Intermediate Level
-              <span> Stock Market Learning Program</span>
-            </h2>
-
-          </div>
-
-          <div className={styles.overviewCard}>
-
-          
-
-            <p>
-              This course is ideal for individuals who want to understand
-              the stock market in a simple and practical way before moving
-              toward advanced-level learning and market participation.
-            </p>
-
-            <p>
-              It is especially suitable for people who may not be sure about
-              continuing advanced learning in the future due to timing
-              constraints, job commitments, business responsibilities,
-              or capital limitations.
-            </p>
-
-            <p>
-              The course helps learners build a strong foundation by covering
-              all major stock market concepts including price action,
-              swing trading, investing, futures & options, hedging,
-              and trading psychology.
-            </p>
-
-          </div>
-
-        </div>
-
-      </section>
 
 
       {/* COURSE HIGHLIGHTS */}
@@ -364,49 +350,55 @@ export default function MasterTrader() {
         className={styles.priceSection}
       >
 
-        <div className={styles.sectionContainer}>
+       <section className={styles.masterPriceSection}>
 
-          <div className={styles.priceCard}>
+  <div className={styles.masterPriceContainer}>
 
-            <div className={styles.priceLeft}>
+    <div className={styles.masterPriceCard}>
 
-              <p className={styles.priceTag}>
-                ONLINE & OFFLINE LEARNING
-              </p>
+      {/* LEFT */}
+      <div className={styles.masterPriceLeft}>
 
-              <h2>
-                Join Master Trader Program
-              </h2>
+        <p className={styles.masterPriceTag}>
+          ONLINE & OFFLINE LEARNING
+        </p>
 
-              <p>
-                Flexible learning options with practical market education,
-                beginner-friendly guidance, and structured mentorship support.
-              </p>
+        <h2 className={styles.masterPriceTitle}>
+          Join Master Trader Program
+        </h2>
 
-            </div>
+        <p className={styles.masterPriceDesc}>
+          Flexible learning options with practical market education,
+          beginner-friendly guidance, and structured mentorship support.
+        </p>
 
-            <div className={styles.priceRight}>
+      </div>
 
-              <div className={styles.oldPrice}>
-                ₹5000
-              </div>
+      {/* RIGHT */}
+      <div className={styles.masterPriceRight}>
 
-              <div className={styles.newPrice}>
-                ₹2999
-              </div>
-
-              <Link
-                to="/contactpage"
-                className={styles.enrollBtn}
-              >
-                Enroll Now
-              </Link>
-
-            </div>
-
-          </div>
-
+        <div className={styles.masterOldPrice}>
+          ₹5000
         </div>
+
+        <div className={styles.masterNewPrice}>
+          ₹2999
+        </div>
+
+        <Link
+          to="/contactpage"
+          className={styles.masterEnrollBtn}
+        >
+          Enroll Now
+        </Link>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
       </section>
 
