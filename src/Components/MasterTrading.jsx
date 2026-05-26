@@ -393,6 +393,7 @@ export default function MasterTrader() {
         </Link>
 
       </div>
+      
 
     </div>
 
