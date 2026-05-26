@@ -112,7 +112,7 @@ export default function MasterTrader() {
               Master The Art Of
               <span> Smart Stock Market Learning</span>
             </h1>
-
+<p className={styles.subtitle}>The Masterclass Course by Master Traders Academy is specially designed for individuals who are serious about building a long-term journey in the stock market and want to develop strong practical understanding with proper mentorship and guidance. This course focuses on creating confident and disciplined traders by covering important market concepts in a structured and practical way.</p>
             <p className={styles.subtitle}>
               This course is designed <strong style={{ color: "black" }}>completely from scratch </strong>and can be easily understood even by people who have <strong style={{ color: "black" }}>zero knowledge about the stock market .</strong> The learning structure is simple, beginner-friendly, and practical, helping learners gradually build confidence from basic concepts to advanced market understanding.</p>
 
