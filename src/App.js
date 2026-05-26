@@ -17,6 +17,8 @@ import MAsterClass from './Components/MasterClass';
 import MasterTrading from './Components/MasterTrading';
 import BigBull from './Components/TheBigBull';
 import OptionMastery from './Components/OptionMastery';
+import TradingMistakesBlog from './Components/TradingMistakesBlog';
+import MarketCyclesBlog from './Components/MarketCyclesBlog';
 
 function App() {
   return (
@@ -38,6 +40,8 @@ function App() {
         <Route path="/mastertrader" element={<MasterTrading />} />
         <Route path="/thebigbull" element={<BigBull />} />
         <Route path="/optionmastery" element={<OptionMastery />} />
+        <Route path="/blog/5tradingmistake" element={<TradingMistakesBlog/>} />
+        <Route path="/blog/marketcycleblog" element={<MarketCyclesBlog/>} />
       </Routes>
 
       <Footer />
