@@ -99,7 +99,7 @@ export default function MasterTrader() {
           <div className={styles.left}>
 
             <p className={styles.tagline}>
-              MASTER TRADER PROGRAM
+              MASTER TRADER - LEARN FROM SCRATCH
             </p>
 
             <h1 className={styles.title}>

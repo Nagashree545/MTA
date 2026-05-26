@@ -106,7 +106,7 @@ export default function MasterTrader() {
           <div className={styles.left}>
 
             <p className={styles.tagline}>
-              BECOME AN INDEPENDENT TRADER            </p>
+             MASTERCLASS - BECOME AN INDEPENDENT TRADER            </p>
 
             <h1 className={styles.title}>
               Master The Art Of
