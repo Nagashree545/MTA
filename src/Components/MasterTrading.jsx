@@ -112,7 +112,7 @@ export default function MasterTrader() {
             </p>
 
             <p className={styles.subtitle}>
-              It is especially suitable for people who may not be sure about continuing advanced learning in the future due to timing constraints, job commitments, business responsibilities, or capital limitations. The course helps learners build a strong foundation by covering all major stock market concepts including price action, swing trading, investing, futures & options, hedging, and trading psychology.
+              <strong style={{color:"black"}}>It is especially suitable for people who may not be sure about continuing advanced learning in the future due to timing constraints, job commitments, business responsibilities, or capital limitations.</strong> The course helps learners build a strong foundation by covering all major stock market concepts including price action, swing trading, investing, futures & options, hedging, and trading psychology.
             </p>
 
             <p className={styles.subtitle}>
