@@ -106,31 +106,31 @@ export default function MasterTrader() {
           <div className={styles.left}>
 
             <p className={styles.tagline}>
-             MASTERCLASS - BECOME AN INDEPENDENT TRADER            </p>
+              MASTERCLASS - BECOME AN INDEPENDENT TRADER            </p>
 
             <h1 className={styles.title}>
               Master The Art Of
               <span> Smart Stock Market Learning</span>
             </h1>
-<p className={styles.subtitle}>The Masterclass Course by Master Traders Academy is specially designed for individuals who are serious about building a long-term journey in the stock market and want to develop strong practical understanding with proper mentorship and guidance. This course focuses on creating confident and disciplined traders by covering important market concepts in a structured and practical way.</p>
+            <p className={styles.subtitle}>The Masterclass Course by Master Traders Academy is specially designed for individuals who are serious about building a long-term journey in the stock market and want to develop strong practical understanding with proper mentorship and guidance. This course focuses on creating confident and disciplined traders by covering important market concepts in a structured and practical way.</p>
             <p className={styles.subtitle}>
               This course is designed <strong style={{ color: "black" }}>completely from scratch </strong>and can be easily understood even by people who have <strong style={{ color: "black" }}>zero knowledge about the stock market .</strong> The learning structure is simple, beginner-friendly, and practical, helping learners gradually build confidence from basic concepts to advanced market understanding.</p>
 
-              <p className={styles.subtitle}>
-One of the biggest advantages of this course is the <strong style={{ color: "black" }}>Lifetime Support and Guidance ,</strong>  ensuring that learning never stops. Students continue receiving mentorship, market understanding, and practical guidance even after course completion, helping them grow with confidence over the long term.              </p>
+            <p className={styles.subtitle}>
+              One of the biggest advantages of this course is the <strong style={{ color: "black" }}>Lifetime Support and Guidance ,</strong>  ensuring that learning never stops. Students continue receiving mentorship, market understanding, and practical guidance even after course completion, helping them grow with confidence over the long term.              </p>
 
 
 
-              {/* KEYWORDS */}
-              <div className={styles.keywordBox}>
+            {/* KEYWORDS */}
+            <div className={styles.keywordBox}>
 
-                <span>Technical Analysis</span>
-                <span>Risk Management</span>
-                <span>Market Knowledge</span>
-                <span>Trading Psychology</span>
-                <span>Stock Market Learning</span>
+              <span>Technical Analysis</span>
+              <span>Risk Management</span>
+              <span>Market Knowledge</span>
+              <span>Trading Psychology</span>
+              <span>Stock Market Learning</span>
 
-              </div>
+            </div>
 
           </div>
 
@@ -138,6 +138,20 @@ One of the biggest advantages of this course is the <strong style={{ color: "bla
           <div className={styles.right}>
 
             <div className={styles.rightContent}>
+
+              {/* IMAGE */}
+              {/* <div className={styles.imageCard}>
+
+                <img
+                  src={heroImage}
+                  alt="Master Trader Stock Market Learning"
+                />
+
+              </div> */}
+              <div className={styles.modeRibbon}>
+                <span className={styles.liveDot}></span>
+                Online & Offline Classes Available
+              </div>
 
               {/* IMAGE */}
               <div className={styles.imageCard}>
@@ -158,13 +172,11 @@ One of the biggest advantages of this course is the <strong style={{ color: "bla
 
                 <div className={styles.priceWrap}>
 
-                  <span className={styles.oldPrice}>
-                    ₹15000
+                  <span className={styles.newPrice}>
+                    ₹14999
                   </span>
 
-                  <span className={styles.newPrice}>
-                    ₹9999
-                  </span>
+
 
                 </div>
 
@@ -377,13 +389,11 @@ One of the biggest advantages of this course is the <strong style={{ color: "bla
               {/* RIGHT */}
               <div className={styles.masterPriceRight}>
 
-                <div className={styles.masterOldPrice}>
-                  ₹15000
+                <div className={styles.masterNewPrice}>
+                  ₹14999
                 </div>
 
-                <div className={styles.masterNewPrice}>
-                  ₹9999
-                </div>
+
 
                 <Link
                   to="/contactpage"

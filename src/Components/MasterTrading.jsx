@@ -140,6 +140,10 @@ export default function MasterTrader() {
             <div className={styles.rightContent}>
 
               {/* IMAGE */}
+               <div className={styles.modeRibbon}>
+                <span className={styles.liveDot}></span>
+                Online & Offline Classes Available
+              </div>
               <div className={styles.imageCard}>
 
                 <img
