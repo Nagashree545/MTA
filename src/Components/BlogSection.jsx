@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
-import styles from "../Styles/BlogDetails.module.css";
+import styles from "../Styles/BlogSection.module.css";
 
 export default function MarketcyclesBlog() {
 
