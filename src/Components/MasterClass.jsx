@@ -1,26 +1,26 @@
 import React from "react";
-import styles from "../Styles/MasterClass.module.css";
-import heroImage from "../Assets/masterclassdetail.png";
+import styles from "../Styles/MasterTrading.module.css";
 import { Link } from "react-router-dom";
 
-export default function MasterClass() {
+import heroImage from "../Assets/masterclassdetail.png";
 
-  const philosophy = [
+export default function MasterTrader() {
+
+  const features = [
     {
+      icon: "📈",
       title: "Discipline & Consistency",
       desc: "Develop emotional control, structured habits, and disciplined thinking for better market understanding.",
     },
     {
+      icon: "🛡️",
       title: "Smart Market Analysis",
-      desc: "Understand market behavior, chart patterns, and trading psychology through structured learning.",
+      desc: "Learn the importance of protecting capital through controlled and structured market participation.",
     },
     {
+      icon: "💡",
       title: "Strategic Thinking",
       desc: "Build clarity in market participation with confidence, patience, and long-term awareness.",
-    },
-    {
-      title: "Growth-Focused Learning",
-      desc: "Improve continuously with consistent learning, financial awareness, and strong decision-making habits.",
     },
   ];
 
@@ -31,243 +31,376 @@ export default function MasterClass() {
     "Mentorship-driven guidance",
     "Market psychology understanding",
     "Long-term growth approach",
+
   ];
 
   const highlights = [
     {
+      icon: "🎓",
+      badge: "Mentorship Support",
       title: "Lifetime Support & Mentorship",
-      desc: "Continuous guidance and learning support even after course completion to help students grow confidently in the market."
+      desc: "Continuous guidance and learning support even after course completion to help students grow confidently in the market.",
     },
     {
+      icon: "🚀",
+      badge: "Beginner Friendly",
       title: "Learn From Scratch",
-      desc: "The course is beginner-friendly and designed for people with absolutely zero stock market knowledge."
+      desc: "The course is beginner-friendly and designed for people with absolutely zero stock market knowledge.",
     },
     {
+      icon: "📈",
+      badge: "Market Understanding",
       title: "Serious Stock Market Learning",
-      desc: "Designed for individuals who are willing to take their stock market journey seriously and build long-term skills."
+      desc: "Designed for individuals who are willing to take their stock market journey seriously and build long-term skills.",
     },
     {
+      icon: "🕯️",
+      badge: "Price Action",
       title: "Price Action & Market Structure",
-      desc: "Learn support, resistance, trend analysis, candle science, and market behavior with better clarity."
+      desc: "Learn support, resistance, trend analysis, candle science, and market behavior with better clarity.",
     },
     {
+      icon: "💹",
+      badge: "Derivatives Learning",
       title: "Futures & Options Learning",
-      desc: "Understand important concepts of futures, options, option chain, and derivatives trading."
+      desc: "Understand important concepts of futures, options, option chain, and derivatives trading.",
     },
     {
+      icon: "🎯",
+      badge: "Swing Trading",
       title: "Swing Trading & Concepts",
-      desc: "Learn how to identify opportunities in swing trading and long-term investing with confidence."
+      desc: "Learn how to identify opportunities in swing trading and long-term investing with confidence.",
     },
     {
+      icon: "🛡️",
+      badge: "Risk Control",
       title: "Hedging & Risk Management",
-      desc: "Understand capital protection, hedging techniques, and proper risk management methods."
+      desc: "Understand capital protection, hedging techniques, and proper risk management methods.",
     },
     {
-      title: "Trading Psychology & Discipline",
-      desc: "Develop emotional control, discipline, patience, and confidence required for consistent market participation."
+      icon: "⚡",
+      badge: "Trading Psychology",
+      title: "Trade Execution Logic",
+      desc: "Develop emotional control, discipline, patience, and confidence required for consistent market participation.",
     },
     {
+      icon: "🧩",
+      badge: "Execution Skills",
       title: "Trade Execution & Strategy Building",
-      desc: "Learn entry, exit, averaging, and execution techniques for better trading decisions."
+      desc: "Learn entry, exit, averaging, and execution techniques for better trading decisions.",
     }
-  ];
 
+  ];
   return (
     <div className={styles.page}>
 
-      {/* ================= HERO SECTION ================= */}
+
+      {/* HERO SECTION */}
       <section className={styles.hero}>
-        <div className={styles.heroGlow}></div>
+
+        <div className={styles.overlay}></div>
 
         <div className={styles.container}>
 
+          {/* LEFT */}
           <div className={styles.left}>
+
             <p className={styles.tagline}>
-              MASTERCLASS STOCK MARKET EDUCATION
-            </p>
+              BECOME AN INDEPENDENT TRADER            </p>
 
             <h1 className={styles.title}>
-              Masterclass For <span>Stock Market Learning</span>
+              Master The Art Of
+              <span> Smart Stock Market Learning</span>
             </h1>
 
             <p className={styles.subtitle}>
-              Learn stock market concepts, trading psychology,
-              market analysis, and disciplined decision-making.
-            </p>
+              This course is designed <strong style={{ color: "black" }}>completely from scratch </strong>and can be easily understood even by people who have <strong style={{ color: "black" }}>zero knowledge about the stock market .</strong> The learning structure is simple, beginner-friendly, and practical, helping learners gradually build confidence from basic concepts to advanced market understanding.</p>
 
-            <div className={styles.keywordBox}>
-              <span>Stock Market Learning</span>
-              <span>Trading Education</span>
-              <span>Market Analysis</span>
-              <span>Trading Psychology</span>
-              <span>Technical Learning</span>
-            </div>
-<div className={styles.heroCtaWrap}>
+              <p className={styles.subtitle}>
+One of the biggest advantages of this course is the <strong style={{ color: "black" }}>Lifetime Support and Guidance ,</strong>  ensuring that learning never stops. Students continue receiving mentorship, market understanding, and practical guidance even after course completion, helping them grow with confidence over the long term.              </p>
 
-  <div className={styles.priceBadge}>
-    <span className={styles.old}>₹15,000</span>
-    <span className={styles.new}>₹9,999</span>
-    <span className={styles.discount}>Save 33%</span>
-  </div>
 
-  <Link to="/contactpage" className={styles.primaryBtn}>
-    Enroll Now
-  </Link>
 
-  <p className={styles.note}>
-    Lifetime Access • Beginner Friendly • Mentorship Included
-  </p>
+              {/* KEYWORDS */}
+              <div className={styles.keywordBox}>
 
-</div>
+                <span>Technical Analysis</span>
+                <span>Risk Management</span>
+                <span>Market Knowledge</span>
+                <span>Trading Psychology</span>
+                <span>Stock Market Learning</span>
+
+              </div>
+
           </div>
 
+          {/* RIGHT */}
           <div className={styles.right}>
-            <div className={styles.imageBox}>
-              <img src={heroImage} alt="Masterclass" />
+
+            <div className={styles.rightContent}>
+
+              {/* IMAGE */}
+              <div className={styles.imageCard}>
+
+                <img
+                  src={heroImage}
+                  alt="Master Trader Stock Market Learning"
+                />
+
+              </div>
+
+              {/* PRICE CARD */}
+              <div className={styles.inlinePrice}>
+
+                <span className={styles.offerText}>
+                  Limited Offer
+                </span>
+
+                <div className={styles.priceWrap}>
+
+                  <span className={styles.oldPrice}>
+                    ₹15000
+                  </span>
+
+                  <span className={styles.newPrice}>
+                    ₹9999
+                  </span>
+
+                </div>
+
+              </div>
+
+              {/* BUTTON */}
+              <div className={styles.buttonGroup}>
+
+                <Link
+                  to="/contactpage"
+                  className={styles.primaryBtn}
+                >
+                  Join Now
+                </Link>
+
+              </div>
+
             </div>
+
           </div>
 
         </div>
+
       </section>
 
-      {/* ================= MASTER INTRO ================= */}
-      <section className={styles.masterIntroSection}>
-        <div className={styles.sectionContainer}>
 
-          <div className={styles.masterIntroBox}>
-            <h2>
-              MASTERCLASS – <span>BECOME AN INDEPENDENT TRADER</span>
-            </h2>
 
-            <p>
-              The Masterclass Course by Master Traders Academy is specially designed for individuals who are serious about building a long-term journey in the stock market and want to develop strong practical understanding with proper mentorship and guidance. This course focuses on creating confident and disciplined traders by covering important market concepts in a structured and practical way.            </p>
 
-            <p>
-              This course is designed completely from scratch and can be easily understood even by people who have zero knowledge about the stock market . The learning structure is simple, beginner-friendly, and practical, helping learners gradually build confidence from basic concepts to advanced market understanding.            </p>
 
-            <p>
-              One of the biggest advantages of this course is the Lifetime Support and Guidance , ensuring that learning never stops. Students continue receiving mentorship, market understanding, and practical guidance even after course completion, helping them grow with confidence over the long term.            </p>
 
-            <p>
-              Includes <b>Lifetime Support & Guidance</b> for continuous growth.
-            </p>
-          </div>
 
-        </div>
-      </section>
-      {/* ================= HIGHLIGHTS ================= */}
-    <section className={styles.highlightsSection}>
-  <div className={styles.sectionContainer}>
+      {/* COURSE HIGHLIGHTS */}
+      <section className={styles.highlightSection}>
 
-    <div className={styles.sectionHeading}>
-      <p>COURSE HIGHLIGHTS</p>
-      <h2>Important Highlights of the Masterclass</h2>
-    </div>
-
-    <div className={styles.highlightsGrid}>
-      {highlights.map((item, i) => (
-        <div key={i} className={styles.highlightCard}>
-
-          <div className={styles.iconBox}>
-            {i + 1}
-          </div>
-
-          <div className={styles.content}>
-            <h4>{item.title}</h4>
-            <p>{item.desc}</p>
-          </div>
-
-        </div>
-      ))}
-    </div>
-
-  </div>
-</section>
-
-      {/* ================= PHILOSOPHY ================= */}
-      <section className={styles.philosophySection}>
         <div className={styles.sectionContainer}>
 
           <div className={styles.sectionHeading}>
-            <p>OUR LEARNING APPROACH</p>
-            <h2>Principles Behind Strong Trading Habits</h2>
+
+            <p>IMPORTANT HIGHLIGHTS</p>
+
+            <h2>
+              What You’ll Learn
+              <span> In This Program</span>
+            </h2>
+
           </div>
 
-          <div className={styles.philosophyGrid}>
-            {philosophy.map((item, index) => (
-              <div key={index} className={styles.philosophyCard}>
+          <div className={styles.highlightGrid}>
 
-                {/* <div className={styles.cardNumber}>
-                  {index + 1}
-                </div> */}
+            {highlights.map((item, index) => (
+
+              <div
+                key={index}
+                className={styles.highlightCard}
+              >
+
+                <div className={styles.highlightTop}>
+
+                  <div className={styles.highlightIcon}>
+                    {item.icon}
+                  </div>
+
+                  <div className={styles.highlightBadge}>
+                    {item.badge}
+                  </div>
+
+                </div>
+
+                <h3>
+                  {item.title}
+                </h3>
+
+                <p>
+                  {item.desc}
+                </p>
+
+              </div>
+
+            ))}
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* EXPERIENCE SECTION */}
+      <section className={styles.cleanExperienceSection}>
+
+        <div className={styles.sectionContainer}>
+
+          {/* HEADING */}
+          <div className={styles.cleanHeading}>
+
+            <p className={styles.cleanTag}>
+              WHY MASTER TRADER
+            </p>
+
+            <h2>
+              Learn The Market With
+              <span> Confidence & Clarity</span>
+            </h2>
+
+            <p className={styles.cleanText}>
+              A beginner-friendly stock market program focused on
+              practical learning, discipline, and market understanding.
+            </p>
+
+          </div>
+
+          {/* CARDS */}
+          <div className={styles.cleanGrid}>
+
+            {benefits.map((item, index) => (
+
+              <div
+                key={index}
+                className={styles.cleanCard}
+              >
+
+                <div className={styles.cleanIcon}>
+                  ✔
+                </div>
+
+                <h3>
+                  {item}
+                </h3>
+
+              </div>
+
+            ))}
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* ABOUT SECTION */}
+      <section className={styles.aboutSection}>
+
+        <div className={styles.sectionContainer}>
+
+          <div className={styles.sectionHeading}>
+
+            <p>ABOUT MASTER TRADER</p>
+
+            <h2>
+              Learn Stock Market Concepts With Confidence
+            </h2>
+
+          </div>
+
+          <div className={styles.aboutGrid}>
+
+            {features.map((item, index) => (
+              <div
+                key={index}
+                className={styles.aboutCard}
+              >
+
+                <div className={styles.aboutIcon}>
+                  {item.icon}
+                </div>
 
                 <h3>{item.title}</h3>
+
                 <p>{item.desc}</p>
 
               </div>
             ))}
+
           </div>
 
         </div>
+
       </section>
 
+      {/* PRICE SECTION */}
+      <section
+        id="pricing"
+        className={styles.priceSection}
+      >
 
+        <section className={styles.masterPriceSection}>
 
-      {/* ================= WHY CHOOSE ================= */}
-      <section className={styles.whySection}>
-        <div className={styles.sectionContainer}>
+          <div className={styles.masterPriceContainer}>
 
-          <div className={styles.whyWrapper}>
+            <div className={styles.masterPriceCard}>
 
-            <div className={styles.whyLeft}>
-              <p className={styles.smallTitle}>WHY CHOOSE MASTERCLASS</p>
+              {/* LEFT */}
+              <div className={styles.masterPriceLeft}>
 
-              <h2>Designed For Better Market Understanding</h2>
+                <p className={styles.masterPriceTag}>
+                  ONLINE & OFFLINE LEARNING
+                </p>
 
-              <p>
-                Structured education, disciplined learning, and confidence-focused guidance.
-              </p>
-            </div>
+                <h2 className={styles.masterPriceTitle}>
+                  Join Master Class Program
+                </h2>
 
-            <div className={styles.whyRight}>
-              {benefits.map((item, index) => (
-                <div key={index} className={styles.benefitItem}>
-                  <span>✔</span>
-                  <p>{item}</p>
+                <p className={styles.masterPriceDesc}>
+                  Flexible learning options with practical market education,
+                  beginner-friendly guidance, and structured mentorship support.
+                </p>
+
+              </div>
+
+              {/* RIGHT */}
+              <div className={styles.masterPriceRight}>
+
+                <div className={styles.masterOldPrice}>
+                  ₹15000
                 </div>
-              ))}
+
+                <div className={styles.masterNewPrice}>
+                  ₹9999
+                </div>
+
+                <Link
+                  to="/contactpage"
+                  className={styles.masterEnrollBtn}
+                >
+                  Enroll Now
+                </Link>
+
+              </div>
+
+
             </div>
 
           </div>
 
-        </div>
-      </section>
+        </section>
 
-      {/* ================= PRICING ================= */}
-      <section className={styles.pricingSection}>
-        <div className={styles.sectionContainer}>
-
-          <div className={styles.pricingBox}>
-
-            <h2>Start Your Trading Journey Today</h2>
-
-            <div className={styles.priceRow}>
-              <div className={styles.oldPrice}>
-        <span>₹15,000</span>
-              </div>
-
-              <div className={styles.newPrice}>
-             <span>₹9,999</span>
-              </div>
-            </div>
-
-            <Link to="/contactpage" className={styles.ctaBtn}>
-              Enroll Now
-            </Link>
-
-          </div>
-
-        </div>
       </section>
 
     </div>
