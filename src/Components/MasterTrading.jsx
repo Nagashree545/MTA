@@ -254,55 +254,56 @@ export default function MasterTrader() {
 
 
       {/* EXPERIENCE SECTION */}
-      <section className={styles.experienceSection}>
+    <section className={styles.cleanExperienceSection}>
 
-        <div className={styles.sectionContainer}>
+  <div className={styles.sectionContainer}>
 
-          <div className={styles.experienceWrapper}>
+    {/* HEADING */}
+    <div className={styles.cleanHeading}>
 
-            <div className={styles.expLeft}>
+      <p className={styles.cleanTag}>
+        WHY MASTER TRADER
+      </p>
 
-              <p className={styles.smallTitle}>
-                WHY MASTER TRADER
-              </p>
+      <h2>
+        Learn The Market With
+        <span> Confidence & Clarity</span>
+      </h2>
 
-              <h2>
-                Designed For Better Market Understanding
-              </h2>
+      <p className={styles.cleanText}>
+        A beginner-friendly stock market program focused on
+        practical learning, discipline, and market understanding.
+      </p>
 
-              <p>
-                Master Trader focuses on helping individuals build
-                discipline, market awareness, confidence, and
-                structured decision-making through professional
-                stock market education.
-              </p>
+    </div>
 
-            </div>
+    {/* CARDS */}
+    <div className={styles.cleanGrid}>
 
-            <div className={styles.expRight}>
+      {benefits.map((item, index) => (
 
-              {benefits.map((item, index) => (
-                <div
-                  key={index}
-                  className={styles.benefitCard}
-                >
+        <div
+          key={index}
+          className={styles.cleanCard}
+        >
 
-                  <div className={styles.tick}>
-                    ✔
-                  </div>
-
-                  <p>{item}</p>
-
-                </div>
-              ))}
-
-            </div>
-
+          <div className={styles.cleanIcon}>
+            ✔
           </div>
+
+          <h3>
+            {item}
+          </h3>
 
         </div>
 
-      </section>
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
 
    {/* ABOUT SECTION */}
       <section className={styles.aboutSection}>
