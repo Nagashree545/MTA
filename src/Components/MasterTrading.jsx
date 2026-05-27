@@ -268,9 +268,9 @@ export default function MasterTrader() {
           {/* HEADING */}
           <div className={styles.cleanHeading}>
 
-            <p className={styles.cleanTag}>
+            {/* <p className={styles.cleanTag}>
               WHY MASTER TRADER
-            </p>
+            </p> */}
 
             <h2>
               Learn The Market With
@@ -319,7 +319,7 @@ export default function MasterTrader() {
 
           <div className={styles.sectionHeading}>
 
-            <p>ABOUT MASTER TRADER</p>
+            {/* <p>ABOUT MASTER TRADER</p> */}
 
             <h2>
               Learn Stock Market Concepts With Confidence
