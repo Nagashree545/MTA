@@ -18,7 +18,7 @@ export default function CoursesSection() {
       image: mastertrader,
       page: "/mastertrader",
       description:
-        "Build strong foundations in stock market trading with strong market understanding.",
+        "LEARN FROM SCRATCH",
       highlights: ["Technical Analysis", "Risk Management", "Market Knowledge"],
     },
     {
@@ -27,7 +27,7 @@ export default function CoursesSection() {
       image: masterclass,
       page: "/masterclass",
       description:
-        "Advanced strategies for professional market understanding.",
+        " BECOME AN INDEPENDENT TRADER",
       highlights: ["Advanced Strategies", "Portfolio Building", "Mentorship"],
     },
     {
@@ -36,7 +36,7 @@ export default function CoursesSection() {
       image: optionhunter,
       page: "/optionmastery",
       description:
-        "Specialized options learning system for disciplined trading.",
+        "MENTORSHIP PROGRAM",
       highlights: ["Options Basics", "Strategies", "Risk Control"],
     },
     {
@@ -45,7 +45,7 @@ export default function CoursesSection() {
       image: bigbull,
       page: "/thebigbull",
       description:
-        "Complete trading mastery experience with premium mentorship guidance.",
+        "TRADE WITH CONFIDENCE",
       highlights: ["Market Mastery", "Trading Psychology", "Pro Tools"],
     },
   ];
