@@ -46,7 +46,7 @@ function App() {
         <Route path="/masterclass" element={<MAsterClass />} />
         <Route path="/mastertrader" element={<MasterTrading />} />
         <Route path="/thebigbull" element={<BigBull />} />
-        <Route path="/optionmastery" element={<OptionMastery />} />
+        <Route path="/optionmastery" element={<OptionMastery/>} />
         <Route path="/blog/5tradingmistake" element={<TradingMistakesBlog/>} />
         <Route path="/blog/marketcycleblog" element={<MarketCyclesBlog/>} />
         <Route path="/blog/riskmanagementblog" element={<RiskManagementStrategy/>} />

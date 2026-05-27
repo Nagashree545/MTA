@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import heroImage from "../Assets/masterclassdetail.png";
 
-export default function MasterTrader() {
+export default function MasterClass() {
 
   const features = [
     {

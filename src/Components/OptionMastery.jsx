@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import heroImage from "../Assets/optionmystrydetail.png";
 
-export default function MasterTrader() {
+export default function OptionMastery() {
 
   const features = [
     {
