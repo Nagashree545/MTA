@@ -105,7 +105,7 @@ export default function TheBigBull() {
           <div className={styles.left}>
 
             <p className={styles.tagline}>
-              THE BIG BULL - TRADE WITH CONFIDENCE           </p>
+              THE BIG BULL - <span style={{color:"green"}}>TRADE WITH CONFIDENCE  </span>         </p>
 
             <h1 className={styles.title}>
               Professional Market Learning
@@ -154,7 +154,9 @@ export default function TheBigBull() {
                 <span className={styles.liveDot}></span>
                 Only Offline Classes Available
               </div>
-
+   <div className={styles.modeRibbon}>
+                <span className={styles.liveDot}></span>
+3 Days Theory With 1 Year Mentorship (Monthly Meet)</div>
               {/* IMAGE */}
               <div className={styles.imageCard}>
 
@@ -274,9 +276,7 @@ export default function TheBigBull() {
           {/* HEADING */}
           <div className={styles.cleanHeading}>
 
-            <p className={styles.cleanTag}>
-              WHY THE BIG BULL
-            </p>
+        
 
             <h2>
               Learn The Market With
@@ -325,7 +325,6 @@ export default function TheBigBull() {
 
           <div className={styles.sectionHeading}>
 
-            <p>ABOUT THE BIG BULL</p>
 
             <h2>
               Learn Stock Market Concepts With Confidence

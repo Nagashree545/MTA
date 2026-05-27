@@ -159,7 +159,7 @@ export default function MasterClass() {
               <div className={styles.modeRibbon} >
 
                 <span className={styles.liveDot} ></span>
-3 days Theory & Lifetime Support              </div>
+3 days Theory With Lifetime Support              </div>
 
               {/* IMAGE */}
               <div className={styles.imageCard}>
