@@ -173,7 +173,7 @@ Build Confidence In              <span>Every Options Trade </span>
                 <div className={styles.priceWrap}>
 
                   <span className={styles.newPrice}>
-                    ₹14999
+                    ₹29999
                   </span>
 
 
@@ -390,7 +390,7 @@ Build Confidence In              <span>Every Options Trade </span>
               <div className={styles.masterPriceRight}>
 
                 <div className={styles.masterNewPrice}>
-                  ₹14999
+                  ₹29999
                 </div>
 
 
