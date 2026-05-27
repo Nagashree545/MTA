@@ -15,7 +15,8 @@ export default function OptionMastery() {
     {
       icon: "💡",
       title: "Strategic Thinking",
-      desc: "Build structured decision-making skills through disciplined market observation and logical trading approaches"},
+      desc: "Build structured decision-making skills through disciplined market observation and logical trading approaches"
+    },
     {
       icon: "🛡️",
       title: "Risk Awareness",
@@ -33,68 +34,63 @@ export default function OptionMastery() {
 
   ];
 
-const highlights = [
-  {
-    icon: "🎓",
-    badge: "Advanced Mentorship",
-    title: "Advanced Options Trading Mentorship",
-    desc: "Designed for traders who already understand the basics and want to master advanced-level trading concepts."
-  },
-  {
-    icon: "🏦",
-    badge: "Smart Money Concepts",
-    title: "Learn How Big Players Trade",
-    desc: "Understand Smart Money Concepts (SMC) and how institutional participants operate in the market.",
-  },
-  {
-    icon: "📊",
-    badge: "Professional Strategies",
-    title: "Professional Buy / Sell / Hedge Strategies",
-    desc: "Learn professional-level option buying, option selling, and hedging techniques used in real-market conditions.",
-  },
-  {
-    icon: "⚡",
-    badge: "Gamma Concepts",
-    title: "Gamma Blast Logic",
-    desc: "Understand advanced gamma-based market movement concepts and high-probability trading logic.",
-  },
-  {
-    icon: "💡",
-    badge: "Advanced Concepts",
-    title: "Exclusive Trading Concepts",
-    desc: "Learn unique market approaches and advanced strategies that very few retail traders know."
-  },
-  {
-    icon: "🧠",
-    badge: "Trader Psychology",
-    title: "Market Psychology & Trader Mindset",
-    desc: "Develop discipline, emotional control, patience, and execution confidence required for high-level trading.",
-  },
-  {
-    icon: "🛡️",
-    badge: "Elite Trading Mindset",
-    title: "Top 5% Trader Mindset",
-    desc: "The program is structured to help traders improve decision-making and move towards elite-level market understanding.",
-  },
-  {
-    icon: "🤝",
-    badge: "Mentorship Program",
-    title: "Mentorship-Based Learning",
-    desc: "This is not just a recorded course — it includes active mentorship, guidance, and practical learning support.",
-  },
-  {
-    icon: "📅",
-    badge: "Structured Learning",
-    title: "3 Days Theory + 3 Months Mentorship",
-    desc: "Intensive learning sessions combined with long-term mentorship for practical implementation and clarity.",
-  },
-  {
-    icon: "🔥",
-    badge: "Dedicated Traders",
-    title: "3 Days Theory + 3 Months Mentorship",
-    desc: "Created specifically for individuals who genuinely want to level up their trading journey and master advanced trading skills.",
-  }
-];
+  const highlights = [
+    {
+      icon: "🎓",
+      badge: "Advanced Mentorship",
+      title: "Advanced Options Trading Mentorship",
+      desc: "Designed for traders who already understand the basics and want to master advanced-level trading concepts."
+    },
+    {
+      icon: "🏦",
+      badge: "Smart Money Concepts",
+      title: "Learn How Big Players Trade",
+      desc: "Understand Smart Money Concepts (SMC) and how institutional participants operate in the market.",
+    },
+    {
+      icon: "📊",
+      badge: "Professional Strategies",
+      title: "Professional Buy / Sell / Hedge Strategies",
+      desc: "Learn professional-level option buying, option selling, and hedging techniques used in real-market conditions.",
+    },
+    {
+      icon: "⚡",
+      badge: "Gamma Concepts",
+      title: "Gamma Blast Logic",
+      desc: "Understand advanced gamma-based market movement concepts and high-probability trading logic.",
+    },
+    {
+      icon: "💡",
+      badge: "Advanced Concepts",
+      title: "Exclusive Trading Concepts",
+      desc: "Learn unique market approaches and advanced strategies that very few retail traders know."
+    },
+    {
+      icon: "🧠",
+      badge: "Trader Psychology",
+      title: "Market Psychology & Trader Mindset",
+      desc: "Develop discipline, emotional control, patience, and execution confidence required for high-level trading.",
+    },
+    {
+      icon: "🛡️",
+      badge: "Elite Trading Mindset",
+      title: "Top 5% Trader Mindset",
+      desc: "The program is structured to help traders improve decision-making and move towards elite-level market understanding.",
+    },
+    {
+      icon: "🤝",
+      badge: "Mentorship Program",
+      title: "Mentorship-Based Learning",
+      desc: "This is not just a recorded course — it includes active mentorship, guidance, and practical learning support.",
+    },
+    {
+      icon: "📅",
+      badge: "Structured Learning",
+      title: "Serious Traders Only",
+      desc: "Created specifically for individuals who genuinely want to level up their trading journey and master advanced trading skills.",
+    },
+   
+  ];
   return (
     <div className={styles.page}>
 
@@ -110,17 +106,17 @@ const highlights = [
           <div className={styles.left}>
 
             <p className={styles.tagline}>
-              OPTION MASTERY – MENTORSHIP PROGRAM OVERVIEW</p>
+              OPTION MASTERY – <span style={{ color: "green" }}>MENTORSHIP PROGRAM</span></p>
 
             <h1 className={styles.title}>
-Build Confidence In              <span>Every Options Trade </span>
+              Build Confidence In              <span>Every Options Trade </span>
             </h1>
             <p className={styles.subtitle}>The Option Mastery Mentorship Program by Master Traders Academy is specially designed for traders who already have basic stock market knowledge and want to level up their understanding with advanced market concepts and professional trading logic. This program focuses on helping traders understand how experienced and institutional-level participants operate in the market.</p>
             <p className={styles.subtitle}>
               Unlike basic trading courses, this is a high-level mentorship program created for individuals who are serious about mastering options trading, market psychology, smart money concepts, and advanced execution strategies. The program includes powerful concepts and trading approaches that very few retail traders are aware of, helping learners build the mindset and skills required to become part of the top-performing traders in the market.</p>
             <p className={styles.subtitle}>
-             <strong style={{ color: "black" }}>This is not just a course — it is a mentorship-driven learning experience that includes 3 Days of Intensive Theory Sessions along with 3 Months of Continuous Mentorship and Guidance to help traders practically apply concepts with confidence and discipline.</strong> 
-</p>
+              <strong style={{ color: "black" }}>This is not just a course — it is a mentorship-driven learning experience that includes 3 Days of Intensive Theory Sessions along with 3 Months of Continuous Mentorship and Guidance to help traders practically apply concepts with confidence and discipline.</strong>
+            </p>
 
             {/* KEYWORDS */}
             <div className={styles.keywordBox}>
@@ -148,10 +144,14 @@ Build Confidence In              <span>Every Options Trade </span>
                 />
 
               </div> */}
+
               <div className={styles.modeRibbon}>
                 <span className={styles.liveDot}></span>
                 Online & Offline Classes Available
               </div>
+              <div className={styles.modeRibbon}>
+                <span className={styles.liveDot}></span>
+                3 Days Theory With 3 Months Mentorship              </div>
 
               {/* IMAGE */}
               <div className={styles.imageCard}>
@@ -272,9 +272,7 @@ Build Confidence In              <span>Every Options Trade </span>
           {/* HEADING */}
           <div className={styles.cleanHeading}>
 
-            <p className={styles.cleanTag}>
-              WHY OPTION MASTERY
-            </p>
+          
 
             <h2>
               Learn The Market With
@@ -323,7 +321,6 @@ Build Confidence In              <span>Every Options Trade </span>
 
           <div className={styles.sectionHeading}>
 
-            <p>ABOUT OPTION MASTERY</p>
 
             <h2>
               Learn Stock Market Concepts With Confidence
