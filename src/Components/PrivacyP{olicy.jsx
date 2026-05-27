@@ -148,7 +148,7 @@ export default function PrivacyPolicy() {
                         📍 Address:<br />
                         2nd Floor, R Narayana Complex, A.N. Nagawara Main Road,<br />
                         Near Manyata Tech Park Road, Beside DX Max Properties,<br />
-                        Brindavan Nagar, HBR Layout, Bengaluru, Karnataka 560077
+                        Brindavan Nagar, HBR Layout, Bengaluru, Karnataka 560043
                         <br /><br />
                         📧 Email: info@mastertradersacademy.in
                         <br />
