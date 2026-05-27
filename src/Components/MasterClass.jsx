@@ -39,9 +39,7 @@ export default function MasterTrader() {
       icon: "🎓",
       badge: "Mentorship Support",
       title: "Lifetime Support & Mentorship",
-      desc: "Continuous guidance and learning support even after course completion to help students grow confidently in the market.",
-    },
-    {
+      desc: "Includes 3 Days of Theory Sessions followed by Lifetime Support and Mentorship, because continuous guidance and practical learning are most important in the stock market journey." },{
       icon: "🚀",
       badge: "Beginner Friendly",
       title: "Learn From Scratch",
