@@ -39,7 +39,8 @@ export default function MasterClass() {
       icon: "🎓",
       badge: "Mentorship Support",
       title: "Lifetime Support & Mentorship",
-      desc: "Includes 3 Days of Theory Sessions followed by Lifetime Support and Mentorship, because continuous guidance and practical learning are most important in the stock market journey." },{
+      desc: "Includes 3 Days of Theory Sessions followed by Lifetime Support and Mentorship, because continuous guidance and practical learning are most important in the stock market journey."
+    }, {
       icon: "🚀",
       badge: "Beginner Friendly",
       title: "Learn From Scratch",
@@ -104,7 +105,7 @@ export default function MasterClass() {
           <div className={styles.left}>
 
             <p className={styles.tagline}>
-              MASTERCLASS - BECOME AN INDEPENDENT TRADER            </p>
+              MASTERCLASS - <span style={{ color: "green" }}>BECOME AN INDEPENDENT TRADER </span>           </p>
 
             <h1 className={styles.title}>
               Master The Art Of
@@ -146,10 +147,19 @@ export default function MasterClass() {
                 />
 
               </div> */}
+               <div className={styles.modeRibbon} >
+
+                <span className={styles.liveDot} ></span>
+                Our BestSeller Course
+              </div>
               <div className={styles.modeRibbon}>
                 <span className={styles.liveDot}></span>
                 Online & Offline Classes Available
               </div>
+              <div className={styles.modeRibbon} >
+
+                <span className={styles.liveDot} ></span>
+3 days Theory & Lifetime Support              </div>
 
               {/* IMAGE */}
               <div className={styles.imageCard}>
@@ -270,9 +280,7 @@ export default function MasterClass() {
           {/* HEADING */}
           <div className={styles.cleanHeading}>
 
-            <p className={styles.cleanTag}>
-              WHY MASTERCLASS
-            </p>
+            
 
             <h2>
               Learn The Market With
@@ -321,7 +329,6 @@ export default function MasterClass() {
 
           <div className={styles.sectionHeading}>
 
-            <p>ABOUT MASTERCLASS</p>
 
             <h2>
               Learn Stock Market Concepts With Confidence
