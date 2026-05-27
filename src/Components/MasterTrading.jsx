@@ -144,6 +144,10 @@ export default function MasterTrader() {
                 <span className={styles.liveDot}></span>
                 Online & Offline Classes Available
               </div>
+              <div className={styles.modeRibbon}>
+                <span className={styles.liveDot}></span>
+               3 Days Theory With 2 Months Support
+              </div>
               <div className={styles.imageCard}>
 
                 <img
