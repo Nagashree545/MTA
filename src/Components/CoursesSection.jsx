@@ -125,7 +125,7 @@ export default function CoursesSection() {
 
                 <h2>{course.title}</h2>
 
-                <p>{course.description}</p>
+                <p style={{color:"Black" , fontWeight:800}}>{course.description}</p>
 
                 <div className={styles.tagRow}>
 
