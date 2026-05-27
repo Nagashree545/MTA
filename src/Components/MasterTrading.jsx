@@ -162,12 +162,12 @@ export default function MasterTrader() {
 
                 <div className={styles.priceWrap}>
 
-                  <span className={styles.oldPrice}>
+                  {/* <span className={styles.oldPrice}>
                     ₹5000
-                  </span>
+                  </span> */}
 
                   <span className={styles.newPrice}>
-                    ₹2999
+                    ₹4999
                   </span>
 
                 </div>
@@ -381,12 +381,12 @@ export default function MasterTrader() {
               {/* RIGHT */}
               <div className={styles.masterPriceRight}>
 
-                <div className={styles.masterOldPrice}>
+                {/* <div className={styles.masterOldPrice}>
                   ₹5000
-                </div>
+                </div> */}
 
                 <div className={styles.masterNewPrice}>
-                  ₹2999
+                  ₹4999
                 </div>
 
                 <Link

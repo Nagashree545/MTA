@@ -43,7 +43,7 @@ export default function WorkshopPopup() {
         <div className={styles.infoBox}>
           <p>📅 Sunday Live Session</p>
           <p>⏰ 10:00 AM – 12:00 PM</p>
-          <p>📍 Offline Only</p>
+          <p>📍Online & Offline</p>
         </div>
 
         <p className={styles.desc}>
