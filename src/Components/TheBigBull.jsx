@@ -25,7 +25,7 @@ export default function TheBigBull() {
   ];
 
   const benefits = [
-   "Structured stock market learning",
+    "Structured stock market learning",
     "Technical analysis understanding",
     "Professional learning environment",
     "Risk-aware market approach",
@@ -34,62 +34,62 @@ export default function TheBigBull() {
 
   ];
 
- const highlights = [
-  {
-    icon: "📘",
-    badge: "Equity & Swing Trading",
-    title: "Specialized in Equity & Swing Trading",
-    desc: "Designed specifically for individuals who want to grow in Equity Investing and Swing Trading."
-  },
-  {
-    icon: "🎓",
-    badge: "Long-Term Mentorship",
-    title: "3 Days Theory + 1 Year Mentorship",
-    desc: "Intensive theory sessions followed by long-term mentorship and continuous practical guidance.",
-  },
-  {
-    icon: "📈",
-    badge: "Proven Trading Strategy",
-    title: "One Powerful Proven Strategy",
-    desc: "Focuses on mastering one high-quality strategy instead of learning multiple confusing methods.",
-  },
-  {
-    icon: "🧠",
-    badge: "10+ Years Experience",
-    title: "10+ Years Tried & Tested Logic",
-    desc: "The strategy has been practically used and refined for over 10 years by Anand Patil.",
-  },
-  {
-    icon: "💎",
-    badge: "Focused Learning Approach",
-    title: "Quality Over Quantity Approach",
-    desc: "The program believes repeated practice of one proven setup is more effective than learning many strategies.",
-  },
-  {
-    icon: "🎯",
-    badge: "Practical Market Learning",
-    title: "6. Practical Market Understanding",
-    desc: "Learn how to identify quality entries, exits, trends, and strong swing trading opportunities.",
-  },
-  {
-    icon: "🛡️",
-    badge: "Disciplined Learning",
-    title: "Structured & Focused Learning",
-    desc: "A niche mentorship program designed for focused learning and disciplined execution.",
-  },
-  {
-    icon: "⚡",
-    badge: "Trader Mindset",
-    title: "Confidence & Discipline Building",
-    desc: "Helps traders and investors develop patience, discipline, and long-term market confidence.",
-  },
-  {
-    icon: "🤝",
-    badge: "Personal Guidance",
-    title: "1:1 Demo Session Available",
-    desc: "Interested learners can connect with the team to book a personalized 1:1 demo and understand the program better.",
-  }
-];
+  const highlights = [
+    {
+      icon: "📘",
+      badge: "Equity & Swing Trading",
+      title: "Specialized in Equity & Swing Trading",
+      desc: "Designed specifically for individuals who want to grow in Equity Investing and Swing Trading."
+    },
+    {
+      icon: "🎓",
+      badge: "Long-Term Mentorship",
+      title: "3 Days Theory + 1 Year Mentorship",
+      desc: "Intensive theory sessions followed by long-term mentorship and continuous practical guidance.",
+    },
+    {
+      icon: "📈",
+      badge: "Proven Trading Strategy",
+      title: "One Powerful Proven Strategy",
+      desc: "Focuses on mastering one high-quality strategy instead of learning multiple confusing methods.",
+    },
+    {
+      icon: "🧠",
+      badge: "10+ Years Experience",
+      title: "10+ Years Tried & Tested Logic",
+      desc: "The strategy has been practically used and refined for over 10 years by Anand Patil.",
+    },
+    {
+      icon: "💎",
+      badge: "Focused Learning Approach",
+      title: "Quality Over Quantity Approach",
+      desc: "The program believes repeated practice of one proven setup is more effective than learning many strategies.",
+    },
+    {
+      icon: "🎯",
+      badge: "Practical Market Learning",
+      title: "6. Practical Market Understanding",
+      desc: "Learn how to identify quality entries, exits, trends, and strong swing trading opportunities.",
+    },
+    {
+      icon: "🛡️",
+      badge: "Disciplined Learning",
+      title: "Structured & Focused Learning",
+      desc: "A niche mentorship program designed for focused learning and disciplined execution.",
+    },
+    {
+      icon: "⚡",
+      badge: "Trader Mindset",
+      title: "Confidence & Discipline Building",
+      desc: "Helps traders and investors develop patience, discipline, and long-term market confidence.",
+    },
+    {
+      icon: "🤝",
+      badge: "Personal Guidance",
+      title: "1:1 Demo Session Available",
+      desc: "Interested learners can connect with the team to book a personalized 1:1 demo and understand the program better.",
+    }
+  ];
   return (
     <div className={styles.page}>
 
@@ -105,7 +105,7 @@ export default function TheBigBull() {
           <div className={styles.left}>
 
             <p className={styles.tagline}>
-              THE BIG BULL - <span style={{color:"green"}}>TRADE WITH CONFIDENCE  </span>         </p>
+              THE BIG BULL - <span style={{ color: "green" }}>TRADE WITH CONFIDENCE  </span>         </p>
 
             <h1 className={styles.title}>
               Professional Market Learning
@@ -126,7 +126,7 @@ export default function TheBigBull() {
             {/* KEYWORDS */}
             <div className={styles.keywordBox}>
 
-            <span>Market Mastery</span>
+              <span>Market Mastery</span>
               <span>Trading Psychology</span>
               <span>Technical Analysis</span>
               <span>Stock Market Learning</span>
@@ -152,11 +152,11 @@ export default function TheBigBull() {
               </div> */}
               <div className={styles.modeRibbon}>
                 <span className={styles.liveDot}></span>
-                Only Offline Classes Available
+                Only Offline Classes
               </div>
-   <div className={styles.modeRibbon}>
+              <div className={styles.modeRibbon}>
                 <span className={styles.liveDot}></span>
-3 Days Theory With 1 Year Mentorship (Monthly Meet)</div>
+                3 Days Theory With 1 Year Mentorship (Monthly Meet)</div>
               {/* IMAGE */}
               <div className={styles.imageCard}>
 
@@ -276,7 +276,7 @@ export default function TheBigBull() {
           {/* HEADING */}
           <div className={styles.cleanHeading}>
 
-        
+
 
             <h2>
               Learn The Market With
