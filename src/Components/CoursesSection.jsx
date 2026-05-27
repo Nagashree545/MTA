@@ -4,8 +4,8 @@ import { useNavigate } from "react-router-dom";
 
 import mastertrader from "../Assets/mastertraderforcourse.png";
 import masterclass from "../Assets/masterclassforcourse.jpg";
-import optionhunter from "../Assets/optionhunterforcourses.jpg";
-import bigbull from "../Assets/bigbullcourses.png";
+import optionhunter from "../Assets/optionmystry.jpeg";
+import bigbull from "../Assets/Thebigbull.jpeg";
 
 export default function CoursesSection() {
 

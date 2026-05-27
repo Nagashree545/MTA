@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../Styles/MasterTrading.module.css";
 import { Link } from "react-router-dom";
 
-import heroImage from "../Assets/optionmystrydetail.png";
+import heroImage from "../Assets/optionmystrydetail.jpeg";
 
 export default function OptionMastery() {
 
