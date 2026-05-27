@@ -1,31 +1,25 @@
 import React from "react";
-import styles from "../Styles/OptionMastery.module.css";
-
-import heroImage from "../Assets/optionhunterforcourses.jpg";
+import styles from "../Styles/MasterTrading.module.css";
 import { Link } from "react-router-dom";
 
-export default function OptionMastery() {
+import heroImage from "../Assets/optionmystrydetail.png";
 
-  const learningPoints = [
+export default function MasterTrader() {
+
+  const features = [
     {
-      number: "01",
+      icon: "📈",
       title: "Options Fundamentals",
       desc: "Understand the core concepts of options trading, strike prices, premiums, expiry, and market movement analysis.",
     },
     {
-      number: "02",
+      icon: "💡",
       title: "Strategic Thinking",
-      desc: "Build structured decision-making skills through disciplined market observation and logical trading approaches.",
-    },
+      desc: "Build structured decision-making skills through disciplined market observation and logical trading approaches"},
     {
-      number: "03",
+      icon: "🛡️",
       title: "Risk Awareness",
       desc: "Learn the importance of risk control, capital management, and emotional discipline in trading.",
-    },
-    {
-      number: "04",
-      title: "Market Psychology",
-      desc: "Develop confidence and patience by understanding market behavior and trading psychology.",
     },
   ];
 
@@ -36,10 +30,74 @@ export default function OptionMastery() {
     "Risk management awareness",
     "Trading psychology learning",
     "Beginner-friendly approach",
+
   ];
 
+const highlights = [
+  {
+    icon: "🎓",
+    badge: "Advanced Mentorship",
+    title: "Advanced Options Trading Mentorship",
+    desc: "Designed for traders who already understand the basics and want to master advanced-level trading concepts."
+  },
+  {
+    icon: "🏦",
+    badge: "Smart Money Concepts",
+    title: "Learn How Big Players Trade",
+    desc: "Understand Smart Money Concepts (SMC) and how institutional participants operate in the market.",
+  },
+  {
+    icon: "📊",
+    badge: "Professional Strategies",
+    title: "Professional Buy / Sell / Hedge Strategies",
+    desc: "Learn professional-level option buying, option selling, and hedging techniques used in real-market conditions.",
+  },
+  {
+    icon: "⚡",
+    badge: "Gamma Concepts",
+    title: "Gamma Blast Logic",
+    desc: "Understand advanced gamma-based market movement concepts and high-probability trading logic.",
+  },
+  {
+    icon: "💡",
+    badge: "Advanced Concepts",
+    title: "Exclusive Trading Concepts",
+    desc: "Learn unique market approaches and advanced strategies that very few retail traders know."
+  },
+  {
+    icon: "🧠",
+    badge: "Trader Psychology",
+    title: "Market Psychology & Trader Mindset",
+    desc: "Develop discipline, emotional control, patience, and execution confidence required for high-level trading.",
+  },
+  {
+    icon: "🛡️",
+    badge: "Elite Trading Mindset",
+    title: "Top 5% Trader Mindset",
+    desc: "The program is structured to help traders improve decision-making and move towards elite-level market understanding.",
+  },
+  {
+    icon: "🤝",
+    badge: "Mentorship Program",
+    title: "Mentorship-Based Learning",
+    desc: "This is not just a recorded course — it includes active mentorship, guidance, and practical learning support.",
+  },
+  {
+    icon: "📅",
+    badge: "Structured Learning",
+    title: "3 Days Theory + 3 Months Mentorship",
+    desc: "Intensive learning sessions combined with long-term mentorship for practical implementation and clarity.",
+  },
+  {
+    icon: "🔥",
+    badge: "Dedicated Traders",
+    title: "3 Days Theory + 3 Months Mentorship",
+    desc: "Created specifically for individuals who genuinely want to level up their trading journey and master advanced trading skills.",
+  }
+];
   return (
     <div className={styles.page}>
+
 
       {/* HERO SECTION */}
       <section className={styles.hero}>
@@ -51,44 +109,26 @@ export default function OptionMastery() {
           {/* LEFT */}
           <div className={styles.left}>
 
-            <div className={styles.badge}>
-              OPTION MASTERY PROGRAM
-            </div>
+            <p className={styles.tagline}>
+              OPTION MASTERY – MENTORSHIP PROGRAM OVERVIEW</p>
 
             <h1 className={styles.title}>
-              Learn <span>Option Mastery</span>
-              <br />
-              With Confidence
+Build Confidence In              <span>Every Options Trade </span>
             </h1>
-
+            <p className={styles.subtitle}>The Option Mastery Mentorship Program by Master Traders Academy is specially designed for traders who already have basic stock market knowledge and want to level up their understanding with advanced market concepts and professional trading logic. This program focuses on helping traders understand how experienced and institutional-level participants operate in the market.</p>
             <p className={styles.subtitle}>
-              A specialized options learning experience designed to help
-              individuals understand options concepts, market psychology,
-              disciplined decision-making, and structured market analysis.
-            </p>
+              Unlike basic trading courses, this is a high-level mentorship program created for individuals who are serious about mastering options trading, market psychology, smart money concepts, and advanced execution strategies. The program includes powerful concepts and trading approaches that very few retail traders are aware of, helping learners build the mindset and skills required to become part of the top-performing traders in the market.</p>
+            <p className={styles.subtitle}>
+             <strong style={{ color: "black" }}>This is not just a course — it is a mentorship-driven learning experience that includes 3 Days of Intensive Theory Sessions along with 3 Months of Continuous Mentorship and Guidance to help traders practically apply concepts with confidence and discipline.</strong> 
+</p>
 
-            <div className={styles.tags}>
+            {/* KEYWORDS */}
+            <div className={styles.keywordBox}>
+
               <span>Options Basics</span>
               <span>Strategies</span>
               <span>Risk Control</span>
               <span>Market Psychology</span>
-            </div>
-
-            <div className={styles.buttonGroup}>
-
-              <Link
-                to="/contactpage"
-                className={styles.primaryBtn}
-              >
-                Join Now
-              </Link>
-
-              <Link
-                to="/courses"
-                className={styles.secondaryBtn}
-              >
-                Explore Courses
-              </Link>
 
             </div>
 
@@ -97,11 +137,63 @@ export default function OptionMastery() {
           {/* RIGHT */}
           <div className={styles.right}>
 
-            <div className={styles.imageCard}>
-              <img
-                src={heroImage}
-                alt="Option Mastery Stock Market Learning"
-              />
+            <div className={styles.rightContent}>
+
+              {/* IMAGE */}
+              {/* <div className={styles.imageCard}>
+
+                <img
+                  src={heroImage}
+                  alt="Master Trader Stock Market Learning"
+                />
+
+              </div> */}
+              <div className={styles.modeRibbon}>
+                <span className={styles.liveDot}></span>
+                Online & Offline Classes Available
+              </div>
+
+              {/* IMAGE */}
+              <div className={styles.imageCard}>
+
+                <img
+                  src={heroImage}
+                  alt="Master Trader Stock Market Learning"
+                />
+
+              </div>
+
+              {/* PRICE CARD */}
+              <div className={styles.inlinePrice}>
+
+                <span className={styles.offerText}>
+                  Limited Offer
+                </span>
+
+                <div className={styles.priceWrap}>
+
+                  <span className={styles.newPrice}>
+                    ₹14999
+                  </span>
+
+
+
+                </div>
+
+              </div>
+
+              {/* BUTTON */}
+              <div className={styles.buttonGroup}>
+
+                <Link
+                  to="/contactpage"
+                  className={styles.primaryBtn}
+                >
+                  Join Now
+                </Link>
+
+              </div>
+
             </div>
 
           </div>
@@ -110,6 +202,119 @@ export default function OptionMastery() {
 
       </section>
 
+
+
+
+
+
+
+      {/* COURSE HIGHLIGHTS */}
+      <section className={styles.highlightSection}>
+
+        <div className={styles.sectionContainer}>
+
+          <div className={styles.sectionHeading}>
+
+            <p>IMPORTANT HIGHLIGHTS</p>
+
+            <h2>
+              What You’ll Learn
+              <span> In This Program</span>
+            </h2>
+
+          </div>
+
+          <div className={styles.highlightGrid}>
+
+            {highlights.map((item, index) => (
+
+              <div
+                key={index}
+                className={styles.highlightCard}
+              >
+
+                <div className={styles.highlightTop}>
+
+                  <div className={styles.highlightIcon}>
+                    {item.icon}
+                  </div>
+
+                  <div className={styles.highlightBadge}>
+                    {item.badge}
+                  </div>
+
+                </div>
+
+                <h3>
+                  {item.title}
+                </h3>
+
+                <p>
+                  {item.desc}
+                </p>
+
+              </div>
+
+            ))}
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* EXPERIENCE SECTION */}
+      <section className={styles.cleanExperienceSection}>
+
+        <div className={styles.sectionContainer}>
+
+          {/* HEADING */}
+          <div className={styles.cleanHeading}>
+
+            <p className={styles.cleanTag}>
+              WHY OPTION MASTERY
+            </p>
+
+            <h2>
+              Learn The Market With
+              <span> Confidence & Clarity</span>
+            </h2>
+
+            <p className={styles.cleanText}>
+              A beginner-friendly stock market program focused on
+              practical learning, discipline, and market understanding.
+            </p>
+
+          </div>
+
+          {/* CARDS */}
+          <div className={styles.cleanGrid}>
+
+            {benefits.map((item, index) => (
+
+              <div
+                key={index}
+                className={styles.cleanCard}
+              >
+
+                <div className={styles.cleanIcon}>
+                  ✔
+                </div>
+
+                <h3>
+                  {item}
+                </h3>
+
+              </div>
+
+            ))}
+
+          </div>
+
+        </div>
+
+      </section>
 
       {/* ABOUT SECTION */}
       <section className={styles.aboutSection}>
@@ -121,72 +326,21 @@ export default function OptionMastery() {
             <p>ABOUT OPTION MASTERY</p>
 
             <h2>
-              Structured Learning For Options Understanding
+              Learn Stock Market Concepts With Confidence
             </h2>
 
           </div>
 
           <div className={styles.aboutGrid}>
 
-            <div className={styles.aboutCard}>
-              <h3>Professional Learning</h3>
-
-              <p>
-                Build a strong understanding of options concepts
-                through structured and discipline-focused education.
-              </p>
-            </div>
-
-            <div className={styles.aboutCard}>
-              <h3>Strategic Approach</h3>
-
-              <p>
-                Learn how to approach market opportunities with
-                patience, confidence, and thoughtful planning.
-              </p>
-            </div>
-
-            <div className={styles.aboutCard}>
-              <h3>Long-Term Growth</h3>
-
-              <p>
-                Focus on improving market awareness and developing
-                disciplined trading habits for consistent learning.
-              </p>
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-
-      {/* LEARNING SECTION */}
-      <section className={styles.learningSection}>
-
-        <div className={styles.sectionContainer}>
-
-          <div className={styles.sectionHeading}>
-
-            <p>WHAT YOU WILL LEARN</p>
-
-            <h2>
-              Build Strong Trading Habits
-            </h2>
-
-          </div>
-
-          <div className={styles.learningGrid}>
-
-            {learningPoints.map((item, index) => (
+            {features.map((item, index) => (
               <div
                 key={index}
-                className={styles.learningCard}
+                className={styles.aboutCard}
               >
 
-                <div className={styles.number}>
-                  {item.number}
+                <div className={styles.aboutIcon}>
+                  {item.icon}
                 </div>
 
                 <h3>{item.title}</h3>
@@ -202,117 +356,60 @@ export default function OptionMastery() {
 
       </section>
 
+      {/* PRICE SECTION */}
+      <section
+        id="pricing"
+        className={styles.priceSection}
+      >
 
-      {/* BENEFITS */}
-      <section className={styles.benefitSection}>
+        <section className={styles.masterPriceSection}>
 
-        <div className={styles.sectionContainer}>
+          <div className={styles.masterPriceContainer}>
 
-          <div className={styles.benefitWrapper}>
+            <div className={styles.masterPriceCard}>
 
-            <div className={styles.benefitLeft}>
+              {/* LEFT */}
+              <div className={styles.masterPriceLeft}>
 
-              <p className={styles.smallTitle}>
-                WHY CHOOSE OPTION MASTERY
-              </p>
+                <p className={styles.masterPriceTag}>
+                  ONLINE & OFFLINE LEARNING
+                </p>
 
-              <h2>
-                Designed For Better Market Understanding
-              </h2>
+                <h2 className={styles.masterPriceTitle}>
+                  Join OPTION MASTERY Program
+                </h2>
 
-              <p>
-                Option Mastery focuses on helping learners improve
-                their understanding of options concepts, trading
-                discipline, market psychology, and risk awareness
-                through a structured educational experience.
-              </p>
+                <p className={styles.masterPriceDesc}>
+                  Flexible learning options with practical market education,
+                  beginner-friendly guidance, and structured mentorship support.
+                </p>
 
-            </div>
+              </div>
 
-            <div className={styles.benefitRight}>
+              {/* RIGHT */}
+              <div className={styles.masterPriceRight}>
 
-              {benefits.map((item, index) => (
-                <div
-                  key={index}
-                  className={styles.benefitItem}
-                >
-
-                  <span>✔</span>
-
-                  <p>{item}</p>
-
+                <div className={styles.masterNewPrice}>
+                  ₹14999
                 </div>
-              ))}
+
+
+
+                <Link
+                  to="/contactpage"
+                  className={styles.masterEnrollBtn}
+                >
+                  Enroll Now
+                </Link>
+
+              </div>
+
 
             </div>
 
           </div>
 
-        </div>
-
-      </section>
-
-
-      {/* SEO CONTENT */}
-      <section className={styles.seoSection}>
-
-        <div className={styles.sectionContainer}>
-
-          <div className={styles.sectionHeading}>
-
-            <p>OPTIONS LEARNING</p>
-
-            <h2>
-              Learn Options Trading Concepts With Clarity
-            </h2>
-
-          </div>
-
-          <div className={styles.seoContent}>
-
-            <p>
-              Option Mastery is designed for individuals who want to
-              improve their understanding of options trading concepts,
-              market psychology, disciplined strategies, and risk
-              awareness through structured stock market education.
-            </p>
-
-            <p>
-              Whether you are exploring options basics or looking to
-              strengthen your market understanding, this learning
-              experience focuses on confidence-building, strategic
-              thinking, and disciplined market participation.
-            </p>
-
-          </div>
-
-        </div>
-
-      </section>
-
-
-      {/* CTA */}
-      <section className={styles.ctaSection}>
-
-        <div className={styles.ctaBox}>
-
-          <h2>
-            Start Your Options Learning Journey Today
-          </h2>
-
-          <p>
-            Build confidence, discipline, and market understanding
-            with a structured options learning experience.
-          </p>
-
-          <Link
-            to="/contactpage"
-            className={styles.ctaBtn}
-          >
-            Connect With Us
-          </Link>
-
-        </div>
+        </section>
 
       </section>
 
