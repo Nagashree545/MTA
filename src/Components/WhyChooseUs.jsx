@@ -22,7 +22,7 @@ export default function WhyUsSection() {
     {
       icon: '💡',
       title: 'Proven Strategies',
-      description: 'Learn battle-tested trading strategies that work in all market conditions.'
+      description: 'Learn core market concepts and technical analysis frameworks used by professionals'
     },
     {
       icon: '🏆',
@@ -65,7 +65,7 @@ export default function WhyUsSection() {
           </div>
           <div className={styles.certificationItem}>
             <h4>NISM Certified</h4>
-            <p>National Institute of Securities Markets</p>
+            <p>Our instructors hold individual NISM certifications.</p>
           </div>
          
         </div>

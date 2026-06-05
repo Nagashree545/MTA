@@ -16,7 +16,7 @@ export default function PopularCourses() {
       image: masterclassImg,
       link: "/masterclass",
       points: [
-        "Technical & Price Action Mastery",
+        "Technical Analysis & Price Action Concepts",
         "Live Market Case Studies",
       ],
     },

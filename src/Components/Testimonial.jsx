@@ -16,7 +16,7 @@ quote: 'Master Traders Academy transformed my trading journey. I went from strug
       role: 'Options Trader',
       image: 'A',
       rating: 5,
-quote: 'The Option Hunter course gave me a much clearer understanding of options trading. The concepts were easy to follow, and the structured guidance helped me improve my confidence and trading approach significantly.',    },
+quote: 'The Options Trading Basics course gave me a much clearer understanding of options trading. The concepts were easy to follow, and the structured guidance helped me improve my confidence and trading approach significantly.',    },
     {
       id: 3,
       name: 'Rohan Sharma',

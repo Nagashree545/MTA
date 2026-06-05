@@ -16,7 +16,7 @@ export default function WhoCanEnroll() {
     {
       icon: "📈",
       title: "Additional Income Seekers",
-      desc: "Learn to generate extra income through stock market strategies and informed trading decisions.",
+      desc: "Learn to analyze the stock market and build strong financial literacy",
     },
     {
       icon: "👴",

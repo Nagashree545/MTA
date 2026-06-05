@@ -47,7 +47,7 @@ export default function WorkshopPopup() {
         </div>
 
         <p className={styles.desc}>
-          Join our expert-led workshop and learn powerful trading strategies,
+          Join our expert-led workshop and learn foundational trading concepts,
           risk management, and real market psychology.
         </p>
 
