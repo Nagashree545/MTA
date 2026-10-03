@@ -106,6 +106,7 @@ export default function MarketcyclesBlog() {
       excerpt:
         "Learn candlestick patterns like doji, hammer, engulfing, and pin bar formations to improve technical analysis and market trend identification.",
     },
+    { id: 10, slug: "trading-psychology-key-points", title: "Trading Psychology: 10 Important Key Points Every Trader Should Understand", date: "Oct 03, 2026", category: "Trading Psychology", image: "🧠", excerpt: "Understand the role of emotions, discipline, patience, risk management, revenge trading, overtrading and probability-based thinking in developing a structured trading approach.", },
 
   ];
 

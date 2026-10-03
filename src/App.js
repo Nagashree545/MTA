@@ -26,6 +26,7 @@ import TraderPsychologyMastery from './Components/TraderPsychologyMastery';
 import SupportResistanceZones from './Components/SupportResistanceZonesBlog';
 import IntradayTradingSetup from './Components/IntradayTradingSetup';
 import CandlestickReadingGuide from './Components/CandlestickReadingGuideBlog';
+import TradingPsychology from './Components/TradingPsychology';
 
 function App() {
   return (
@@ -56,6 +57,7 @@ function App() {
         <Route path="/blog/supportresistanceblog" element={<SupportResistanceZones/>} />
         <Route path="/blog/intradaytradingblog" element={<IntradayTradingSetup/>} />
         <Route path="/blog/candlestickreadingblog" element={<CandlestickReadingGuide/>} />
+        <Route path="/blog/trading-psychology-key-points" element={<TradingPsychology/>} />
       </Routes>
 
       <Footer />
